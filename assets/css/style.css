@@ -1,0 +1,10 @@
+.full-width-layout{
+    max-width: 1920px !important;
+}
+
+/* ----------------Hero Section start------------------ */
+.hero-bg{
+    background-image: url('../images/bg-banner.png');
+    
+}
+/* ----------------Hero Section end------------------ */
