@@ -4,7 +4,7 @@
         extend: {
           colors: {
             primary: "#009DDD",
-            secondary: "#010101",
+            secondary: "#747474",
           },
           spacing: {
             240: "240px",
@@ -21,7 +21,7 @@
     };
   </script>
 
-<header class="bg-white border-b shadow-md font-barlow">
+<header class="bg-white  font-barlow">
     <div class="w-[1440px] mx-auto flex items-center justify-between py-4">
         <!-- Logo -->
         <a href="index.html" class="flex items-center">
@@ -30,19 +30,22 @@
         <!-- Navigation Links -->
         <nav>
             <ul class="flex space-x-[60px] text-gray-700 font-medium">
-                <li><a href="index.html" class="hover:text-primary text-xl">HOME</a></li>
-                <li><a href="about.html" class="hover:text-primary text-xl">ABOUT US</a></li>
-                <li><a href="products.html" class="hover:text-primary text-xl">PRODUCT</a></li>
-                <li><a href="gallery.html" class="hover:text-primary text-xl">GALLERY</a></li>
-                <li><a href="global-network.html" class="hover:text-primary text-xl">GLOBAL NETWORK</a></li>
-                <li><a href="blog.html" class="hover:text-primary text-xl">BLOG</a></li>
-                <li><a href="contact.html" class="hover:text-primary text-xl">CONTACT US</a></li>
+                <li><a href="index.html" class="hover:text-primary text-secondary font-bold text-xl">HOME</a></li>
+                <li><a href="about.html" class="hover:text-primary text-secondary font-bold text-xl">ABOUT US</a></li>
+                <li><a href="products.html" class="hover:text-primary text-secondary font-bold text-xl">PRODUCT</a></li>
+                <li><a href="gallery.html" class="hover:text-primary text-secondary font-bold text-xl">GALLERY</a></li>
+                <li><a href="global-network.html" class="hover:text-primary text-secondary font-bold text-xl">GLOBAL NETWORK</a></li>
+                <li><a href="blog.html" class="hover:text-primary text-secondary font-bold text-xl">BLOG</a></li>
+                <li><a href="contact.html" class="hover:text-primary text-secondary font-bold text-xl">CONTACT US</a></li>
             </ul>
         </nav>
         <!-- Search Icon -->
-        <div>
+        <div class="flex items-center justify-between gap-3">
             <button class="bg-primary bg-opacity-20 p-2 rounded-md">
                 <img src="../assets/icons/search.png" alt="Logo" class="h-6" >
+            </button>
+            <button class="bg-primary bg-opacity-20 p-2 rounded-md">
+                <img src="../assets/icons/menu.png" alt="Logo" class="h-6" >
             </button>
         </div>
     </div>
