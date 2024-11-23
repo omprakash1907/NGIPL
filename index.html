@@ -33,7 +33,7 @@
               barlow: ["'Barlow Condensed'", "sans-serif"],
             },
             boxShadow: {
-              "inner-button": "inset 0 5px 8px rgba(0, 0, 0, 0.2)",
+              "inner-button": "inset 0 5px 4px rgba(0, 0, 0, 0.2)",
             },
           },
         },
@@ -53,32 +53,52 @@
     <!-- Main Content -->
     <main class="font-barlow full-width-layout mx-auto">
       <!-- Hero Section -->
-      <section class="relative hero-bg bg-center bg-contain bg-no-repeat">
-        <div class="max-w-container  mx-auto">
-          <!-- Text Content -->
-          <div class="lg:w-1/2 p-4">
-            <h3 class="font-semibold text-3xl mb-2">WE ARE PROUD</h3>
-            <h1 class="text-primary font-bold text-[80px] leading-none mb-4">
-              To Be Always On Demand
-            </h1>
-            <p class="text-2xl font-medium mb-12">
-              Delivering Excellence in Every Impression-Import Export Made Easy
-            </p>
-            <a
-              href="#"
-              class="bg-primary text-white text-3xl font-medium rounded-bl-2xl rounded-tr-2xl px-10 py-4 shadow-inner-button"
+      <section class="relative">
+        <div class="flex flex-col">
+          <div class="flex flex-col">
+            <!-- Left Content -->
+            <div
+              class="w-full  hero-bg  p-10  relative bg-top bg-cover"
             >
-              KNOW MORE
-            </a>
-
-            <!-- Banner Image -->
-            <!-- <div class="lg:w-1/2">
+              <div class="lg:w-1/2 pt-28 pb-16 px-16 relative">
+                <!-- vector -->
+                 <img src="assets/images/banner-vector.png" alt="vector" class="w-auto absolute right-16 top-6">
+                <h3 class="font-semibold text-4xl mb-4">WE ARE PROUD</h3>
+                <h1
+                  class="text-primary font-semibold text-[5rem] leading-none mb-4"
+                >
+                  To Be Always On<br/> Demand
+                </h1>
+                <p class="text-3xl font-nomral mt-12">
+                  Delivering Excellence in Every Impression-Import Export Made
+                  Easy
+                </p>
+                <button class="mt-24">
+                  <a
+                    href="#"
+                    class="bg-primary text-white text-3xl font-medium rounded-bl-[1.8rem] rounded-tr-[1.8rem] px-16 py-5 shadow-inner-button "
+                  >
+                    KNOW MORE
+                  </a>
+                </button>
+              </div>
+              <!-- Delivery Steps -->
+            </div>
+            <div class="py-12 px-5 lg:w-1/2">
+              <img
+                src="./assets/images/delivery_steps.png"
+                alt="Delivery Steps"
+                class="w-full h-auto"
+              />
+            </div>
+          </div>
+          <!-- Right Content -->
+          <div class="lg:w-1/2 absolute right-0 top-0">
             <img
               src="./assets/images/banner.png"
               alt="Ship Banner"
-              class="w-full h-auto"
+              class="w-full h-auto object-cover"
             />
-          </div> -->
           </div>
         </div>
       </section>
