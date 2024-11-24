@@ -13,12 +13,23 @@
   position: absolute;
   right: 0;
   height: 100%;
-  border-right: 2px dashed #009DDD;
+  border-right: 2px dashed #009edd79;
 }
 .line-bottom-dashed{
   bottom: 0;
   position: absolute;
   right: 0;
   width: 100%;
-  border-bottom: 2px dashed #009DDD;
+  border-bottom: 2px dashed #009edd79;
 }
+.line-center-dashed{
+  bottom: 50%;
+  position: absolute;
+  left: 56%; /* Center horizontally */
+  transform: translateX(-50%); /* Adjust for left offset */
+  width: 50%;
+  border-bottom: 2px dashed #009edd79;
+}
+
+
+

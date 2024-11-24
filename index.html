@@ -185,9 +185,13 @@
       <!-- About Section End -->
       <!-- Service Section Start -->
       <!-- Services Section -->
-      <section class="bg-white py-12">
+      <section class="bg-white relative my-32">
+        <!-- Airoplane -->
+        <div class="absolute right-0 bottom-0">
+          <img src="assets/images/helicopter.png" alt="" />
+        </div>
         <div
-          class="max-w-container mx-auto px-4 flex justify-between items-center gap-8"
+          class="max-w-container mx-auto flex justify-between items-center gap-8"
         >
           <!-- Left Section: Content Boxes -->
           <div class="lg:col-span-2 w-2/3 grid grid-cols-1 sm:grid-cols-2">
@@ -199,7 +203,7 @@
               <h3 class="text-3xl font-semibold mb-3">
                 Paints, Coatings & Resins
               </h3>
-              <p class="text-2xl text-secondary mb-3 leading-relaxed">
+              <p class="text-[1.4rem] text-secondary mb-3 leading-relaxed">
                 We are known for offering the best products essential for...
               </p>
               <a
@@ -226,7 +230,7 @@
             <div class="relative p-6">
               <div class="line-bottom-dashed"></div>
               <h3 class="text-3xl font-semibold mb-3">Textiles</h3>
-              <p class="text-2xl text-secondary mb-3 leading-relaxed">
+              <p class="text-[1.4rem] text-secondary mb-3 leading-relaxed">
                 As an industry leader, we offer our clients a diverse range of
                 Textile Sector goods.
               </p>
@@ -255,7 +259,7 @@
               <div class="line-bottom-dashed"></div>
               <div class="line-right-dashed"></div>
               <h3 class="text-3xl font-semibold mb-3">Food Additives</h3>
-              <p class="text-2xl text-secondary mb-3 me-1 leading-relaxed">
+              <p class="text-[1.4rem] text-secondary mb-3 me-1 leading-relaxed">
                 We provide food additives as well as functional food components.
               </p>
               <a
@@ -282,7 +286,7 @@
             <div class="relative p-6">
               <div class="line-bottom-dashed"></div>
               <h3 class="text-3xl font-semibold mb-3">Pharma Industry</h3>
-              <p class="text-2xl text-secondary mb-3 leading-relaxed">
+              <p class="text-[1.4rem] text-secondary mb-3 leading-relaxed">
                 We are a major provider of pharmaceutical excipients and a
                 well-known industry...
               </p>
@@ -310,7 +314,7 @@
             <div class="relative p-6">
               <div class="line-right-dashed"></div>
               <h3 class="text-3xl font-semibold mb-3">Water Treatment</h3>
-              <p class="text-2xl text-secondary mb-3 leading-relaxed">
+              <p class="text-[1.4rem] text-secondary mb-3 leading-relaxed">
                 Clean water is an essential aspect of everyone's life. We are a
                 leading...
               </p>
@@ -344,30 +348,258 @@
           </div>
 
           <!-- Right Section: Images -->
-          <div class="flex flex-col ">
-            <div class="px-2 ">
-              <div 
-              class="bg-no-repeat bg-center bg-cover py-10 px-6 mx-8"
-              style="background-image: url('assets/images/service-side.png');">
+          <div class="flex flex-col relative">
+            <div class="px-4">
+              <div
+                class="bg-primary bg-opacity-10 py-8 px-6 mx-8 rounded-tr-[8rem]"
+              >
                 <h3 class="text-3xl font-semibold mb-3">Ultimate Quality</h3>
-                <h3 class="text-3xl text-primary font-semibold mb-4">TEXTILES</h3>
-                <p class="text-2xl  mb-3 leading-relaxed">
-                  We are your reliable and experienced textile partner around the world.
+                <h3 class="text-3xl text-primary font-semibold mb-4">
+                  TEXTILES
+                </h3>
+                <p class="text-2xl mb-3 leading-relaxed pe-16">
+                  We are your reliable and experienced textile partner around
+                  the world.
                 </p>
-              <!-- </div> -->
+              </div>
             </div>
             <div class="h-full">
-               <img
-              src="./assets/images/service-image.png"
-              alt="Service Image"
-              class="w-full h-auto"
+              <img
+                src="./assets/images/service-image.png"
+                alt="Service Image"
+                class="w-full relative"
+              />
+              <img
+                src="assets/images/play-button.png"
+                alt="play"
+                class="absolute top-[60%] left-[44%]"
               />
             </div>
           </div>
         </div>
       </section>
-
       <!-- Service Section End -->
+      <!-- Global Service Section Start -->
+      <section
+        class="bg-primary relative"
+        style="
+          background: url('assets/images/global-banner.png') no-repeat center
+            top;
+          background-size: cover;
+        "
+      >
+        <!-- Overlay for background with primary color and reduced opacity -->
+        <div class="absolute inset-0 bg-[#006994] bg-opacity-90"></div>
+
+        <!-- Content Container -->
+        <div
+          class="relative max-w-container flex items-end justify-between mx-auto text-white"
+        >
+          <!-- Left Content -->
+          <div class="w-full lg:w-2/3 px-8 py-24">
+            <h4 class="text-3xl font-medium uppercase">
+              We're Servicing A Global
+            </h4>
+            <h2
+              class="text-4xl lg:text-6xl font-semibold mt-2 pe-4 leading-relaxed"
+            >
+              Provide You The Highest Quality Work That Meets Your Expectation.
+            </h2>
+          </div>
+
+          <!-- Right Content -->
+          <div
+            class="bg-white py-6 px-12 rounded-tr-[6rem] flex flex-col items-center"
+          >
+            <div class="relative px-14">
+              <div class="line-bottom-dashed"></div>
+              <svg
+                width="45"
+                class="m-4"
+                height="45"
+                viewBox="0 0 60 54"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M30 21.2146C35.6307 21.2146 40.1953 16.65 40.1953 11.0193C40.1953 5.38857 35.6307 0.823975 30 0.823975C24.3693 0.823975 19.8047 5.38857 19.8047 11.0193C19.8047 16.65 24.3693 21.2146 30 21.2146Z"
+                  fill="#009DDD"
+                />
+                <path
+                  d="M50.625 21.2145C54.1846 21.2145 57.0703 18.3288 57.0703 14.7692C57.0703 11.2095 54.1846 8.32385 50.625 8.32385C47.0654 8.32385 44.1797 11.2095 44.1797 14.7692C44.1797 18.3288 47.0654 21.2145 50.625 21.2145Z"
+                  fill="#009DDD"
+                />
+                <path
+                  d="M9.375 21.2145C12.9346 21.2145 15.8203 18.3288 15.8203 14.7692C15.8203 11.2095 12.9346 8.32385 9.375 8.32385C5.81535 8.32385 2.92969 11.2095 2.92969 14.7692C2.92969 18.3288 5.81535 21.2145 9.375 21.2145Z"
+                  fill="#009DDD"
+                />
+                <path
+                  d="M15.7254 27.0025C13.1883 24.9238 10.8906 25.1989 7.95703 25.1989C3.56953 25.1989 0 28.7474 0 33.1079V45.906C0 47.7997 1.5457 49.3396 3.44648 49.3396C11.6527 49.3396 10.6641 49.488 10.6641 48.9857C10.6641 39.917 9.58992 33.2665 15.7254 27.0025Z"
+                  fill="#009DDD"
+                />
+                <path
+                  d="M32.7901 25.2458C27.6662 24.8184 23.2125 25.2507 19.3709 28.4215C12.9424 33.5708 14.1795 40.5039 14.1795 48.9856C14.1795 51.2296 16.0053 53.0895 18.2834 53.0895C43.0196 53.0895 44.0041 53.8874 45.4709 50.6391C45.952 49.5406 45.8202 49.8897 45.8202 39.3809C45.8202 31.0341 38.5929 25.2458 32.7901 25.2458ZM52.0428 25.1989C49.0932 25.1989 46.8082 24.9265 44.2745 27.0024C50.3641 33.2199 49.3358 39.4167 49.3358 48.9856C49.3358 49.4911 48.5151 49.3395 56.4303 49.3395C58.3991 49.3395 59.9999 47.7446 59.9999 45.784V33.1079C59.9999 28.7473 56.4303 25.1989 52.0428 25.1989Z"
+                  fill="#009DDD"
+                />
+              </svg>
+            </div>
+            <h3 class="text-5xl font-semibold py-4 text-primary">2545</h3>
+            <p class="text-black text-2xl pb-2">Happy Customer</p>
+          </div>
+        </div>
+      </section>
+      <!-- Global Service Section End -->
+      <!-- Gallery Section Start -->
+      <section class="relative pb-12 pt-32">
+        <!-- aside -->
+        <img
+          src="assets/images/gallery-side.png"
+          alt="aside"
+          class="absolute right-0 top-0"
+        />
+        <div class="max-w-container mx-auto">
+          <div class="flex justify-between items-center mb-16">
+            <!-- Title -->
+            <div>
+              <h3 class="text-3xl font-semibold mb-4">RECENT GALLERY</h3>
+              <h2 class="text-6xl font-semibold text-primary">
+                Explore Recent Gallery
+              </h2>
+            </div>
+            <!-- Carousel Controls -->
+            <div class="flex justify-between items-center mt-6 w-1/4 relative">
+              <!-- Previous Button -->
+              <button
+                id="prevButton"
+                class="text-secondary hover:text-primary text-2xl font-semibold"
+              >
+                PREVIOUS
+              </button>
+              <div class="line-center-dashed px-6"></div>
+              <!-- Pagination Counter -->
+              <div
+                class="flex items-center rounded-full px-4 py-1 bg-white relative z-10"
+              >
+                <span class="text-2xl font-bold text-primary" id="currentSlide"
+                  >1</span
+                >
+              </div>
+
+              <!-- Next Button -->
+              <button
+                id="nextButton"
+                class="text-secondary hover:text-primary text-2xl font-semibold"
+              >
+                NEXT
+              </button>
+            </div>
+          </div>
+
+          <!-- Carousel Section -->
+          <div class="relative overflow-hidden">
+            <!-- Carousel Items -->
+            <div
+              class="carousel flex transition-transform duration-500 ease-in-out justify-between gap-7"
+            >
+              <!-- Slide 1 -->
+              <div class="flex-shrink-0">
+                <div class="overflow-hidden relative group">
+                  <img
+                    src="./assets/images/gallery-1.png"
+                    alt="Gallery 1"
+                    class="w-full h-auto"
+                  />
+                  <p
+                    class="absolute bottom-0 left-0 w-full text-2xl rounded-tr-[3rem] bg-primary bg-opacity-80 text-white px-8 py-6 transform translate-y-full transition-transform duration-300 group-hover:translate-y-0"
+                  >
+                    Container-terminal-wharf-<br />transport
+                  </p>
+                </div>
+              </div>
+
+              <!-- Slide 2 -->
+              <div class="flex-shrink-0">
+                <div class="overflow-hidden relative group">
+                  <img
+                    src="./assets/images/gallery-2.png"
+                    alt="Gallery 2"
+                    class="w-full h-auto"
+                  />
+                  <p
+                    class="absolute bottom-0 left-0 w-full text-2xl rounded-tr-[3rem] bg-primary bg-opacity-80 text-white px-8 py-6 transform translate-y-full transition-transform duration-300 group-hover:translate-y-0"
+                  >
+                    Industrial-ports-at-night
+                  </p>
+                </div>
+              </div>
+              <!-- Slide 3 -->
+              <div class="flex-shrink-0">
+                <div class="overflow-hidden relative group">
+                  <img
+                    src="./assets/images/gallery-3.png"
+                    alt="Gallery 3"
+                    class="w-full h-auto"
+                  />
+                  <p
+                    class="absolute bottom-0 left-0 w-full text-2xl rounded-tr-[3rem] bg-primary bg-opacity-80 text-white px-8 py-6 transform translate-y-full transition-transform duration-300 group-hover:translate-y-0"
+                  >
+                    Cargo-container-yard
+                  </p>
+                </div>
+              </div>
+              <!-- Slide 1 -->
+              <div class="flex-shrink-0">
+                <div class="overflow-hidden relative group">
+                  <img
+                    src="./assets/images/gallery-1.png"
+                    alt="Gallery 1"
+                    class="w-full h-auto"
+                  />
+                  <p
+                    class="absolute bottom-0 left-0 w-full text-2xl rounded-tr-[3rem] bg-primary bg-opacity-80 text-white px-8 py-6 transform translate-y-full transition-transform duration-300 group-hover:translate-y-0"
+                  >
+                    Container-terminal-wharf-<br />transport
+                  </p>
+                </div>
+              </div>
+
+              <!-- Slide 2 -->
+              <div class="flex-shrink-0">
+                <div class="overflow-hidden relative group">
+                  <img
+                    src="./assets/images/gallery-2.png"
+                    alt="Gallery 2"
+                    class="w-full h-auto"
+                  />
+                  <p
+                    class="absolute bottom-0 left-0 w-full text-2xl rounded-tr-[3rem] bg-primary bg-opacity-80 text-white px-8 py-6 transform translate-y-full transition-transform duration-300 group-hover:translate-y-0"
+                  >
+                    Industrial-ports-at-night
+                  </p>
+                </div>
+              </div>
+              <!-- Slide 3 -->
+              <div class="flex-shrink-0">
+                <div class="overflow-hidden relative group">
+                  <img
+                    src="./assets/images/gallery-3.png"
+                    alt="Gallery 3"
+                    class="w-full h-auto"
+                  />
+                  <p
+                    class="absolute bottom-0 left-0 w-full text-2xl rounded-tr-[3rem] bg-primary bg-opacity-80 text-white px-8 py-6 transform translate-y-full transition-transform duration-300 group-hover:translate-y-0"
+                  >
+                    Cargo-container-yard
+                  </p>
+                </div>
+              </div>
+              <!-- Add more images if needed -->
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Gallery Section End -->
     </main>
   </body>
 </html>

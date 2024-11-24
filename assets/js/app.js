@@ -24,3 +24,40 @@ $(document).ready(function () {
     }
   });
 });
+
+/// Carousel Logic
+const carousel = document.querySelector(".carousel");
+const slides = carousel.querySelectorAll(".flex-shrink-0");
+const prevButton = document.getElementById("prevButton");
+const nextButton = document.getElementById("nextButton");
+const currentSlideElement = document.getElementById("currentSlide");
+const totalSlides = Math.ceil(slides.length / 3); // Total number of groups (3 items per page)
+
+let currentSlide = 0;
+
+// Update Counter
+const updateCounter = () => {
+  currentSlideElement.textContent = currentSlide + 1;
+};
+
+// Move Carousel
+const moveCarousel = () => {
+  const offset = -currentSlide * 100; // Move by 100% for each group
+  carousel.style.transform = `translateX(${offset}%)`;
+  updateCounter();
+};
+
+// Previous Button
+prevButton.addEventListener("click", () => {
+  currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
+  moveCarousel();
+});
+
+// Next Button
+nextButton.addEventListener("click", () => {
+  currentSlide = (currentSlide + 1) % totalSlides;
+  moveCarousel();
+});
+
+// Initialize Total Slides
+document.getElementById("totalSlides").textContent = totalSlides;
