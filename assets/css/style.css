@@ -1,28 +1,24 @@
-.full-width-layout{
-    max-width: 1920px !important;
+.full-width-layout {
+  max-width: 1920px !important;
 }
 
 /* ----------------Hero Section start------------------ */
-.hero-bg{
-    background-image: url('../images/bg-banner.png');
+.hero-bg {
+  background-image: url("../images/bg-banner.png");
 }
-.button-shadow {
-    position: relative;
-    display: inline-block;
-    box-shadow: inset 0 5px 8px rgba(0, 0, 0, 0.2); /* Inner shadow on the top */
-    overflow: hidden;
-  }
-  
-  .button-shadow::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.1);
-    border-radius: inherit; /* Matches button's rounded corners */
-    box-shadow: inset 0 -5px 8px rgba(0, 0, 0, 0.3); /* Enhanced inner shadow */
-    pointer-events: none;
-  }
+
 /* ----------------Hero Section end------------------ */
+.line-right-dashed{
+  bottom: 0;
+  position: absolute;
+  right: 0;
+  height: 100%;
+  border-right: 2px dashed #009DDD;
+}
+.line-bottom-dashed{
+  bottom: 0;
+  position: absolute;
+  right: 0;
+  width: 100%;
+  border-bottom: 2px dashed #009DDD;
+}

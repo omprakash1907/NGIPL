@@ -52,39 +52,49 @@
 
     <!-- Main Content -->
     <main class="font-barlow full-width-layout mx-auto">
-      <!-- Hero Section -->
+      <!-- Hero Section start -->
       <section class="relative">
-        <div class="flex flex-col">
-          <div class="flex flex-col">
-            <!-- Left Content -->
-            <div
-              class="w-full  hero-bg  p-10  relative bg-top bg-cover"
-            >
-              <div class="lg:w-1/2 pt-28 pb-16 px-16 relative">
-                <!-- vector -->
-                 <img src="assets/images/banner-vector.png" alt="vector" class="w-auto absolute right-16 top-6">
-                <h3 class="font-semibold text-4xl mb-4">WE ARE PROUD</h3>
-                <h1
-                  class="text-primary font-semibold text-[5rem] leading-none mb-4"
+        <!-- Background Image -->
+        <img
+          src="assets/images/bg-banner.png"
+          alt="banner"
+          class="absolute top-0 w-full h-auto"
+        />
+
+        <!-- Container -->
+        <div class="flex flex-col lg:flex-row relative z-10 mx-auto">
+          <!-- Left Content -->
+          <div class="lg:w-1/2 p-10 relative">
+            <div class="pt-28 pb-16 px-16 lg:px-16">
+              <!-- Vector Image -->
+              <img
+                src="assets/images/banner-vector.png"
+                alt="vector"
+                class="hidden lg:block w-auto absolute right-16 top-6"
+              />
+              <h3 class="font-semibold text-4xl mb-6">WE ARE PROUD</h3>
+              <h1
+                class="text-primary font-semibold text-[3rem] lg:text-[5rem] leading-none mb-4"
+              >
+                To Be Always On<br />
+                Demand
+              </h1>
+              <p class="text-xl lg:text-3xl font-normal mt-4 lg:mt-12">
+                Delivering Excellence in Every Impression-Import Export Made
+                Easy
+              </p>
+              <button class="mt-12 lg:mt-24">
+                <a
+                  href="#"
+                  class="bg-primary text-white text-xl lg:text-3xl font-medium rounded-bl-[1.8rem] rounded-tr-[1.8rem] px-10 lg:px-16 py-3 lg:py-5 shadow-inner-button"
                 >
-                  To Be Always On<br/> Demand
-                </h1>
-                <p class="text-3xl font-nomral mt-12">
-                  Delivering Excellence in Every Impression-Import Export Made
-                  Easy
-                </p>
-                <button class="mt-24">
-                  <a
-                    href="#"
-                    class="bg-primary text-white text-3xl font-medium rounded-bl-[1.8rem] rounded-tr-[1.8rem] px-16 py-5 shadow-inner-button "
-                  >
-                    KNOW MORE
-                  </a>
-                </button>
-              </div>
-              <!-- Delivery Steps -->
+                  KNOW MORE
+                </a>
+              </button>
             </div>
-            <div class="py-12 px-5 lg:w-1/2">
+
+            <!-- Delivery Steps -->
+            <div class="py-12 px-5 absolute">
               <img
                 src="./assets/images/delivery_steps.png"
                 alt="Delivery Steps"
@@ -92,16 +102,272 @@
               />
             </div>
           </div>
+
           <!-- Right Content -->
-          <div class="lg:w-1/2 absolute right-0 top-0">
+          <div class="w-full lg:w-1/2">
             <img
               src="./assets/images/banner.png"
               alt="Ship Banner"
-              class="w-full h-auto object-cover"
+              class="w-full h-auto object-bottom"
             />
           </div>
         </div>
       </section>
+      <!-- Hero Section start -->
+      <!-- About Section Start -->
+      <section class="my-20 relative">
+        <!-- map -->
+        <img
+          src="/assets/images/map.png"
+          alt="map"
+          class="absolute left-0 top-20"
+        />
+        <!-- about-vector -->
+        <img
+          src="/assets/images/about-vector.png"
+          alt="map"
+          class="absolute right-0 top-20"
+        />
+        <!-- ship -->
+        <img
+          src="/assets/images/ship.png"
+          alt="map"
+          class="absolute right-0 bottom-20"
+        />
+        <div class="flex">
+          <!-- Left Side: Content -->
+          <div class="relative">
+            <img
+              src="assets/images/about-side.png"
+              alt="about"
+              class="w-full"
+            />
+            <h2
+              class="absolute w-full text-center text-primary font-semibold text-[3rem] lg:text-[5rem] leading-none transform -rotate-90 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
+            >
+              ABOUT US
+            </h2>
+          </div>
+          <!-- Right Side: Content -->
+          <div class="w-full lg:w-2/3 px-8 py-8 lg:ps-10 lg:pe-28 lg:py-8">
+            <h4 class="font-semibold text-3xl mb-4">ABOUT US</h4>
+            <h3 class="text-primary font-semibold text-3xl lg:text-6xl mb-8">
+              Niraj Gupta Impex Pvt. LTD
+            </h3>
+            <p
+              class="text-lg lg:text-[1.6rem] font-normal mb-8 pe-8"
+              style="line-height: inherit"
+            >
+              NIRAJ GUPTA IMPEX PVT. LTD. has been an internationally
+              acknowledged indenting and sourcing agent in India since 2005. We
+              have expanded our operations to include Importers, Merchant
+              Exporters, and Job Manufacturing. Our company has been associated
+              with the manufacturing of dyes and dye intermediates since 1993.
+            </p>
+            <p
+              class="text-lg lg:text-[1.6rem] font-normal mb-8 pe-8"
+              style="line-height: inherit"
+            >
+              Our primary activities include international trade promotion for a
+              wide range of industries including paints, coatings, resins,
+              specialty chemicals, organic & inorganic dyes, pharmaceuticals,
+              bulk drugs & API, construction & water treatment, electronics,
+              plastic & polymers, rubber & textiles, and many more.
+            </p>
+            <button
+              class="bg-primary text-white text-xl lg:text-3xl font-medium rounded-bl-[1.8rem] rounded-tr-[1.8rem] px-10 lg:px-16 py-3 lg:py-5 shadow-inner-button"
+            >
+              <a href="#"> KNOW MORE </a>
+            </button>
+          </div>
+        </div>
+      </section>
+      <!-- About Section End -->
+      <!-- Service Section Start -->
+      <!-- Services Section -->
+      <section class="bg-white py-12">
+        <div
+          class="max-w-container mx-auto px-4 flex justify-between items-center gap-8"
+        >
+          <!-- Left Section: Content Boxes -->
+          <div class="lg:col-span-2 w-2/3 grid grid-cols-1 sm:grid-cols-2">
+            <!-- Box with Before and After Borders -->
+            <div class="relative p-6">
+              <div class="line-bottom-dashed"></div>
+              <div class="line-right-dashed"></div>
+              <!-- Content -->
+              <h3 class="text-3xl font-semibold mb-3">
+                Paints, Coatings & Resins
+              </h3>
+              <p class="text-2xl text-secondary mb-3 leading-relaxed">
+                We are known for offering the best products essential for...
+              </p>
+              <a
+                href="#"
+                class="text-primary text-2xl font-semibold flex items-center space-x-2 mt-2"
+              >
+                <span>KNOW MORE</span>
+                <svg
+                  width="45"
+                  height="16"
+                  viewBox="0 0 45 16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M44.7071 8.70711C45.0976 8.31658 45.0976 7.68342 44.7071 7.29289L38.3431 0.928932C37.9526 0.538408 37.3195 0.538408 36.9289 0.928932C36.5384 1.31946 36.5384 1.95262 36.9289 2.34315L42.5858 8L36.9289 13.6569C36.5384 14.0474 36.5384 14.6805 36.9289 15.0711C37.3195 15.4616 37.9526 15.4616 38.3431 15.0711L44.7071 8.70711ZM0 9H44V7H0V9Z"
+                    fill="#009DDD"
+                  />
+                </svg>
+              </a>
+            </div>
+
+            <!-- Box 2 -->
+            <div class="relative p-6">
+              <div class="line-bottom-dashed"></div>
+              <h3 class="text-3xl font-semibold mb-3">Textiles</h3>
+              <p class="text-2xl text-secondary mb-3 leading-relaxed">
+                As an industry leader, we offer our clients a diverse range of
+                Textile Sector goods.
+              </p>
+              <a
+                href="#"
+                class="text-primary text-2xl font-semibold flex items-center space-x-2 mt-2"
+              >
+                <span>KNOW MORE</span>
+                <svg
+                  width="45"
+                  height="16"
+                  viewBox="0 0 45 16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M44.7071 8.70711C45.0976 8.31658 45.0976 7.68342 44.7071 7.29289L38.3431 0.928932C37.9526 0.538408 37.3195 0.538408 36.9289 0.928932C36.5384 1.31946 36.5384 1.95262 36.9289 2.34315L42.5858 8L36.9289 13.6569C36.5384 14.0474 36.5384 14.6805 36.9289 15.0711C37.3195 15.4616 37.9526 15.4616 38.3431 15.0711L44.7071 8.70711ZM0 9H44V7H0V9Z"
+                    fill="#009DDD"
+                  />
+                </svg>
+              </a>
+            </div>
+
+            <!-- Box 3 -->
+            <div class="relative p-6">
+              <div class="line-bottom-dashed"></div>
+              <div class="line-right-dashed"></div>
+              <h3 class="text-3xl font-semibold mb-3">Food Additives</h3>
+              <p class="text-2xl text-secondary mb-3 me-1 leading-relaxed">
+                We provide food additives as well as functional food components.
+              </p>
+              <a
+                href="#"
+                class="text-primary text-2xl font-semibold flex items-center space-x-2 mt-2"
+              >
+                <span>KNOW MORE</span>
+                <svg
+                  width="45"
+                  height="16"
+                  viewBox="0 0 45 16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M44.7071 8.70711C45.0976 8.31658 45.0976 7.68342 44.7071 7.29289L38.3431 0.928932C37.9526 0.538408 37.3195 0.538408 36.9289 0.928932C36.5384 1.31946 36.5384 1.95262 36.9289 2.34315L42.5858 8L36.9289 13.6569C36.5384 14.0474 36.5384 14.6805 36.9289 15.0711C37.3195 15.4616 37.9526 15.4616 38.3431 15.0711L44.7071 8.70711ZM0 9H44V7H0V9Z"
+                    fill="#009DDD"
+                  />
+                </svg>
+              </a>
+            </div>
+
+            <!-- Box 4 -->
+            <div class="relative p-6">
+              <div class="line-bottom-dashed"></div>
+              <h3 class="text-3xl font-semibold mb-3">Pharma Industry</h3>
+              <p class="text-2xl text-secondary mb-3 leading-relaxed">
+                We are a major provider of pharmaceutical excipients and a
+                well-known industry...
+              </p>
+              <a
+                href="#"
+                class="text-primary text-2xl font-semibold flex items-center space-x-2 mt-2"
+              >
+                <span>KNOW MORE</span>
+                <svg
+                  width="45"
+                  height="16"
+                  viewBox="0 0 45 16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M44.7071 8.70711C45.0976 8.31658 45.0976 7.68342 44.7071 7.29289L38.3431 0.928932C37.9526 0.538408 37.3195 0.538408 36.9289 0.928932C36.5384 1.31946 36.5384 1.95262 36.9289 2.34315L42.5858 8L36.9289 13.6569C36.5384 14.0474 36.5384 14.6805 36.9289 15.0711C37.3195 15.4616 37.9526 15.4616 38.3431 15.0711L44.7071 8.70711ZM0 9H44V7H0V9Z"
+                    fill="#009DDD"
+                  />
+                </svg>
+              </a>
+            </div>
+
+            <!-- Box 5 -->
+            <div class="relative p-6">
+              <div class="line-right-dashed"></div>
+              <h3 class="text-3xl font-semibold mb-3">Water Treatment</h3>
+              <p class="text-2xl text-secondary mb-3 leading-relaxed">
+                Clean water is an essential aspect of everyone's life. We are a
+                leading...
+              </p>
+              <a
+                href="#"
+                class="text-primary text-2xl font-semibold flex items-center space-x-2 mt-2"
+              >
+                <span>KNOW MORE</span>
+                <svg
+                  width="45"
+                  height="16"
+                  viewBox="0 0 45 16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M44.7071 8.70711C45.0976 8.31658 45.0976 7.68342 44.7071 7.29289L38.3431 0.928932C37.9526 0.538408 37.3195 0.538408 36.9289 0.928932C36.5384 1.31946 36.5384 1.95262 36.9289 2.34315L42.5858 8L36.9289 13.6569C36.5384 14.0474 36.5384 14.6805 36.9289 15.0711C37.3195 15.4616 37.9526 15.4616 38.3431 15.0711L44.7071 8.70711ZM0 9H44V7H0V9Z"
+                    fill="#009DDD"
+                  />
+                </svg>
+              </a>
+            </div>
+
+            <!-- Box 6 with Vector -->
+            <div class="p-6 flex flex-col items-start">
+              <img
+                src="./assets/images/service-vector.png"
+                alt="Service Vector"
+              />
+            </div>
+          </div>
+
+          <!-- Right Section: Images -->
+          <div class="flex flex-col ">
+            <div class="px-2 ">
+              <div 
+              class="bg-no-repeat bg-center bg-cover py-10 px-6 mx-8"
+              style="background-image: url('assets/images/service-side.png');">
+                <h3 class="text-3xl font-semibold mb-3">Ultimate Quality</h3>
+                <h3 class="text-3xl text-primary font-semibold mb-4">TEXTILES</h3>
+                <p class="text-2xl  mb-3 leading-relaxed">
+                  We are your reliable and experienced textile partner around the world.
+                </p>
+              <!-- </div> -->
+            </div>
+            <div class="h-full">
+               <img
+              src="./assets/images/service-image.png"
+              alt="Service Image"
+              class="w-full h-auto"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Service Section End -->
     </main>
   </body>
 </html>
