@@ -22,6 +22,13 @@
   width: 100%;
   border-bottom: 2px dashed #009edd79;
 }
+.line-top-dashed{
+  top: 0;
+  position: absolute;
+  right: 0;
+  width: 100%;
+  border-bottom: 2px dashed #009edd79;
+}
 .line-center-dashed{
   bottom: 50%;
   position: absolute;
