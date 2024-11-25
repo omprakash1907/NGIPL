@@ -25,7 +25,7 @@ $(document).ready(function () {
   });
 });
 
-/// Carousel Logic
+// Gallery Carousel Logic ----------------------------------------------------->>>
 const carousel = document.querySelector(".carousel");
 const slides = carousel.querySelectorAll(".flex-shrink-0");
 const prevButton = document.getElementById("prevButton");
@@ -61,3 +61,6 @@ nextButton.addEventListener("click", () => {
 
 // Initialize Total Slides
 document.getElementById("totalSlides").textContent = totalSlides;
+
+
+
