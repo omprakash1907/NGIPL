@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- Preconnect for Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "#009DDD",
+              secondary: "#747474",
+            },
+            spacing: {
+              240: "240px",
+              40: "40px",
+            },
+            maxWidth: {
+              container: "1440px",
+              mxcontainer: "1920px",
+            },
+            fontFamily: {
+              barlow: ["'Barlow Condensed'", "sans-serif"],
+            },
+            boxShadow: {
+              "inner-button": "inset 0 5px 4px rgba(0, 0, 0, 0.2)",
+            },
+          },
+        },
+      };
+    </script>
+    <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Header js -->
+    <script src="./assets/js/app.js" defer></script>
+    <!-- Style -->
+    <link rel="stylesheet" href="/assets/css/style.css" />
+  </head>
+  <body class="font-barlow full-width-layout mx-auto">
+    <!-- Header -->
+    <div id="header-placeholder"></div>
+    <main>
+      <!-- breadcrumb Start -->
+      <div class="bg-primary bg-opacity-15 rounded-bl-[7rem]">
+        <div class="max-2xl-container ms-auto">
+          <div class="grid lg:grid-cols-2 grid-cols-1 items-center relative">
+            <div>
+              <!-- ship vector -->
+              <img
+                src="assets/images/gallery/ship.png"
+                alt="ship"
+                class="absolute bottom-0 left-20"
+              />
+              <!-- vector -->
+              <img
+                src="assets/images/banner-vector.png"
+                alt="vector"
+                class="absolute left-1/4 top-20"
+              />
+              <!-- content -->
+
+              <h3 class="text-3xl font-semibold mb-2">
+                <a href="index.html">HOME</a>/
+                <a href="blog.html">BLOG</a>
+              </h3>
+              <h2
+                class="text-primary font-semibold text-[3rem] lg:text-[4.5rem] leading-none mb-4"
+              >
+                Blog
+              </h2>
+            </div>
+            <div class="rounded-tl-[7rem] overflow-hidden">
+              <img src="assets/images/blog/blog-banner.jpg" alt="banner" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- breadcrumb End -->
+      <!-- Content Start -->
+      <div class="py-32 max-w-container mx-auto">
+        <div class="grid grid-cols-1 lg:grid-cols-2">
+          <div class="rounded-tr-[7rem] overflow-hidden">
+            <img src="assets/images/blog/blog-1.png" alt="blog-1" />
+          </div>
+          <div class="p-8">
+            <h4 class="font-semibold text-[1.75rem] mb-5">
+              The Role of Indentors in Maintaining Safety and Quality Standards
+              for Chemical Products
+            </h4>
+            <p class="text-secondary text-2xl">
+              In the complex world of chemical manufacturing and distribution,
+              ensuring product safety and quality is paramount. This task is
+              facilitated by various actors within the supply chain, one of
+              which is the often overlooked....
+            </p>
+            <a
+              href="blogdetail.html"
+              class="text-primary text-2xl font-semibold flex items-center space-x-2 mt-2"
+            >
+              <span>KNOW MORE</span>
+              <svg
+                width="45"
+                height="16"
+                viewBox="0 0 45 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M44.7071 8.70711C45.0976 8.31658 45.0976 7.68342 44.7071 7.29289L38.3431 0.928932C37.9526 0.538408 37.3195 0.538408 36.9289 0.928932C36.5384 1.31946 36.5384 1.95262 36.9289 2.34315L42.5858 8L36.9289 13.6569C36.5384 14.0474 36.5384 14.6805 36.9289 15.0711C37.3195 15.4616 37.9526 15.4616 38.3431 15.0711L44.7071 8.70711ZM0 9H44V7H0V9Z"
+                  fill="#009DDD"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <div id="footer-placeholder"></div>
+  </body>
+</html>

@@ -32,6 +32,9 @@
             fontFamily: {
               barlow: ["'Barlow Condensed'", "sans-serif"],
             },
+            boxShadow: {
+              "inner-button": "inset 0 5px 4px rgba(0, 0, 0, 0.2)",
+            },
           },
         },
       };
@@ -43,14 +46,304 @@
     <!-- Style -->
     <link rel="stylesheet" href="/assets/css/style.css" />
   </head>
-  <body>
+  <body class="font-barlow full-width-layout mx-auto">
     <!-- Header -->
     <div id="header-placeholder"></div>
-    <main class="font-barlow full-width-layout mx-auto">
+    <main>
       <!-- breadcrumb Start -->
+      <div class="bg-primary bg-opacity-15 rounded-bl-[7rem]">
+        <div class="max-2xl-container ms-auto">
+          <div class="grid lg:grid-cols-2 grid-cols-1 items-center relative">
+            <div>
+              <!-- ship vector -->
+              <img
+                src="assets/images/gallery/ship.png"
+                alt="ship"
+                class="absolute bottom-0 left-20"
+              />
+              <!-- vector -->
+              <img
+                src="assets/images/banner-vector.png"
+                alt="vector"
+                class="absolute left-1/4 top-20"
+              />
+              <!-- content -->
 
+              <h3 class="text-3xl font-semibold mb-2">
+                <a href="index.html">HOME</a>/
+                <a href="blog.html">BLOG</a>
+              </h3>
+              <h2
+                class="text-primary font-semibold text-[3rem] lg:text-[4.5rem] leading-none mb-4"
+              >
+                Blog
+              </h2>
+            </div>
+            <div class="rounded-tl-[7rem] overflow-hidden">
+              <img src="assets/images/blog/blog-banner.jpg" alt="banner" />
+            </div>
+          </div>
+        </div>
+      </div>
       <!-- breadcrumb End -->
+      <!-- Content Start -->
+      <div class="py-32 max-w-container mx-auto">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+          <!-- Blog 1 -->
+          <div class="flex flex-col">
+            <div
+              class="rounded-tr-[7rem] overflow-hidden ps-12 -mb-24 relative z-10"
+            >
+              <img src="assets/images/blog/blog-1.png" alt="blog-1" />
+            </div>
+            <div
+              class="bg-primary bg-opacity-15 rounded-bl-[7rem] px-12 pb-12 pt-32"
+            >
+              <h4 class="font-semibold text-[1.75rem] mb-5">
+                The Role of Indentors in Maintaining Safety and Quality
+                Standards for Chemical Products
+              </h4>
+              <p class="text-secondary text-2xl mb-5">
+                In the complex world of chemical manufacturing and distribution,
+                ensuring product safety and quality is paramount. This task is
+                facilitated by various actors within the supply chain, one of
+                which is the often overlooked....
+              </p>
+              <a
+                href="blogdetail.html"
+                class="text-primary text-[1.75rem] font-semibold flex items-center space-x-2 mt-2"
+              >
+                <span>KNOW MORE</span>
+                <svg
+                  width="45"
+                  height="16"
+                  viewBox="0 0 45 16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M44.7071 8.70711C45.0976 8.31658 45.0976 7.68342 44.7071 7.29289L38.3431 0.928932C37.9526 0.538408 37.3195 0.538408 36.9289 0.928932C36.5384 1.31946 36.5384 1.95262 36.9289 2.34315L42.5858 8L36.9289 13.6569C36.5384 14.0474 36.5384 14.6805 36.9289 15.0711C37.3195 15.4616 37.9526 15.4616 38.3431 15.0711L44.7071 8.70711ZM0 9H44V7H0V9Z"
+                    fill="#009DDD"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Blog 2 -->
+          <div class="flex flex-col">
+            <div
+              class="rounded-tr-[7rem] overflow-hidden ps-12 -mb-24 relative z-10"
+            >
+              <img src="assets/images/blog/blog-2.png" alt="blog-2" />
+            </div>
+            <div
+              class="bg-primary bg-opacity-15 rounded-bl-[7rem] px-12 pb-12 pt-32"
+            >
+              <h4 class="font-semibold text-[1.75rem] mb-5">
+                Exploring the Benefits of Indentors in Textile Product
+                Manufacturing
+              </h4>
+              <p class="text-secondary text-2xl mb-5">
+                There are many tools required in textile product manufacturing.
+                One such specialized tool is the indenter. Indentors are also
+                rollers used in different textile processes to create specific
+                designs, patterns, or textures....
+              </p>
+              <a
+                href="blogdetail.html"
+                class="text-primary text-[1.75rem] font-semibold flex items-center space-x-2 mt-2"
+              >
+                <span>KNOW MORE</span>
+                <svg
+                  width="45"
+                  height="16"
+                  viewBox="0 0 45 16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M44.7071 8.70711C45.0976 8.31658 45.0976 7.68342 44.7071 7.29289L38.3431 0.928932C37.9526 0.538408 37.3195 0.538408 36.9289 0.928932C36.5384 1.31946 36.5384 1.95262 36.9289 2.34315L42.5858 8L36.9289 13.6569C36.5384 14.0474 36.5384 14.6805 36.9289 15.0711C37.3195 15.4616 37.9526 15.4616 38.3431 15.0711L44.7071 8.70711ZM0 9H44V7H0V9Z"
+                    fill="#009DDD"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Blog 3 -->
+          <div class="flex flex-col">
+            <div
+              class="rounded-tr-[7rem] overflow-hidden ps-12 -mb-24 relative z-10"
+            >
+              <img src="assets/images/blog/blog-3.png" alt="blog-3" />
+            </div>
+            <div
+              class="bg-primary bg-opacity-15 rounded-bl-[7rem] px-12 pb-12 pt-32"
+            >
+              <h4 class="font-semibold text-[1.75rem] mb-5">
+                Indentors vs. Direct Procurement: Pros and Cons in Chemicals and
+                Pharma
+              </h4>
+              <p class="text-secondary text-2xl mb-5">
+                Indenting and direct procurement are different approaches to
+                sourcing materials and products for businesses like chemicals
+                and pharmaceuticals. Each approach has its own set of pros and
+                cons. In this article, we look....
+              </p>
+              <a
+                href="blogdetail.html"
+                class="text-primary text-[1.75rem] font-semibold flex items-center space-x-2 mt-2"
+              >
+                <span>KNOW MORE</span>
+                <svg
+                  width="45"
+                  height="16"
+                  viewBox="0 0 45 16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M44.7071 8.70711C45.0976 8.31658 45.0976 7.68342 44.7071 7.29289L38.3431 0.928932C37.9526 0.538408 37.3195 0.538408 36.9289 0.928932C36.5384 1.31946 36.5384 1.95262 36.9289 2.34315L42.5858 8L36.9289 13.6569C36.5384 14.0474 36.5384 14.6805 36.9289 15.0711C37.3195 15.4616 37.9526 15.4616 38.3431 15.0711L44.7071 8.70711ZM0 9H44V7H0V9Z"
+                    fill="#009DDD"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Blog 4 -->
+          <div class="flex flex-col">
+            <div
+              class="rounded-tr-[7rem] overflow-hidden ps-12 -mb-24 relative z-10"
+            >
+              <img src="assets/images/blog/blog-4.png" alt="blog-4" />
+            </div>
+            <div
+              class="bg-primary bg-opacity-15 rounded-bl-[7rem] px-12 pb-12 pt-32"
+            >
+              <h4 class="font-semibold text-[1.75rem] mb-5">
+                Sourcing Agents: The Key to Finding Quality Pharma Products
+              </h4>
+              <p class="text-secondary text-2xl mb-5">
+                In the pharmaceutical sector, product quality is of utmost
+                significance. Pharmaceutical product sourcing is essential for
+                ensuring that patients receive high-quality, secure medications.
+                To accomplish this, pharmaceutica....
+              </p>
+              <a
+                href="blogdetail.html"
+                class="text-primary text-[1.75rem] font-semibold flex items-center space-x-2 mt-2"
+              >
+                <span>KNOW MORE</span>
+                <svg
+                  width="45"
+                  height="16"
+                  viewBox="0 0 45 16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M44.7071 8.70711C45.0976 8.31658 45.0976 7.68342 44.7071 7.29289L38.3431 0.928932C37.9526 0.538408 37.3195 0.538408 36.9289 0.928932C36.5384 1.31946 36.5384 1.95262 36.9289 2.34315L42.5858 8L36.9289 13.6569C36.5384 14.0474 36.5384 14.6805 36.9289 15.0711C37.3195 15.4616 37.9526 15.4616 38.3431 15.0711L44.7071 8.70711ZM0 9H44V7H0V9Z"
+                    fill="#009DDD"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Blog 5 -->
+          <div class="flex flex-col">
+            <div
+              class="rounded-tr-[7rem] overflow-hidden ps-12 -mb-24 relative z-10"
+            >
+              <img src="assets/images/blog/blog-5.png" alt="blog-4" />
+            </div>
+            <div
+              class="bg-primary bg-opacity-15 rounded-bl-[7rem] px-12 pb-12 pt-32"
+            >
+              <h4 class="font-semibold text-[1.75rem] mb-5">
+                Navigating the Complex World of Chemicals: Let Sourcing Agents
+                Be Your Guide
+              </h4>
+              <p class="text-secondary text-2xl mb-5">
+                Finding your way around the complicated world of chemicals can
+                be difficult. It is vital to have an experienced guide because
+                there are so many options, suppliers, and legal and ethical
+                issues to consider.
+              </p>
+              <a
+                href="blogdetail.html"
+                class="text-primary text-[1.75rem] font-semibold flex items-center space-x-2 mt-2"
+              >
+                <span>KNOW MORE</span>
+                <svg
+                  width="45"
+                  height="16"
+                  viewBox="0 0 45 16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M44.7071 8.70711C45.0976 8.31658 45.0976 7.68342 44.7071 7.29289L38.3431 0.928932C37.9526 0.538408 37.3195 0.538408 36.9289 0.928932C36.5384 1.31946 36.5384 1.95262 36.9289 2.34315L42.5858 8L36.9289 13.6569C36.5384 14.0474 36.5384 14.6805 36.9289 15.0711C37.3195 15.4616 37.9526 15.4616 38.3431 15.0711L44.7071 8.70711ZM0 9H44V7H0V9Z"
+                    fill="#009DDD"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Blog 6 -->
+          <div class="flex flex-col">
+            <div
+              class="rounded-tr-[7rem] overflow-hidden ps-12 -mb-24 relative z-10"
+            >
+              <img src="assets/images/blog/blog-3.png" alt="blog-4" />
+            </div>
+            <div
+              class="bg-primary bg-opacity-15 rounded-bl-[7rem] px-12 pb-12 pt-32"
+            >
+              <h4 class="font-semibold text-[1.75rem] mb-5">
+                How Pharmaceutical Sourcing Agents / Indenting Agents Help
+                Ensure Quality and Compliance.
+              </h4>
+              <p class="text-secondary text-2xl mb-5">
+                An essential component of the pharmaceutical supply chain is
+                pharmaceutical sourcing. It is a process that helps to ensure
+                that pharmaceutical products are safe and effective before they
+                are put on the market....
+              </p>
+              <a
+                href="blogdetail.html"
+                class="text-primary text-[1.75rem] font-semibold flex items-center space-x-2 mt-2"
+              >
+                <span>KNOW MORE</span>
+                <svg
+                  width="45"
+                  height="16"
+                  viewBox="0 0 45 16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M44.7071 8.70711C45.0976 8.31658 45.0976 7.68342 44.7071 7.29289L38.3431 0.928932C37.9526 0.538408 37.3195 0.538408 36.9289 0.928932C36.5384 1.31946 36.5384 1.95262 36.9289 2.34315L42.5858 8L36.9289 13.6569C36.5384 14.0474 36.5384 14.6805 36.9289 15.0711C37.3195 15.4616 37.9526 15.4616 38.3431 15.0711L44.7071 8.70711ZM0 9H44V7H0V9Z"
+                    fill="#009DDD"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="text-center mt-12">
+          <button
+            class="load-more-btn bg-primary text-white text-xl lg:text-3xl font-medium rounded-bl-[1.8rem] rounded-tr-[1.8rem] px-10 lg:px-16 py-3 lg:py-5 shadow-inner-button"
+          >
+            LOAD MORE
+          </button>
+        </div>
+      </div>
     </main>
+
     <!-- Footer -->
     <div id="footer-placeholder"></div>
   </body>
