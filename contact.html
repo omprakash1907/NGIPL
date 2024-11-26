@@ -32,6 +32,9 @@
             fontFamily: {
               barlow: ["'Barlow Condensed'", "sans-serif"],
             },
+            boxShadow: {
+              "inner-button": "inset 0 5px 4px rgba(0, 0, 0, 0.2)",
+            },
           },
         },
       };
@@ -43,14 +46,299 @@
     <!-- Style -->
     <link rel="stylesheet" href="/assets/css/style.css" />
   </head>
-  <body>
+  <body class="font-barlow full-width-layout mx-auto">
     <!-- Header -->
     <div id="header-placeholder"></div>
-    <main class="font-barlow full-width-layout mx-auto">
+    <main>
       <!-- breadcrumb Start -->
+      <div class="bg-primary bg-opacity-15 rounded-bl-[7rem]">
+        <div class="max-2xl-container ms-auto">
+          <div class="grid lg:grid-cols-2 grid-cols-1 items-center relative">
+            <div>
+              <!-- ship vector -->
+              <img
+                src="assets/images/gallery/ship.png"
+                alt="ship"
+                class="absolute bottom-0 left-20"
+              />
+              <!-- vector -->
+              <img
+                src="assets/images/banner-vector.png"
+                alt="vector"
+                class="absolute left-1/4 top-20"
+              />
+              <!-- content -->
 
+              <h3 class="text-3xl font-semibold mb-2">
+                <a href="index.html">HOME</a>/
+                <a href="contact.html">CONTACT US</a>
+              </h3>
+              <h2
+                class="text-primary font-semibold text-[3rem] lg:text-[4.5rem] leading-none mb-4"
+              >
+                Contact Us
+              </h2>
+            </div>
+            <div class="rounded-tl-[7rem] overflow-hidden">
+              <img
+                src="assets/images/contact/contact-banner.jpg"
+                alt="banner"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
       <!-- breadcrumb End -->
+      <!-- Content Start -->
+      <div class="max-2xl-container ms-auto py-32">
+        <!-- Section Heading -->
+        <h4 class="font-semibold text-3xl mb-5">CONTACT US</h4>
+        <h3 class="text-primary font-semibold text-6xl mb-8">Inquiry Form</h3>
+
+        <!-- Form Section -->
+        <form
+          action="#"
+          class="bg-primary bg-opacity-10 rounded-br-[7rem] p-12 "
+        >
+        <div class="max-w-container  space-y-10 relative">
+          <!-- vector -->
+          <img
+          src="assets/images/banner-vector.png"
+          alt="vector"
+          class="absolute  bottom-20 right-0"
+        />
+          <!-- Row 1: First Name, Last Name, Email -->
+          <div class="grid lg:grid-cols-3 grid-cols-1 gap-6 ">
+            <div class="flex flex-col">
+              <label
+                for="first-name"
+                class="text-secondary text-xl font-normal mb-2 ps-4"
+                >First Name<span class="text-red-500">*</span></label
+              >
+              <input
+                type="text"
+                id="first-name"
+                placeholder="First Name*"
+                class="p-4 rounded-lg text-xl"
+                required
+              />
+            </div>
+            <div class="flex flex-col">
+              <label
+                for="last-name"
+                class="text-secondary text-xl font-normal mb-2 ps-4"
+                >Last Name<span class="text-red-500">*</span></label
+              >
+              <input
+                type="text"
+                id="last-name"
+                placeholder="Last Name*"
+                class="p-4 rounded-lg text-xl"
+                required
+              />
+            </div>
+            <div class="flex flex-col">
+              <label
+                for="email"
+                class="text-secondary text-xl font-normal mb-2 ps-4"
+                >Email<span class="text-red-500">*</span></label
+              >
+              <input
+                type="email"
+                id="email"
+                placeholder="Enter Your Email*"
+                class="p-4 rounded-lg text-xl"
+                required
+              />
+            </div>
+          </div>
+
+          <!-- Row 2: Attach File -->
+          <div class="flex flex-col lg:flex-row items-center gap-6">
+            <div class="flex-grow">
+              <label
+                for="file-upload"
+                class="text-secondary text-xl font-normal mb-2 ps-4 block"
+                >Attach Your Requirement Details</label
+              >
+              <input
+                type="text"
+                id="file-upload"
+                placeholder="Attach Your Requirement Details"
+                class="p-4 rounded-lg text-xl w-full"
+                readonly
+              />
+              <p class="mt-2 text-secondary text-xl font-normal mb-2 ps-4">
+                .pdf, .doc, .docx extensions only<span class="text-red-500"
+                  >*</span
+                >
+              </p>
+            </div>
+            <button
+              type="button"
+              class="bg-primary text-white text-xl lg:text-3xl font-medium rounded-bl-[1.8rem] rounded-tr-[1.8rem] px-10 lg:px-16 py-3 lg:py-3 shadow-inner-button"
+            >
+              BROWSER
+            </button>
+          </div>
+
+          <!-- Row 3: Message -->
+          <div class="flex flex-col">
+            <label
+              for="message"
+              class="text-secondary text-xl font-normal mb-2 ps-4"
+              >Message</label
+            >
+            <textarea
+              id="message"
+              rows="5"
+              placeholder="Message"
+              class="p-4 rounded-lg text-xl"
+            ></textarea>
+          </div>
+
+          <!-- Row 4: Security Question -->
+          <div class="lg:w-1/3">
+            <div class="flex flex-col">
+              <label
+                for="security-question"
+                class="text-secondary text-xl font-normal mb-2 ps-4"
+                >What is 6 + 1?</label
+              >
+              <div class="flex items-center gap-4">
+                <input
+                  type="text"
+                  id="security-question"
+                  placeholder="Type Your Answer"
+                  class="p-4 rounded-lg text-xl w-full"
+                />
+                <div class="flex items-center justify-start">
+                  <button
+                    type="button"
+                    class="bg-primary text-white text-xl lg:text-3xl font-medium rounded-lg px-4 lg:px-4 py-4 lg:py-4 shadow-inner-button"
+                  >
+                    <svg
+                      width="25"
+                      height="24"
+                      viewBox="0 0 25 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M21.9118 11.0177C22.142 13.1814 21.6093 15.3576 20.4058 17.1705C19.2023 18.9833 17.4034 20.3189 15.32 20.9466C13.2365 21.5743 10.9993 21.4547 8.9946 20.6085C6.98994 19.7622 5.34374 18.2425 4.34033 16.3117C3.33691 14.3809 3.03928 12.1603 3.49884 10.0334C3.9584 7.90652 5.14629 6.0069 6.85736 4.66263C8.56842 3.31836 10.6952 2.61385 12.8704 2.67076C15.0457 2.72767 17.1327 3.54244 18.7711 4.97434L17.1203 4.98251C16.9671 4.98289 16.8155 5.01345 16.6741 5.07243C16.5327 5.13142 16.4043 5.21767 16.2962 5.32628C16.1881 5.43489 16.1025 5.56371 16.0442 5.70541C15.986 5.8471 15.9562 5.99888 15.9566 6.15209C15.9569 6.3053 15.9875 6.45693 16.0465 6.59833C16.1055 6.73973 16.1917 6.86813 16.3003 6.9762C16.4089 7.08426 16.5378 7.16988 16.6794 7.22815C16.8211 7.28643 16.9729 7.31623 17.1261 7.31584H17.1331L21.3401 7.29251C21.6489 7.29066 21.9444 7.16644 22.1618 6.9471C22.3792 6.72775 22.5007 6.43116 22.4998 6.12234L22.4765 1.91651C22.4813 1.76168 22.4541 1.60752 22.3966 1.46366C22.3392 1.31981 22.2527 1.18934 22.1425 1.08041C22.0324 0.971476 21.901 0.886419 21.7565 0.830547C21.612 0.774675 21.4576 0.749187 21.3028 0.755675C20.9936 0.757527 20.6978 0.882061 20.4803 1.10192C20.2629 1.32177 20.1416 1.61896 20.1431 1.92818L20.149 3.09134C18.0787 1.34785 15.4661 0.379269 12.7596 0.351797C10.0532 0.324325 7.42148 1.23968 5.31623 2.94078C3.21098 4.64189 1.76342 7.02267 1.22195 9.67459C0.680482 12.3265 1.07887 15.0842 2.34875 17.4744C3.61864 19.8647 5.68083 21.7384 8.18146 22.7741C10.6821 23.8098 13.4652 23.943 16.0533 23.1506C18.6413 22.3583 20.8729 20.6899 22.3651 18.4317C23.8573 16.1736 24.5171 13.4665 24.2311 10.775C24.2198 10.619 24.1773 10.4669 24.106 10.3277C24.0347 10.1885 23.9362 10.0651 23.8163 9.96473C23.6963 9.86437 23.5575 9.78914 23.4079 9.74352C23.2583 9.6979 23.1011 9.68282 22.9455 9.69917C22.79 9.71552 22.6394 9.76297 22.5026 9.8387C22.3657 9.91443 22.2455 10.0169 22.1491 10.14C22.0527 10.2631 21.982 10.4043 21.9412 10.5553C21.9004 10.7063 21.8904 10.8639 21.9118 11.0188V11.0177Z"
+                        fill="white"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Submit Button -->
+          <div>
+            <button
+              type="submit"
+              class="bg-primary text-white text-xl lg:text-3xl font-medium rounded-bl-[1.8rem] rounded-tr-[1.8rem] px-10 lg:px-16 py-3 lg:py-3 shadow-inner-button"
+            >
+              SUBMIT
+            </button>
+          </div>
+        </div>
+        </form>
+      </div>
+      <!-- contact details -->
+      <div class="max-2xl-container me-auto py-32">
+        <div class="grid lg:grid-cols-2 grid-cols-1 gap-12 items-center">
+          <div class="rounded-br-[7rem] overflow-hidden">
+            <img src="assets/images/service/service-details.png" alt="banner" />
+          </div>
+          <div class="pe-24">
+            <h4 class="font-semibold text-3xl mb-5">CONTACT DETAILS</h4>
+            <h3 class="text-primary font-semibold text-6xl mb-8">
+              Say Hii!
+            </h3>
+            <div class="relative">
+              <div class="line-bottom-dashed"></div>
+              <div class="flex justify-start items-center gap-6 py-4">
+                <div class="p-3 w-max bg-white rounded-md shadow-sm">
+                  <svg
+                    width="24"
+                    height="25"
+                    viewBox="0 0 24 25"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M15.5512 13.9194L13.5412 15.9363C12.7261 16.7542 11.2919 16.7719 10.4591 15.9363L8.44899 13.9194L1.22949 21.1624C1.49823 21.2866 1.79452 21.3608 2.10952 21.3608H21.8908C22.2058 21.3608 22.502 21.2867 22.7706 21.1624L15.5512 13.9194Z"
+                      fill="#009DDD"
+                    />
+                    <path
+                      d="M21.8906 4.48584H2.10938C1.79438 4.48584 1.49808 4.56 1.22944 4.68426L8.94398 12.4244C8.9445 12.4249 8.94511 12.425 8.94563 12.4255C8.94594 12.4259 8.94616 12.4263 8.94623 12.4267L11.4547 14.9435C11.7211 15.2099 12.279 15.2099 12.5454 14.9435L15.0533 12.4272C15.0533 12.4272 15.054 12.426 15.0545 12.4255C15.0545 12.4255 15.0556 12.4249 15.0561 12.4244L22.7705 4.68421C22.5018 4.5599 22.2056 4.48584 21.8906 4.48584ZM0.224344 5.66765C0.0853125 5.94881 0 6.2609 0 6.59521V19.2515C0 19.5858 0.0852187 19.8979 0.224297 20.179L7.45631 12.9236L0.224344 5.66765ZM23.7757 5.66756L16.5437 12.9236L23.7757 20.1791C23.9147 19.898 24 19.5859 24 19.2515V6.59521C24 6.26081 23.9147 5.94871 23.7757 5.66756Z"
+                      fill="#009DDD"
+                    />
+                  </svg>
+                </div>
+                <h3 class="text-[1.75rem] font-medium">info@ngimpli.in</h3>
+              </div>
+            </div>
+            <div class="relative">
+              <div class="line-bottom-dashed"></div>
+              <div class="flex justify-start items-center gap-6 py-4">
+                <div class="p-3 w-max bg-white rounded-md shadow-sm">
+                  <svg
+                  width="24"
+                  height="25"
+                  viewBox="0 0 24 25"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g clip-path="url(#clip0_74_219)">
+                    <path
+                      d="M23.347 18.5369L19.9977 15.1876C18.8015 13.9915 16.768 14.47 16.2896 16.025C15.9307 17.1016 14.7346 17.6996 13.658 17.4604C11.2657 16.8623 8.03602 13.7522 7.43794 11.2403C7.07908 10.1637 7.79679 8.96753 8.87334 8.60872C10.4284 8.13025 10.9068 6.09677 9.71066 4.9006L6.36138 1.55133C5.40445 0.71401 3.96905 0.71401 3.13173 1.55133L0.859009 3.82405C-1.41371 6.21639 1.09824 12.5561 6.72023 18.1781C12.3422 23.8001 18.6819 26.4317 21.0743 24.0393L23.347 21.7666C24.1843 20.8096 24.1843 19.3742 23.347 18.5369Z"
+                      fill="#009DDD"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_74_219">
+                      <rect
+                        width="24"
+                        height="24"
+                        fill="white"
+                        transform="translate(0 0.92334)"
+                      />
+                    </clipPath>
+                  </defs>
+                </svg>
+                </div>
+                <h3 class="text-[1.75rem] font-medium">+91 97129 23925</h3>
+              </div>
+            </div>
+            <div class="relative">
+              <div class="flex justify-start items-center gap-6 py-4">
+                <div class="p-3 w-max bg-white rounded-md shadow-sm">
+                  <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M12.0005 0C7.20775 0 3.30859 3.89916 3.30859 8.69184C3.30859 14.6397 11.087 23.3715 11.4182 23.7404C11.7292 24.0868 12.2723 24.0862 12.5828 23.7404C12.914 23.3715 20.6924 14.6397 20.6924 8.69184C20.6923 3.89916 16.7932 0 12.0005 0ZM12.0005 13.065C9.58914 13.065 7.62742 11.1032 7.62742 8.69184C7.62742 6.2805 9.58919 4.31878 12.0005 4.31878C14.4118 4.31878 16.3735 6.28055 16.3735 8.69189C16.3735 11.1032 14.4118 13.065 12.0005 13.065Z"
+                    fill="#009DDD"
+                  />
+                </svg>
+                </div>
+                <h3 class="text-[1.75rem] font-medium">315, Oberon Tower Opp Mercedes Benz Showroom New City Light
+                  Road, Bharthana, Vesu, Surat, Gujarat 395007</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
+
     <!-- Footer -->
     <div id="footer-placeholder"></div>
   </body>
