@@ -1,3 +1,4 @@
+/// Header ---------------------------------------------------------------->>>
 $(document).ready(function () {
   // Load the header dynamically
   $("#header-placeholder").load("./components/header.html", function () {
@@ -24,6 +25,20 @@ $(document).ready(function () {
     }
   });
 });
+
+///Footer --------------------------------------------------------------------->>>
+$(document).ready(function () {
+  // Load the footer dynamically
+  $("#footer-placeholder").load("./components/footer.html", function (response, status, xhr) {
+    if (status === "error") {
+      console.error("Error loading footer:", xhr.status, xhr.statusText);
+    } else {
+      console.log("Footer loaded successfully.");
+    }
+  });
+});
+
+
 
 // Gallery Carousel Logic ----------------------------------------------------->>>
 const carousel = document.querySelector(".carousel");

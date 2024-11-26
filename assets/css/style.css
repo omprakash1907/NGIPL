@@ -2,6 +2,10 @@
   max-width: 1920px !important;
 }
 
+.max-2xl-container{
+  max-width: 1680px !important;
+}
+
 /* ----------------Hero Section start------------------ */
 .hero-bg {
   background-image: url("../images/bg-banner.png");
