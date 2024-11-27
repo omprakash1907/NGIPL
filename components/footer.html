@@ -10,11 +10,11 @@
     class="bg-primary bg-opacity-10 rounded-tr-[7rem] pt-24 pb-20"
   >
     <div class="max-2xl-container ms-auto">
-      <div class="grid grid-cols-2 items-center justify-center gap-16">
+      <div class="grid lg:grid-cols-2 grid-cols-1 items-center justify-center lg:gap-16 gap-8">
         <div
-          class="grid grid-cols-2 items-center justify-center relative pb-8"
+          class="grid grid-cols-2 items-center justify-center relative lg:pb-8 pb-0"
         >
-          <div class="line-bottom-dashed"></div>
+          <div class="line-bottom-dashed hidden lg:block"></div>
           <div class="relative">
             <div class="line-right-dashed"></div>
             <div class="flex flex-col justify-center items-center">
@@ -71,7 +71,8 @@
             </div>
           </div>
         </div>
-        <div class="flex justify-normal items-center gap-8">
+        <div class="flex lg:flex-row flex-col justify-normal items-center gap-8 relative pb-8">
+          <div class="line-bottom-dashed lg:hidden block"></div>
           <div class="p-3 w-max bg-white rounded-md">
             <svg
               width="24"
@@ -86,7 +87,7 @@
               />
             </svg>
           </div>
-          <p class="text-[1.5rem] font-medium w-2/3  leading-10 pe-8">
+          <p class="text-[1.5rem] font-medium lg:w-2/3 w-3/4 leading-10 lg:pe-8 p-0 text-center ">
             315, Oberon Tower Opp Mercedes Benz Showroom New City Light
             Road, Bharthana, Vesu, Surat, Gujarat 395007
           </p>

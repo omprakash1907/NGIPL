@@ -1,75 +1,24 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <!-- Preconnect for Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet"
-    />
-    <!-- Tailwind CSS CDN -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            colors: {
-              primary: "#009DDD",
-              secondary: "#747474",
-            },
-            spacing: {
-              240: "240px",
-              40: "40px",
-            },
-            maxWidth: {
-              container: "1440px",
-              mxcontainer: "1920px",
-            },
-            fontFamily: {
-              barlow: ["'Barlow Condensed'", "sans-serif"],
-            },
-            boxShadow: {
-              "inner-button": "inset 0 5px 4px rgba(0, 0, 0, 0.2)",
-            },
-          },
-        },
-      };
-    </script>
-    <!-- jQuery CDN -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <!-- Header js -->
-    <script src="./assets/js/app.js" defer></script>
-    <!-- Style -->
-    <link rel="stylesheet" href="/assets/css/style.css" />
-  </head>
-  <body class="font-barlow full-width-layout mx-auto">
-    <!-- Header -->
-    <div id="header-placeholder"></div>
-    <main>
+    <main >
       <!-- breadcrumb Start -->
-      <div class="bg-primary bg-opacity-15 rounded-bl-[7rem] ">
+      <div class="bg-primary bg-opacity-15 rounded-bl-[7rem]">
         <div class="max-2xl-container ms-auto">
           <div class="grid lg:grid-cols-2 grid-cols-1 items-center relative">
-            <div class="lg:py-0 py-24 lg:px-0 px-12">
+            <div>
               <!-- ship vector -->
               <img
                 src="assets/images/gallery/ship.png"
                 alt="ship"
-                class="absolute lg:bottom-0 bottom-10 lg:left-20 right-0"
+                class="absolute bottom-0 left-20"
               />
               <!-- vector -->
               <img
                 src="assets/images/banner-vector.png"
                 alt="vector"
-                class="absolute lg:left-1/4 lg:top-20 right-10 top-10  h-20"
+                class="absolute left-1/4 top-20"
               />
               <!-- content -->
 
-              <h3 class="text-3xl font-semibold mb-4">
+              <h3 class="text-3xl font-semibold mb-2">
                 <a href="index.html">HOME</a>/
                 <a href="service.html">SERVICES</a>
               </h3>
@@ -79,7 +28,7 @@
                 Services
               </h2>
             </div>
-            <div class="rounded-tl-[7rem] overflow-hidden lg:ms-0 ms-24 lg:mb-0 -mb-44">
+            <div class="rounded-tl-[7rem] overflow-hidden">
               <img
                 src="assets/images/service/service-banner.png"
                 alt="banner"
@@ -89,8 +38,8 @@
         </div>
       </div>
       <!-- breadcrumb End -->
-       <!-- Content Start -->
-       <div class="lg:py-32 pt-56 pb-32 lg:px-0 px-8 max-w-container mx-auto">
+      <!-- Content Start -->
+      <div class="lg:py-32 pt-56 pb-32 lg:px-0 px-8 max-w-container mx-auto">
         <h3 class="text-5xl font-semibold mb-4">Paints, Coatings & Resins</h3>
         <p class="text-[1.75rem] py-6">
           We are known for offering the best products essential for the
@@ -236,10 +185,4 @@
           </div>
         </div>
       </div>
-      
     </main>
-
-    <!-- Footer -->
-    <div id="footer-placeholder"></div>
-  </body>
-</html>
