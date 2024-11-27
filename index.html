@@ -45,6 +45,10 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <!-- Header js -->
     <script src="./assets/js/app.js" defer></script>
+    <!-- banner caurosal -->
+    <script src="assets/js/banner.js"></script>
+    <!-- Gallery caurosal -->
+    <script src="assets/js/gallery.js"></script>
     <!-- blog caurosal -->
     <script src="assets/js/blog.js"></script>
     <!-- counter js -->
@@ -75,84 +79,91 @@
           <div class="lg:w-1/2 p-10 relative">
             <div class="flex">
               <!-- Carousel Controls -->
-              <div
-                class="flex justify-between items-center mt-6 w-1/4 relative transform -rotate-90"
-              >
+              <div class="flex justify-between items-center mt-6 w-1/4 relative transform -rotate-90">
                 <!-- Previous Button -->
-                <button
-                  id="prevButton"
-                  class="text-secondary text-[2rem] font-semibold transform rotate-90"
-                >
-                  3
+                <button id="prevButton" class="text-secondary text-[2rem] font-semibold transform rotate-90">
+                  <span id="prevSlideNumber">3</span> <!-- Placeholder for previous slide number -->
                 </button>
-                <div
-                  class="line-center-dashed left-1/2 top-1/2 w-2/3 px-6"
-                ></div>
+                <div class="line-center-dashed left-1/2 top-1/2 w-2/3 px-6"></div>
                 <!-- Pagination Counter -->
-                <div
-                  class="flex items-center rounded-full px-4 border-gray-100 border-2 bg-white relative z-10 transform rotate-90"
-                >
-                  <span
-                    class="text-[2rem] font-bold text-primary"
-                    id="currentSlide"
-                    >2</span
-                  >
+                <div class="flex items-center rounded-full px-4 border-gray-100 border-2 bg-white relative z-10 transform rotate-90">
+                  <span class="text-[2rem] font-bold text-primary" id="currentSlide">1</span>
                 </div>
-
                 <!-- Next Button -->
-                <button
-                  id="nextButton"
-                  class="text-secondary text-[2rem] font-semibold transform rotate-90"
-                >
-                  1
+                <button id="nextButton" class="text-secondary text-[2rem] font-semibold transform rotate-90">
+                  <span id="nextSlideNumber">2</span> <!-- Placeholder for next slide number -->
                 </button>
               </div>
-              <div class="pt-20 pb-16">
+              
+              <div class="pt-20 pb-12">
                 <!-- Vector Image -->
-                <img
-                  src="assets/images/banner-vector.png"
-                  alt="vector"
-                  class="hidden lg:block w-auto absolute right-16 top-16"
-                />
-                <h3 class="font-semibold text-4xl mb-6">WE ARE PROUD</h3>
-                <h1
-                  class="text-primary font-semibold text-[3rem] lg:text-[5rem] leading-none mb-4"
-                >
-                  To Be Always On<br />
-                  Demand
-                </h1>
-                <p class="text-xl lg:text-3xl font-normal mt-4 lg:mt-12">
-                  Delivering Excellence in Every Impression-Import Export Made
-                  Easy
-                </p>
-                <button class="mt-12 lg:mt-24">
-                  <a
-                    href="about.html"
-                    class="bg-primary text-white text-xl lg:text-3xl font-medium rounded-bl-[1.8rem] rounded-tr-[1.8rem] px-10 lg:px-16 py-3 lg:py-5 shadow-inner-button"
-                  >
-                    KNOW MORE
-                  </a>
-                </button>
+                <img src="assets/images/banner-vector.png" alt="vector" class="hidden lg:block w-auto absolute right-16 top-16" />
+                <!-- Slider Content -->
+                <div class="relative vertical-carousel overflow-hidden h-[500px]">
+                  <div class="slides transform transition-transform duration-500">
+                    <!-- slide 1 -->
+                    <div class="slide flex-shrink-0 h-[500px]">
+                      <h3 class="font-semibold text-4xl mb-6">WE ARE PROUD</h3>
+                      <h1 class="text-primary font-semibold text-[3rem] lg:text-[5rem] leading-none mb-4">
+                        To Be Always On<br />Demand
+                      </h1>
+                      <p class="text-xl lg:text-[1.75rem] font-normal mt-4 lg:mt-12">
+                        Delivering Excellence in Every Impression-Import Export Made Easy
+                      </p>
+                      <button class="mt-12 lg:mt-24">
+                        <a href="about.html" class="bg-primary text-white text-xl lg:text-3xl font-medium rounded-bl-[1.8rem] rounded-tr-[1.8rem] px-10 lg:px-16 py-3 lg:py-5 shadow-inner-button">
+                          KNOW MORE
+                        </a>
+                      </button>
+                    </div>
+        
+                    <!-- slide 2 -->
+                    <div class="slide flex-shrink-0 h-[500px]">
+                      <h3 class="font-semibold text-4xl mb-6">WE ARE PROUD</h3>
+                      <h1 class="text-primary font-semibold text-[3rem] lg:text-[5rem] leading-none mb-4">
+                        To Be Always On<br />Demand
+                      </h1>
+                      <p class="text-xl lg:text-[1.75rem] font-normal mt-4 lg:mt-12">
+                        Delivering Excellence in Every Impression-Import Export Made Easy
+                      </p>
+                      <button class="mt-12 lg:mt-24">
+                        <a href="about.html" class="bg-primary text-white text-xl lg:text-3xl font-medium rounded-bl-[1.8rem] rounded-tr-[1.8rem] px-10 lg:px-16 py-3 lg:py-5 shadow-inner-button">
+                          KNOW MORE
+                        </a>
+                      </button>
+                    </div>
+        
+                    <!-- slide 3 -->
+                    <div class="slide flex-shrink-0 h-[500px]">
+                      <h3 class="font-semibold text-4xl mb-6">WE ARE PROUD</h3>
+                      <h1 class="text-primary font-semibold text-[3rem] lg:text-[5rem] leading-none mb-4">
+                        To Be Always On<br />Demand
+                      </h1>
+                      <p class="text-xl lg:text-[1.75rem] font-normal mt-4 lg:mt-12">
+                        Delivering Excellence in Every Impression-Import Export Made Easy
+                      </p>
+                      <button class="mt-12 lg:mt-24">
+                        <a href="about.html" class="bg-primary text-white text-xl lg:text-3xl font-medium rounded-bl-[1.8rem] rounded-tr-[1.8rem] px-10 lg:px-16 py-3 lg:py-5 shadow-inner-button">
+                          KNOW MORE
+                        </a>
+                      </button>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
             <!-- Delivery Steps -->
             <div class="py-12 px-5 absolute">
-              <img
-                src="./assets/images/delivery_steps.png"
-                alt="Delivery Steps"
-                class="w-full h-auto"
-              />
+              <img src="./assets/images/delivery_steps.png" alt="Delivery Steps" class="w-full h-auto" />
             </div>
           </div>
-
+        
           <!-- Right Content -->
           <div class="w-full lg:w-1/2">
-            <img
-              src="./assets/images/banner.png"
-              alt="Ship Banner"
-              class="w-full h-auto object-bottom"
-            />
+            <img src="./assets/images/banner.png" alt="Ship Banner" class="w-full h-auto object-bottom" />
           </div>
+        </div>
+        
         </div>
       </section>
       <!-- Hero Section start -->
@@ -564,7 +575,7 @@
               class="carousel flex transition-transform duration-500 ease-in-out justify-between gap-7"
             >
               <!-- Slide 1 -->
-              <div class="flex-shrink-0">
+              <div class="gallery-caurosal flex-shrink-0">
                 <div class="overflow-hidden relative group">
                   <img
                     src="./assets/images/gallery-1.png"
@@ -580,7 +591,7 @@
               </div>
 
               <!-- Slide 2 -->
-              <div class="flex-shrink-0">
+              <div class="gallery-caurosal flex-shrink-0">
                 <div class="overflow-hidden relative group">
                   <img
                     src="./assets/images/gallery-2.png"
@@ -595,7 +606,7 @@
                 </div>
               </div>
               <!-- Slide 3 -->
-              <div class="flex-shrink-0">
+              <div class="gallery-caurosal flex-shrink-0">
                 <div class="overflow-hidden relative group">
                   <img
                     src="./assets/images/gallery-3.png"
@@ -609,8 +620,8 @@
                   </p>
                 </div>
               </div>
-              <!-- Slide 1 -->
-              <div class="flex-shrink-0">
+              <!-- Slide 2 -->
+              <div class="gallery-caurosal flex-shrink-0">
                 <div class="overflow-hidden relative group">
                   <img
                     src="./assets/images/gallery-1.png"
@@ -626,7 +637,7 @@
               </div>
 
               <!-- Slide 2 -->
-              <div class="flex-shrink-0">
+              <div class="gallery-caurosal flex-shrink-0">
                 <div class="overflow-hidden relative group">
                   <img
                     src="./assets/images/gallery-2.png"
@@ -641,7 +652,7 @@
                 </div>
               </div>
               <!-- Slide 3 -->
-              <div class="flex-shrink-0">
+              <div class="gallery-caurosal flex-shrink-0">
                 <div class="overflow-hidden relative group">
                   <img
                     src="./assets/images/gallery-3.png"
