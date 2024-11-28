@@ -6,7 +6,7 @@
     <title>Document</title>
   </head>
   <body>
-    <header class="bg-white font-barlow lg:shadow-none shadow-md">
+    <header class="bg-white font-barlow lg:shadow-none shadow-md ">
       <div
         class="max-w-container mx-auto flex items-center justify-between lg:py-10 lg:px-0 px-6 py-6"
       >
@@ -15,7 +15,7 @@
           <img
             src="./assets/images/logo.png"
             alt="Logo"
-            class="w-[171px] h-[59px]"
+            class="md:w-[171px] md:h-[59px] w-32"
           />
         </a>
         <!-- Navigation Links -->
@@ -82,11 +82,12 @@
 
         <!-- Search Icon -->
         <div class="flex items-center justify-between gap-3">
-          <button class="bg-primary bg-opacity-10 p-3 rounded-md">
+          <button class="bg-primary bg-opacity-10 md:p-3 p-2 rounded-md">
             <svg
               width="24"
               height="24"
               viewBox="0 0 24 24"
+              class="md:w-5 md:h-5 w-6 h-6"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
             >
@@ -102,12 +103,13 @@
           </button>
           <button
             id="menu-button"
-            class="bg-primary bg-opacity-20 p-3 rounded-md lg:hidden"
+            class="bg-primary bg-opacity-10 md:p-3 p-2 rounded-md lg:hidden"
           >
             <svg
               width="24"
               height="24"
               viewBox="0 0 14 14"
+              class="md:w-5 md:h-5 w-6 h-6"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
             >
@@ -123,36 +125,129 @@
     <!-- Off-Canvas Menu -->
     <div
       id="offcanvas-menu"
-      class="fixed z-10 top-0 right-0 h-full w-[80%] max-w-[300px] bg-[#D9F0FA] shadow-lg transform translate-x-full transition-transform duration-300"
+      class="fixed z-10 h-screen top-0 right-0  w-[100%]  rounded-bl-[7rem] bg-[#D9F0FA] shadow-lg transform translate-x-full transition-transform duration-300"
     >
-      <div class="p-6">
+      <div class="p-6 relative h-screen">
+        <!-- tower -->
+         <img src="assets/images/tower.png" alt="tower" class="absolute -bottom-[15%] -right-1/4 ">
         <!-- Close Button -->
-        <button
+        <div class="flex items-center justify-between mb-6">
+          <img
+          src="assets/images/footer-logo.png"
+          alt="logo"
+          class="w-32"
+        />
+          <button
           id="close-menu"
-          class="text-xl text-gray-700 focus:outline-none float-right"
-        >
-          ✕
-        </button>
+            type="button"
+            class="bg-primary text-white text-xl lg:text-3xl font-medium rounded-lg px-3 lg:px-3 py-3 lg:py-3 shadow-inner-button"
+          >
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M2.37865 14.8501C2.03851 14.8699 1.70399 14.7568 1.44562 14.5347C0.936095 14.0222 0.936095 13.1944 1.44562 12.6818L12.6026 1.52477C13.1326 1.02888 13.9642 1.05644 14.4601 1.5864C14.9085 2.06563 14.9346 2.80223 14.5212 3.31202L3.29851 14.5347C3.0435 14.7536 2.71432 14.8665 2.37865 14.8501Z" fill="white"/>
+            <path d="M13.5228 14.8502C13.1781 14.8487 12.8477 14.7118 12.6029 14.4691L1.44587 3.312C0.973822 2.76076 1.038 1.93116 1.58925 1.45907C2.08125 1.03773 2.80685 1.03773 3.29881 1.45907L14.5215 12.6161C15.0514 13.1121 15.0788 13.9438 14.5827 14.4736C14.563 14.4947 14.5426 14.515 14.5215 14.5348C14.3856 14.653 14.2268 14.742 14.055 14.7963C13.8832 14.8505 13.702 14.8689 13.5228 14.8502Z" fill="white"/>
+            </svg>
+            
+          </button>
+        
+        </div>
+        <!-- Search button -->
+        <div class="flex items-center gap-4 mb-6 ">
+          <input
+            type="text"
+            id="security-question"
+            placeholder="Search"
+            class="px-3 py-2 rounded-lg text-xl w-full"
+          />
+          <div class="flex items-center justify-start">
+            <button
+              type="button"
+              class="bg-primary text-white text-xl lg:text-3xl font-medium rounded-lg px-3 lg:px-3 py-3 lg:py-3 shadow-inner-button"
+            >
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 28 28"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g clip-path="url(#clip0_1_2705)">
+                  <path
+                    d="M15.7543 24.4961C8.99134 24.4961 3.50879 19.0136 3.50879 12.2505C3.50879 5.48744 8.99128 0.00500488 15.7543 0.00500488C22.5174 0.00500488 27.9999 5.4875 27.9999 12.2506C27.9999 19.0136 22.5174 24.4961 15.7543 24.4961ZM15.7543 3.50375C10.9236 3.50375 7.00754 7.41981 7.00754 12.2506C7.00754 17.0813 10.9236 20.9974 15.7543 20.9974C20.5851 20.9974 24.5012 17.0813 24.5012 12.2506C24.5012 7.41981 20.585 3.50375 15.7543 3.50375Z"
+                    fill="white"
+                  />
+                  <path
+                    d="M1.75951 27.9948C1.52928 27.9961 1.30105 27.952 1.08792 27.8649C0.874777 27.7779 0.680922 27.6496 0.517469 27.4875C-0.168521 26.8071 -0.173043 25.6995 0.50734 25.0135L0.517469 25.0034L7.09506 18.4258C7.80517 17.7398 8.93693 17.7594 9.62292 18.4695C10.3089 19.1796 10.2893 20.3114 9.57921 20.9974L3.00155 27.4875C2.8381 27.6496 2.64425 27.7779 2.43111 27.8649C2.21797 27.952 1.98974 27.9961 1.75951 27.9948Z"
+                    fill="white"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="clip0_1_2705">
+                    <rect width="28" height="28" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
+            </button>
+          </div>
+        </div>
         <!-- Navigation Links -->
-        <ul class="mt-10 space-y-4 text-gray-700 font-medium">
-          <li><a href="index.html" class="text-2xl font-semibold">HOME</a></li>
+        <ul class="relative mt-10 space-y-4 text-gray-700 font-medium text-center">
+          <!-- vector -->
+           <img src="assets/images/banner-vector.png" alt="vector" class="absolute top-0 w-32 right-0">
           <li>
-            <a href="about.html" class="text-2xl font-semibold">ABOUT US</a>
+            <a
+              href="index.html"
+              data-page="home"
+              class="nav-link hover:text-primary text-secondary font-semibold text-2xl"
+              >HOME</a
+            >
           </li>
           <li>
-            <a href="products.html" class="text-2xl font-semibold">PRODUCT</a>
+            <a
+              href="about.html"
+              data-page="about"
+              class="nav-link hover:text-primary text-secondary font-semibold text-2xl"
+              >ABOUT US</a
+            >
           </li>
           <li>
-            <a href="gallery.html" class="text-2xl font-semibold">GALLERY</a>
+            <a
+              href="products.html"
+              data-page="products"
+              class="nav-link hover:text-primary text-secondary font-semibold text-2xl"
+              >PRODUCT</a
+            >
           </li>
           <li>
-            <a href="global-network.html" class="text-2xl font-semibold"
+            <a
+              href="gallery.html"
+              data-page="gallery"
+              class="nav-link hover:text-primary text-secondary font-semibold text-2xl"
+              >GALLERY</a
+            >
+          </li>
+          <li>
+            <a
+              href="global-network.html"
+              data-page="global-network"
+              class="nav-link hover:text-primary text-secondary font-semibold text-2xl"
               >GLOBAL NETWORK</a
             >
           </li>
-          <li><a href="blog.html" class="text-2xl font-semibold">BLOG</a></li>
           <li>
-            <a href="contact.html" class="text-2xl font-semibold">CONTACT US</a>
+            <a
+              href="blog.html"
+              data-page="blog"
+              class="nav-link hover:text-primary text-secondary font-semibold text-2xl"
+              >BLOG</a
+            >
+          </li>
+          <li>
+            <a
+              href="contact.html"
+              data-page="contact"
+              class="nav-link hover:text-primary text-secondary font-semibold text-2xl"
+              >CONTACT US</a
+            >
           </li>
         </ul>
       </div>
@@ -172,6 +267,6 @@
         offcanvasMenu.classList.add("translate-x-full");
       });
     </script>
-    
+
   </body>
 </html>
