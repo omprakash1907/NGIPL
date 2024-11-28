@@ -6,10 +6,12 @@
     <title>Document</title>
   </head>
   <body>
-    <footer class="bg-primary bg-opacity-10 rounded-tr-[7rem] pt-24 pb-20">
+    <footer
+      class="bg-primary bg-opacity-10 rounded-tr-[7rem] md:pt-24 pt-8 md:pb-20 pb-6"
+    >
       <div class="max-2xl-container ms-auto">
         <div
-          class="grid lg:grid-cols-2 grid-cols-1 items-center justify-center lg:gap-16 gap-8 lg:p-0 p-8"
+          class="grid lg:grid-cols-2 grid-cols-1 items-center justify-center lg:gap-16 gap-8 lg:p-0 md:p-8 p-4"
         >
           <div
             class="grid grid-cols-2 items-center justify-center relative lg:pb-8 pb-0"
@@ -18,11 +20,12 @@
             <div class="relative">
               <div class="line-right-dashed"></div>
               <div class="flex flex-col justify-center items-center">
-                <div class="p-3 w-max bg-white rounded-md mb-6">
+                <div class="p-3 w-max bg-white rounded-md md:mb-6 mb-3">
                   <svg
                     width="24"
                     height="25"
                     viewBox="0 0 24 25"
+                    class="md:w-6 md:h-6 w-4 h-4"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
                   >
@@ -36,16 +39,19 @@
                     />
                   </svg>
                 </div>
-                <h3 class="text-[1.5rem] font-medium">info@ngimpli.in</h3>
+                <h3 class="md:text-[1.5rem] text-md font-medium">
+                  info@ngimpli.in
+                </h3>
               </div>
             </div>
             <div class="relative">
               <div class="flex flex-col justify-center items-center">
-                <div class="p-3 w-max bg-white rounded-md mb-6">
+                <div class="p-3 w-max bg-white rounded-md md:mb-6 mb-3">
                   <svg
                     width="24"
                     height="25"
                     viewBox="0 0 24 25"
+                    class="md:w-6 md:h-6 w-4 h-4"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
                   >
@@ -67,12 +73,14 @@
                     </defs>
                   </svg>
                 </div>
-                <h3 class="text-[1.5rem] font-medium">+91 97129 23925</h3>
+                <h3 class="md:text-[1.5rem] text-md font-medium">
+                  +91 97129 23925
+                </h3>
               </div>
             </div>
           </div>
           <div
-            class="flex lg:flex-row flex-col justify-normal items-center gap-8 relative pb-8 "
+            class="flex lg:flex-row flex-col justify-normal items-center md:gap-8 gap-3 relative pb-8"
           >
             <div class="line-bottom-dashed lg:hidden block"></div>
             <div class="p-3 w-max bg-white rounded-md">
@@ -80,6 +88,7 @@
                 width="24"
                 height="24"
                 viewBox="0 0 24 24"
+                class="md:w-6 md:h-6 w-4 h-4"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
               >
@@ -90,7 +99,7 @@
               </svg>
             </div>
             <p
-              class="text-[1.5rem] font-medium lg:w-2/3 w-3/4 leading-10 lg:pe-8 p-0 text-center"
+              class="md:text-[1.5rem] text-md font-medium lg:w-2/3 md:leading-10 lg:pe-8 p-0 text-center"
             >
               315, Oberon Tower Opp Mercedes Benz Showroom New City Light Road,
               Bharthana, Vesu, Surat, Gujarat 395007
@@ -98,27 +107,34 @@
           </div>
         </div>
         <div class="grid grid-cols-1 lg:grid-cols-2 lg:ps-0 ps-8">
-          <div
-            class="flex flex-col justify-between items-start"
-          >
-            <div class="flex py-10 ">
+          <div class="flex flex-col justify-between items-start">
+            <div class="flex md:py-10 py-3 w-full">
               <img
                 src="assets/images/footer-logo.png"
                 alt="logo"
-                class="w-full"
+                class=" md:h-[80px] md:w-[200px] w-32 "
               />
             </div>
             <div>
-              <h3 class="text-[1.75rem] font-semibold mb-4">Our Pages</h3>
-              <div class="flex justify-between">
+              <h3
+                class="md:text-[1.75rem] text-xl hidden md:block font-semibold md:mb-8 md:ps-0 "
+              >
+                Our Pages
+              </h3>
+              <div class="flex justify-between md:mb-8">
                 <div
-                  class="flex flex-col lg:flex-row justify-between items-center gap-8"
+                  class="flex flex-col lg:flex-row justify-between items-center md:gap-8 gap-2  md:w-full w-1/3"
                 >
+                  <h3
+                    class="md:text-[1.75rem] text-lg font-semibold md:mb-4 mb-0 block md:hidden"
+                  >
+                    Our Pages
+                  </h3>
                   <div class="relative">
                     <div class="line-right-dashed hidden lg:block"></div>
                     <a
                       href="index.html"
-                      class="text-secondary font-medium text-2xl pe-8"
+                      class="text-secondary font-medium md:text-2xl text-md md:pe-8 pe-0"
                       >Home</a
                     >
                   </div>
@@ -126,7 +142,7 @@
                     <div class="line-right-dashed hidden lg:block"></div>
                     <a
                       href="about.html"
-                      class="text-secondary font-medium text-2xl pe-8"
+                      class="text-secondary font-medium md:text-2xl text-md md:pe-8 pe-0"
                       >About Us</a
                     >
                   </div>
@@ -134,7 +150,7 @@
                     <div class="line-right-dashed hidden lg:block"></div>
                     <a
                       href="products.html"
-                      class="text-secondary font-medium text-2xl pe-8"
+                      class="text-secondary font-medium md:text-2xl text-md md:pe-8 pe-0"
                       >Portfolio</a
                     >
                   </div>
@@ -142,7 +158,7 @@
                     <div class="line-right-dashed hidden lg:block"></div>
                     <a
                       href="global-network.html"
-                      class="text-secondary font-medium text-2xl pe-8"
+                      class="text-secondary font-medium md:text-2xl text-md md:pe-8 pe-0"
                       >Global Network</a
                     >
                   </div>
@@ -150,31 +166,32 @@
                     <div class="line-right-dashed hidden lg:block"></div>
                     <a
                       href="blog.html"
-                      class="text-secondary font-medium text-2xl pe-8"
+                      class="text-secondary font-medium md:text-2xl text-md md:pe-8 pe-0"
                       >Blog</a
                     >
                   </div>
                   <div>
                     <a
                       href="contact.html"
-                      class="text-secondary font-medium text-2xl pe-8"
+                      class="text-secondary font-medium md:text-2xl text-md md:pe-8 pe-0"
                       >Contact Us</a
                     >
                   </div>
                 </div>
-                <div class="lg:hidden block w-3/4">
-                  <img src="assets/images/footer-banner.png" alt="footer" />
+                <div class="lg:hidden block w-3/4 py-3">
+                  <img src="assets/images/footer-banner.png" alt="footer" class="h-full" />
                 </div>
               </div>
             </div>
             <div class="mb-4">
-              <h3 class="text-[1.75rem] font-semibold mb-4">Follow Us</h3>
-              <div class="flex gap-4">
+              <h3 class="md:text-[1.75rem] text-lg font-semibold md:mb-8 mb-4 md:mt-0 mt-2">Follow Us</h3>
+              <div class="flex md:gap-4 gap-2">
                 <div class="p-3 w-max bg-white rounded-md">
                   <svg
                     width="32"
                     height="32"
                     viewBox="0 0 32 32"
+                    class="md:w-6 md:h-6 w-4 h-4"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
                   >
@@ -189,6 +206,7 @@
                     width="32"
                     height="32"
                     viewBox="0 0 32 32"
+                    class="md:w-6 md:h-6 w-4 h-4"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
                   >
@@ -207,6 +225,7 @@
                     width="32"
                     height="32"
                     viewBox="0 0 32 32"
+                    class="md:w-6 md:h-6 w-4 h-4"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
                   >
@@ -228,6 +247,7 @@
                     width="32"
                     height="32"
                     viewBox="0 0 32 32"
+                    class="md:w-6 md:h-6 w-4 h-4"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
                   >
@@ -242,6 +262,7 @@
                     width="32"
                     height="32"
                     viewBox="0 0 32 32"
+                    class="md:w-6 md:h-6 w-4 h-4"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
                   >
@@ -263,6 +284,7 @@
                     width="32"
                     height="32"
                     viewBox="0 0 32 32"
+                    class="md:w-6 md:h-6 w-4 h-4"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
                   >
@@ -277,6 +299,7 @@
                     width="32"
                     height="32"
                     viewBox="0 0 32 32"
+                    class="md:w-6 md:h-6 w-4 h-4"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
                   >
@@ -295,12 +318,13 @@
                 </div>
               </div>
             </div>
-            <div class="grid grid-cols-2 items-center justify-start w-full">
-              <h3 class="text-2xl text-secondary font-semibold mb-2">
+            <div class="grid md:grid-cols-2 items-center justify-start w-full relative">
+              <div class="line-center-dashed md:w-2/3 w-1/5 left-[82%] md:hidden block"></div>
+              <h3 class="md:text-[1.5rem] text-md text-secondary  font-medium mb-2 ">
                 Copyright 2023 ngimpl. All Rights Reserved.
               </h3>
-              <div class="relative text-start">
-                <div class="line-center-dashed w-2/3 left-[25%]"></div>
+              <div class="relative text-start md:block hidden">
+                <div class="line-center-dashed md:w-2/3 left-[25%]"></div>
               </div>
             </div>
           </div>
