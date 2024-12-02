@@ -1,46 +1,38 @@
 document.addEventListener("DOMContentLoaded", () => {
-    const testimonialSlides = document.querySelectorAll(".gallery-caurosal"); 
-    const testimonialPrevButton = document.getElementById("prevButton");
-    const testimonialNextButton = document.getElementById("nextButton");
-    const testimonialCurrentSlideElement = document.getElementById("currentSlide");
-    const testimonialTotalSlides = Math.ceil(testimonialSlides.length / 3); // 2 cards per slide
-  
-    let testimonialCurrentSlide = 0; // Index of the current slide
-  
-    // Update Testimonial Counter
-    const updateTestimonialCounter = () => {
-      testimonialCurrentSlideElement.textContent = testimonialCurrentSlide + 1;
-    };
-  
-    // Move Testimonial Carousel
-    const moveTestimonialCarousel = () => {
-      testimonialSlides.forEach((slide, index) => {
-        const start = testimonialCurrentSlide * 3; // Start index for visible slides
-        const end = start + 3; // End index for visible slides
-        if (index >= start && index < end) {
-          slide.classList.remove("hidden");
-          slide.classList.add("flex");
-        } else {
-          slide.classList.remove("flex");
-          slide.classList.add("hidden");
-        }
-      });
-      updateTestimonialCounter();
-    };
-  
-    // Previous Button for Testimonial
-    testimonialPrevButton.addEventListener("click", () => {
-      testimonialCurrentSlide = (testimonialCurrentSlide - 1 + testimonialTotalSlides) % testimonialTotalSlides;
-      moveTestimonialCarousel();
-    });
-  
-    // Next Button for Testimonial
-    testimonialNextButton.addEventListener("click", () => {
-      testimonialCurrentSlide = (testimonialCurrentSlide + 1) % testimonialTotalSlides;
-      moveTestimonialCarousel();
-    });
-  
-    // Initialize Carousel
-    moveTestimonialCarousel();
+  const carousel = document.querySelector(".carousel");
+  const slides = document.querySelectorAll(".gallery-caurosal");
+  const prevButton = document.getElementById("galleryprevButton");
+  const nextButton = document.getElementById("gallerynextButton");
+  const currentSlideElement = document.getElementById("gallerycurrentSlide");
+  const slidesPerView = 3; // Number of slides visible at a time
+  const totalSlides = slides.length;
+  const totalPages = Math.ceil(totalSlides / slidesPerView);
+  let currentPage = 0;
+
+  // Update the counter
+  const updateCounter = () => {
+    currentSlideElement.textContent = currentPage + 1;
+  };
+
+  // Move the carousel
+  const moveCarousel = () => {
+    const translateX = -currentPage * (100 / slidesPerView);
+    carousel.style.transform = `translateX(${translateX}%)`;
+    updateCounter();
+  };
+
+  // Event Listeners for Buttons
+  prevButton.addEventListener("click", () => {
+    currentPage = (currentPage - 1 + totalPages) % totalPages;
+    moveCarousel();
   });
-  
+
+  nextButton.addEventListener("click", () => {
+    console.log("next")
+    currentPage = (currentPage + 1) % totalPages;
+    moveCarousel();
+  });
+
+  // Initialize Carousel
+  moveCarousel();
+});
