@@ -1,670 +1,596 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>NGIPL</title>
-    <!-- Favicon -->
-    <link rel="icon" href="assets/images/favicon.png" type="image/x-icon" />
-    <!-- Preconnect for Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet"
-    />
-    <!-- Tailwind CSS CDN -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            colors: {
-              primary: "#009DDD",
-              secondary: "#747474",
-            },
-            spacing: {
-              240: "240px",
-              40: "40px",
-            },
-            maxWidth: {
-              container: "1440px",
-              mxcontainer: "1920px",
-            },
-            fontFamily: {
-              barlow: ["'Barlow Condensed'", "sans-serif"],
-            },
-            boxShadow: {
-              "inner-button": "inset 0 5px 4px rgba(0, 0, 0, 0.2)",
-            },
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NGIPL</title>
+
+  <!-- Favicon -->
+  <link rel="icon" href="assets/images/favicon.png" type="image/x-icon" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet" />
+
+  <!-- Styles -->
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: "#009DDD",
+            secondary: "#747474",
+          },
+          spacing: {
+            240: "240px",
+            40: "40px",
+          },
+          maxWidth: {
+            container: "1440px",
+            mxcontainer: "1920px",
+          },
+          fontFamily: {
+            barlow: ["'Barlow Condensed'", "sans-serif"],
+          },
+          boxShadow: {
+            "inner-button": "inset 0 5px 4px rgba(0, 0, 0, 0.2)",
           },
         },
-      };
-    </script>
-    <!-- jQuery CDN -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <!-- Header js -->
-    <script src="./assets/js/app.js" defer></script>
-    <!-- blog caurosal -->
-    <script src="assets/js/blog.js"></script>
-    <!-- counter js -->
-    <script src="assets/js/counter.js"></script>
-    <!-- testimonial caurosal js -->
-    <script src="assets/js/testimonial.js"></script>
-    <!-- Style -->
-    <link rel="stylesheet" href="/assets/css/style.css" />
-  </head>
-  <body class="font-barlow full-width-layout mx-auto">
-    <!-- Header -->
-    <div id="header-placeholder"></div>
-    <main>
-      <!-- breadcrumb Start -->
-      <div
-        class="bg-primary bg-opacity-10 md:rounded-bl-[7rem] rounded-bl-[5rem]"
-      >
-        <div class="max-2xl-container ms-auto">
-          <div class="grid md:grid-cols-2 grid-cols-1 items-center relative">
-            <div class="md:pt-0 pt-16 md:pb-0 pb-6 md:px-0 px-12">
-              <!-- ship vector -->
-              <img
-                src="assets/images/gallery/ship.png"
-                alt="ship"
-                class="absolute md:bottom-0 bottom-10 md:left-20 right-0 md:w-auto w-96"
-              />
-              <!-- vector -->
-              <img
-                src="assets/images/banner-vector.png"
-                alt="vector"
-                class="absolute md:left-1/4 md:top-20 right-10 top-10 md:h-20 h-12"
-              />
-              <!-- content -->
+      },
+    };
+  </script>
 
-              <h3 class="md:text-3xl text-lg font-semibold mb-4">
-                <a href="index.html">HOME</a>/
-                <a href="about.html">ABOUT</a>
-              </h3>
-              <h2
-                class="text-primary font-semibold text-[2.75rem] md:text-[4.5rem] leading-none mb-4"
-              >
-                About Us
-              </h2>
-            </div>
-            <div
-              class="md:rounded-tl-[7rem] rounded-tl-[4rem] overflow-hidden md:ms-0 ms-16 md:mb-0 -mb-24"
-            >
-              <img src="assets/images/about/about-banner.jpg" alt="banner" />
-            </div>
+  <!-- Animate.css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="/assets/css/style.css" />
+
+  <!-- JavaScript -->
+  <!-- jQuery (Required for some scripts) -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" defer></script>
+
+  <!-- Custom Scripts -->
+  <script src="./assets/js/app.js" defer></script>
+  <script src="assets/js/banner.js" defer></script>
+  <script src="assets/js/gallery.js" defer></script>
+  <script src="assets/js/blog.js" defer></script>
+  <script src="assets/js/counter.js" defer></script>
+  <script src="assets/js/testimonial.js" defer></script>
+</head>
+
+<body class="font-barlow full-width-layout mx-auto">
+  <!-- Header -->
+  <div id="header-placeholder"></div>
+  <main>
+    <!-- breadcrumb Start -->
+    <div class="bg-primary bg-opacity-10 md:rounded-bl-[7rem] rounded-bl-[5rem]">
+      <div class="max-2xl-container ms-auto">
+        <div class="grid md:grid-cols-2 grid-cols-1 items-center relative">
+          <div class="md:pt-0 pt-16 md:pb-0 pb-6 md:px-0 px-12">
+            <!-- ship vector -->
+            <img src="assets/images/gallery/ship.png" alt="ship"
+              class="absolute md:bottom-0 bottom-10 md:left-20 right-0 md:w-auto w-96" />
+            <!-- vector -->
+            <img src="assets/images/banner-vector.png" alt="vector"
+              class="absolute md:left-1/4 md:top-20 right-10 top-10 md:h-20 h-12" />
+            <!-- content -->
+
+            <h3 class="md:text-3xl text-lg font-semibold mb-4">
+              <a href="index.html">HOME</a>/
+              <a href="about.html">ABOUT</a>
+            </h3>
+            <h2 class="text-primary font-semibold text-[2.75rem] md:text-[4.5rem] leading-none mb-4">
+              About Us
+            </h2>
+          </div>
+          <div class="md:rounded-tl-[7rem] rounded-tl-[4rem] overflow-hidden md:ms-0 ms-16 md:mb-0 -mb-24">
+            <img src="assets/images/about/about-banner.jpg" alt="banner" />
           </div>
         </div>
       </div>
-      <!-- breadcrumb End -->
-      <!-- Content Start -->
-      <div class="pt-32 md:pb-32 pb-0 relative md:px-0 px-4">
-        <!-- vector -->
-        <img
-          src="assets/images/tower.png"
-          alt="tower"
-          class="absolute -bottom-36 right-0 md:block hidden"
-        />
-        <div class="max-w-container mx-auto">
-          <!-- Who We Are -->
-          <h4 class="font-semibold md:text-3xl text-xl md:mb-5 mb-2">
-            WHO WE ARE?
-          </h4>
-          <h3
-            class="text-primary font-semibold md:text-6xl text-3xl md:mb-6 mb-3"
-          >
-            Niraj Gupta Impex PVT. LTD
-          </h3>
-          <div
-            style="background-image: url('assets/images/about/abput-map.png')"
-            class="bg-no-repeat bg-center"
-          >
-            <div class="md:pb-8">
-              <p class="md:text-[1.75rem] text-xl md:pt-6 md:leading-10">
-                We are a trusted name when it comes to offering high-quality
-                CHEMICALS AND PHARMACEUTICAL PRODUCTS at competitive prices. The
-                goal has always been to bring value to the chemical supply chain
-                for both parties, with a focus on broad-based partnerships with
-                both customers and suppliers.
+    </div>
+    <!-- breadcrumb End -->
+    <!-- Content Start -->
+    <div class="pt-32 md:pb-32 pb-0 relative md:px-0 px-4">
+      <!-- vector -->
+      <img src="assets/images/tower.png" alt="tower" class="absolute -bottom-36 right-0 md:block hidden" />
+      <div class="max-w-container mx-auto">
+        <!-- Who We Are -->
+        <h4 class="font-semibold md:text-3xl text-xl md:mb-5 mb-2">
+          WHO WE ARE?
+        </h4>
+        <h3 class="text-primary font-semibold md:text-6xl text-3xl md:mb-6 mb-3">
+          Niraj Gupta Impex PVT. LTD
+        </h3>
+        <div style="background-image: url('assets/images/about/abput-map.png')" class="bg-no-repeat bg-center">
+          <div class="md:pb-8">
+            <p class="md:text-[1.75rem] text-xl md:pt-6 md:leading-10">
+              We are a trusted name when it comes to offering high-quality
+              CHEMICALS AND PHARMACEUTICAL PRODUCTS at competitive prices. The
+              goal has always been to bring value to the chemical supply chain
+              for both parties, with a focus on broad-based partnerships with
+              both customers and suppliers.
+            </p>
+            <p class="md:text-[1.75rem] text-xl py-6 md:leading-10">
+              We strive hard to establish a solid supply chain, high-quality
+              products, and a thriving worldwide trade network, primarily in
+              the Indian chemical and manufacturing industries. Today, we are
+              making fast progress toward those goals.
+            </p>
+          </div>
+          <div class="grid grid-cols-1 lg:grid-cols-2 items-center gap-8">
+            <div class="md:rounded-tr-[7rem] rounded-tr-[4rem] overflow-hidden relative">
+              <img src="assets/images/about/about-1.jpg" alt="about" />
+              <!-- Play Button -->
+              <div
+                class="p-2 rounded-full bg-white bg-opacity-80 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+                <div class="p-4 bg-white rounded-full shadow-md">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_1_2039)">
+                      <path
+                        d="M5.10545 0.52912C2.94172 -0.712029 1.1875 0.304735 1.1875 2.79831V21.1998C1.1875 23.6959 2.94172 24.7113 5.10545 23.4713L21.1893 14.2474C23.3538 13.0058 23.3538 10.9942 21.1893 9.75294L5.10545 0.52912Z"
+                        fill="#009DDD" />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_1_2039">
+                        <rect width="24" height="24" fill="white" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <p class="md:text-[1.75rem] text-xl pt-6 md:leading-10">
+                Our strength is servicing and representing world-class
+                manufacturers, suppliers, and importers. We provide
+                high-quality chemicals tailored to your individual needs.
               </p>
               <p class="md:text-[1.75rem] text-xl py-6 md:leading-10">
-                We strive hard to establish a solid supply chain, high-quality
-                products, and a thriving worldwide trade network, primarily in
-                the Indian chemical and manufacturing industries. Today, we are
-                making fast progress toward those goals.
+                We have a strong customer base across India, and we supply the
+                highest standard material with timely delivery. Furthermore,
+                we export our products to other Asian and African countries.
               </p>
             </div>
-            <div class="grid grid-cols-1 lg:grid-cols-2 items-center gap-8">
-              <div
-                class="md:rounded-tr-[7rem] rounded-tr-[4rem] overflow-hidden relative"
-              >
-                <img src="assets/images/about/about-1.jpg" alt="about" />
-                <!-- Play Button -->
-                <div
-                  class="p-2 rounded-full bg-white bg-opacity-80 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
-                >
-                  <div class="p-4 bg-white rounded-full shadow-md">
-                    <svg
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <g clip-path="url(#clip0_1_2039)">
-                        <path
-                          d="M5.10545 0.52912C2.94172 -0.712029 1.1875 0.304735 1.1875 2.79831V21.1998C1.1875 23.6959 2.94172 24.7113 5.10545 23.4713L21.1893 14.2474C23.3538 13.0058 23.3538 10.9942 21.1893 9.75294L5.10545 0.52912Z"
-                          fill="#009DDD"
-                        />
-                      </g>
-                      <defs>
-                        <clipPath id="clip0_1_2039">
-                          <rect width="24" height="24" fill="white" />
-                        </clipPath>
-                      </defs>
-                    </svg>
-                  </div>
-                </div>
-              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Our Mission -->
+    <div class="flex md:flex-nowrap flex-wrap items-center md:py-24 md:px-0 px-4 py-6 relative">
+      <!-- vecrtor -->
+      <img src="assets/images/banner-vector.png" alt="vector" class="absolute -top-20 right-1/3 md:block hidden" />
+      <!-- Left Side: Content -->
+      <div class="relative md:w-1/3 w-1/2 md:order-1 order-1">
+        <img src="assets/images/about-side.png" alt="about" class="w-full" />
+        <h2
+          class="absolute w-full text-center text-primary font-semibold text-[2rem] lg:text-[5rem] leading-none transform md:-rotate-90 md:top-1/2 top-6 md:left-1/2 md:-translate-x-1/2 md:-translate-y-1/2">
+          OUR MISSION
+        </h2>
+      </div>
+      <!-- Right Side: Content -->
+      <div class="w-full lg:w-2/3 md:px-12 py-8 lg:py-8 md:order-2 order-3">
+        <h4 class="font-semibold text-3xl mb-4 md:block hidden">
+          OUR MISSION
+        </h4>
+        <p class="text-lg lg:text-[1.75rem] font-normal md:mb-8" style="line-height: inherit">
+          To provide the best quality products at the most competitive prices
+          to all our esteemed clients. Our strength is servicing and
+          representing world-class manufacturers, suppliers, and importers. We
+          provide high-quality products tailored to your individual needs.
+        </p>
+      </div>
+      <img src="assets/images/about/about-2.png" alt="about" class="md:order-3 order-2 md:mt-0 -mt-48 md:ps-0 ps-16" />
+    </div>
+    <!-- Our Vision -->
+    <div class="flex md:flex-nowrap flex-wrap items-center md:justify-normal justify-end md:py-24 md:px-0 px-4 py-6">
+      <!-- Left Side: Content -->
+      <img src="assets/images/about/about-3.jpg" alt="about"
+        class="md:order-1 order-2 md:mt-0 -mt-32 md:pe-0 pe-16 relative z-10" />
+      <div class="w-full lg:w-2/3 md:px-12 py-6 lg:py-8 md:order-2 order-3">
+        <h4 class="font-semibold text-3xl mb-4 md:block hidden">
+          OUR VISION
+        </h4>
+        <p class="text-lg lg:text-[1.75rem] font-normal mb-8" style="line-height: inherit">
+          Global reach with all possible clients on a win-win basis. To be an
+          innovator that enriches the world by delivering sustainable
+          solutions for chemicals and pharmaceutical products, indenting and
+          trading companies, and global import and export solutions via Global
+          Connect, while also being an equal opportunity employer backed by
+          excellent corporate governance. <br /><br />
+          Our priority would be to be an innovative solution provider in the
+          B2B industry while guaranteeing a high level of compliance.
+        </p>
+      </div>
 
-              <div>
-                <p class="md:text-[1.75rem] text-xl pt-6 md:leading-10">
-                  Our strength is servicing and representing world-class
-                  manufacturers, suppliers, and importers. We provide
-                  high-quality chemicals tailored to your individual needs.
+      <!-- Right Side: Image -->
+      <div class="relative md:w-1/3 w-1/2 md:order-3 order-1">
+        <img src="assets/images/about/about-aside.png" alt="about" class="w-full" />
+        <h2
+          class="absolute w-full text-center text-primary font-semibold text-[2rem] lg:text-[5rem] leading-none transform md:-rotate-90 md:top-1/2 top-6 md:left-1/2 md:-translate-x-1/2 md:-translate-y-1/2">
+          OUR VISION
+        </h2>
+      </div>
+    </div>
+    <!-- FAQ Section Start -->
+    <section class="md:py-44 py-12 relative md:px-0 px-4">
+      <!-- faq-bg -->
+      <img src="assets/images/faq-bg.png" alt="bg" class="absolute left-0 top-0" />
+      <!-- faq-vector -->
+      <div class="max-w-container mx-auto relative">
+        <img src="assets/images/banner-vector.png" alt="bg" class="absolute right-52 top-0 md:w-auto w-32" />
+        <!-- Title -->
+        <div class="md:mb-16 mb-6">
+          <h4 class="font-semibold md:text-3xl text-xl md:mb-4 mb-2">FABLIO</h4>
+          <h2 class="md:text-6xl text-3xl font-semibold text-primary">Why Choose Us?</h2>
+        </div>
+
+        <!-- Content -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <!-- Left Column -->
+          <div class="space-y-6">
+            <div class="flex items-start">
+              <div class="me-4">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M11.076 21.2696C11.0123 21.2696 10.9493 21.2564 10.891 21.2309C10.8327 21.2054 10.7803 21.1681 10.737 21.1213L1.59918 11.2368C1.53827 11.1709 1.49788 11.0887 1.48298 11.0002C1.46807 10.9117 1.47928 10.8208 1.51524 10.7385C1.55121 10.6563 1.61036 10.5864 1.68546 10.5372C1.76056 10.4881 1.84835 10.462 1.93809 10.462H6.33655C6.40259 10.462 6.46786 10.4761 6.52796 10.5035C6.58805 10.5309 6.64158 10.5708 6.68492 10.6207L9.73883 14.1341C10.0689 13.4286 10.7078 12.2539 11.829 10.8225C13.4864 8.70631 16.5694 5.59411 21.8441 2.78463C21.946 2.73034 22.0646 2.71625 22.1764 2.74514C22.2883 2.77403 22.3852 2.84381 22.4481 2.94068C22.511 3.03756 22.5353 3.1545 22.5162 3.26841C22.497 3.38232 22.4359 3.48492 22.3448 3.55595C22.3247 3.57169 20.291 5.17323 17.9504 8.10672C15.7963 10.8063 12.9329 15.2204 11.5238 20.919C11.4991 21.0191 11.4415 21.1081 11.3603 21.1717C11.2791 21.2352 11.1789 21.2698 11.0758 21.2698L11.076 21.2696Z"
+                    fill="#009DDD" />
+                </svg>
+              </div>
+              <div class="relative w-full pb-4">
+                <div class="line-bottom-dashed"></div>
+                <p class="text-xl font-normal">
+                  Have the necessary skills, resources, and knowledge for
+                  successful distribution.
                 </p>
-                <p class="md:text-[1.75rem] text-xl py-6 md:leading-10">
-                  We have a strong customer base across India, and we supply the
-                  highest standard material with timely delivery. Furthermore,
-                  we export our products to other Asian and African countries.
+              </div>
+            </div>
+            <div class="flex items-start">
+              <div class="me-4">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M11.076 21.2696C11.0123 21.2696 10.9493 21.2564 10.891 21.2309C10.8327 21.2054 10.7803 21.1681 10.737 21.1213L1.59918 11.2368C1.53827 11.1709 1.49788 11.0887 1.48298 11.0002C1.46807 10.9117 1.47928 10.8208 1.51524 10.7385C1.55121 10.6563 1.61036 10.5864 1.68546 10.5372C1.76056 10.4881 1.84835 10.462 1.93809 10.462H6.33655C6.40259 10.462 6.46786 10.4761 6.52796 10.5035C6.58805 10.5309 6.64158 10.5708 6.68492 10.6207L9.73883 14.1341C10.0689 13.4286 10.7078 12.2539 11.829 10.8225C13.4864 8.70631 16.5694 5.59411 21.8441 2.78463C21.946 2.73034 22.0646 2.71625 22.1764 2.74514C22.2883 2.77403 22.3852 2.84381 22.4481 2.94068C22.511 3.03756 22.5353 3.1545 22.5162 3.26841C22.497 3.38232 22.4359 3.48492 22.3448 3.55595C22.3247 3.57169 20.291 5.17323 17.9504 8.10672C15.7963 10.8063 12.9329 15.2204 11.5238 20.919C11.4991 21.0191 11.4415 21.1081 11.3603 21.1717C11.2791 21.2352 11.1789 21.2698 11.0758 21.2698L11.076 21.2696Z"
+                    fill="#009DDD" />
+                </svg>
+              </div>
+              <div class="relative w-full pb-4">
+                <div class="line-bottom-dashed"></div>
+                <p class="text-xl font-normal">
+                  Extensive market development experience for new and
+                  innovative products.
+                </p>
+              </div>
+            </div>
+            <div class="flex items-start">
+              <div class="me-4">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M11.076 21.2696C11.0123 21.2696 10.9493 21.2564 10.891 21.2309C10.8327 21.2054 10.7803 21.1681 10.737 21.1213L1.59918 11.2368C1.53827 11.1709 1.49788 11.0887 1.48298 11.0002C1.46807 10.9117 1.47928 10.8208 1.51524 10.7385C1.55121 10.6563 1.61036 10.5864 1.68546 10.5372C1.76056 10.4881 1.84835 10.462 1.93809 10.462H6.33655C6.40259 10.462 6.46786 10.4761 6.52796 10.5035C6.58805 10.5309 6.64158 10.5708 6.68492 10.6207L9.73883 14.1341C10.0689 13.4286 10.7078 12.2539 11.829 10.8225C13.4864 8.70631 16.5694 5.59411 21.8441 2.78463C21.946 2.73034 22.0646 2.71625 22.1764 2.74514C22.2883 2.77403 22.3852 2.84381 22.4481 2.94068C22.511 3.03756 22.5353 3.1545 22.5162 3.26841C22.497 3.38232 22.4359 3.48492 22.3448 3.55595C22.3247 3.57169 20.291 5.17323 17.9504 8.10672C15.7963 10.8063 12.9329 15.2204 11.5238 20.919C11.4991 21.0191 11.4415 21.1081 11.3603 21.1717C11.2791 21.2352 11.1789 21.2698 11.0758 21.2698L11.076 21.2696Z"
+                    fill="#009DDD" />
+                </svg>
+              </div>
+              <div class="relative w-full pb-4">
+                <div class="line-bottom-dashed"></div>
+                <p class="text-xl font-normal">
+                  Years of experience in the Indian business community.
+                </p>
+              </div>
+            </div>
+            <div class="flex items-start">
+              <div class="me-4">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M11.076 21.2696C11.0123 21.2696 10.9493 21.2564 10.891 21.2309C10.8327 21.2054 10.7803 21.1681 10.737 21.1213L1.59918 11.2368C1.53827 11.1709 1.49788 11.0887 1.48298 11.0002C1.46807 10.9117 1.47928 10.8208 1.51524 10.7385C1.55121 10.6563 1.61036 10.5864 1.68546 10.5372C1.76056 10.4881 1.84835 10.462 1.93809 10.462H6.33655C6.40259 10.462 6.46786 10.4761 6.52796 10.5035C6.58805 10.5309 6.64158 10.5708 6.68492 10.6207L9.73883 14.1341C10.0689 13.4286 10.7078 12.2539 11.829 10.8225C13.4864 8.70631 16.5694 5.59411 21.8441 2.78463C21.946 2.73034 22.0646 2.71625 22.1764 2.74514C22.2883 2.77403 22.3852 2.84381 22.4481 2.94068C22.511 3.03756 22.5353 3.1545 22.5162 3.26841C22.497 3.38232 22.4359 3.48492 22.3448 3.55595C22.3247 3.57169 20.291 5.17323 17.9504 8.10672C15.7963 10.8063 12.9329 15.2204 11.5238 20.919C11.4991 21.0191 11.4415 21.1081 11.3603 21.1717C11.2791 21.2352 11.1789 21.2698 11.0758 21.2698L11.076 21.2696Z"
+                    fill="#009DDD" />
+                </svg>
+              </div>
+              <div class="relative w-full pb-4">
+                <div class="line-bottom-dashed"></div>
+                <p class="text-xl font-normal">
+                  A well-trained and knowledgeable sales and support crew.
+                </p>
+              </div>
+            </div>
+            <div class="flex items-start">
+              <div class="me-4">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M11.076 21.2696C11.0123 21.2696 10.9493 21.2564 10.891 21.2309C10.8327 21.2054 10.7803 21.1681 10.737 21.1213L1.59918 11.2368C1.53827 11.1709 1.49788 11.0887 1.48298 11.0002C1.46807 10.9117 1.47928 10.8208 1.51524 10.7385C1.55121 10.6563 1.61036 10.5864 1.68546 10.5372C1.76056 10.4881 1.84835 10.462 1.93809 10.462H6.33655C6.40259 10.462 6.46786 10.4761 6.52796 10.5035C6.58805 10.5309 6.64158 10.5708 6.68492 10.6207L9.73883 14.1341C10.0689 13.4286 10.7078 12.2539 11.829 10.8225C13.4864 8.70631 16.5694 5.59411 21.8441 2.78463C21.946 2.73034 22.0646 2.71625 22.1764 2.74514C22.2883 2.77403 22.3852 2.84381 22.4481 2.94068C22.511 3.03756 22.5353 3.1545 22.5162 3.26841C22.497 3.38232 22.4359 3.48492 22.3448 3.55595C22.3247 3.57169 20.291 5.17323 17.9504 8.10672C15.7963 10.8063 12.9329 15.2204 11.5238 20.919C11.4991 21.0191 11.4415 21.1081 11.3603 21.1717C11.2791 21.2352 11.1789 21.2698 11.0758 21.2698L11.076 21.2696Z"
+                    fill="#009DDD" />
+                </svg>
+              </div>
+              <div class="relative w-full pb-4">
+                <p class="text-xl font-normal">
+                  Exclusive or semi-exclusive representation.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column -->
+          <div class="space-y-6 md:block hidden">
+            <div class="flex items-start">
+              <div class="me-4">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M11.076 21.2696C11.0123 21.2696 10.9493 21.2564 10.891 21.2309C10.8327 21.2054 10.7803 21.1681 10.737 21.1213L1.59918 11.2368C1.53827 11.1709 1.49788 11.0887 1.48298 11.0002C1.46807 10.9117 1.47928 10.8208 1.51524 10.7385C1.55121 10.6563 1.61036 10.5864 1.68546 10.5372C1.76056 10.4881 1.84835 10.462 1.93809 10.462H6.33655C6.40259 10.462 6.46786 10.4761 6.52796 10.5035C6.58805 10.5309 6.64158 10.5708 6.68492 10.6207L9.73883 14.1341C10.0689 13.4286 10.7078 12.2539 11.829 10.8225C13.4864 8.70631 16.5694 5.59411 21.8441 2.78463C21.946 2.73034 22.0646 2.71625 22.1764 2.74514C22.2883 2.77403 22.3852 2.84381 22.4481 2.94068C22.511 3.03756 22.5353 3.1545 22.5162 3.26841C22.497 3.38232 22.4359 3.48492 22.3448 3.55595C22.3247 3.57169 20.291 5.17323 17.9504 8.10672C15.7963 10.8063 12.9329 15.2204 11.5238 20.919C11.4991 21.0191 11.4415 21.1081 11.3603 21.1717C11.2791 21.2352 11.1789 21.2698 11.0758 21.2698L11.076 21.2696Z"
+                    fill="#009DDD" />
+                </svg>
+              </div>
+              <div class="relative w-full pb-4">
+                <div class="line-bottom-dashed"></div>
+                <p class="text-xl font-normal">
+                  Products of the highest quality from industry leaders in the
+                  chemical sector.
+                </p>
+              </div>
+            </div>
+            <div class="flex items-start">
+              <div class="me-4">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M11.076 21.2696C11.0123 21.2696 10.9493 21.2564 10.891 21.2309C10.8327 21.2054 10.7803 21.1681 10.737 21.1213L1.59918 11.2368C1.53827 11.1709 1.49788 11.0887 1.48298 11.0002C1.46807 10.9117 1.47928 10.8208 1.51524 10.7385C1.55121 10.6563 1.61036 10.5864 1.68546 10.5372C1.76056 10.4881 1.84835 10.462 1.93809 10.462H6.33655C6.40259 10.462 6.46786 10.4761 6.52796 10.5035C6.58805 10.5309 6.64158 10.5708 6.68492 10.6207L9.73883 14.1341C10.0689 13.4286 10.7078 12.2539 11.829 10.8225C13.4864 8.70631 16.5694 5.59411 21.8441 2.78463C21.946 2.73034 22.0646 2.71625 22.1764 2.74514C22.2883 2.77403 22.3852 2.84381 22.4481 2.94068C22.511 3.03756 22.5353 3.1545 22.5162 3.26841C22.497 3.38232 22.4359 3.48492 22.3448 3.55595C22.3247 3.57169 20.291 5.17323 17.9504 8.10672C15.7963 10.8063 12.9329 15.2204 11.5238 20.919C11.4991 21.0191 11.4415 21.1081 11.3603 21.1717C11.2791 21.2352 11.1789 21.2698 11.0758 21.2698L11.076 21.2696Z"
+                    fill="#009DDD" />
+                </svg>
+              </div>
+              <div class="relative w-full pb-4">
+                <div class="line-bottom-dashed"></div>
+                <p class="text-xl font-normal">
+                  Strong presence in important markets.
+                </p>
+              </div>
+            </div>
+            <div class="flex items-start">
+              <div class="me-4">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M11.076 21.2696C11.0123 21.2696 10.9493 21.2564 10.891 21.2309C10.8327 21.2054 10.7803 21.1681 10.737 21.1213L1.59918 11.2368C1.53827 11.1709 1.49788 11.0887 1.48298 11.0002C1.46807 10.9117 1.47928 10.8208 1.51524 10.7385C1.55121 10.6563 1.61036 10.5864 1.68546 10.5372C1.76056 10.4881 1.84835 10.462 1.93809 10.462H6.33655C6.40259 10.462 6.46786 10.4761 6.52796 10.5035C6.58805 10.5309 6.64158 10.5708 6.68492 10.6207L9.73883 14.1341C10.0689 13.4286 10.7078 12.2539 11.829 10.8225C13.4864 8.70631 16.5694 5.59411 21.8441 2.78463C21.946 2.73034 22.0646 2.71625 22.1764 2.74514C22.2883 2.77403 22.3852 2.84381 22.4481 2.94068C22.511 3.03756 22.5353 3.1545 22.5162 3.26841C22.497 3.38232 22.4359 3.48492 22.3448 3.55595C22.3247 3.57169 20.291 5.17323 17.9504 8.10672C15.7963 10.8063 12.9329 15.2204 11.5238 20.919C11.4991 21.0191 11.4415 21.1081 11.3603 21.1717C11.2791 21.2352 11.1789 21.2698 11.0758 21.2698L11.076 21.2696Z"
+                    fill="#009DDD" />
+                </svg>
+              </div>
+              <div class="relative w-full pb-4">
+                <div class="line-bottom-dashed"></div>
+                <p class="text-xl font-normal">
+                  Quick, personalized service with excellent attention to
+                  detail.
+                </p>
+              </div>
+            </div>
+            <div class="flex items-start">
+              <div class="me-4">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M11.076 21.2696C11.0123 21.2696 10.9493 21.2564 10.891 21.2309C10.8327 21.2054 10.7803 21.1681 10.737 21.1213L1.59918 11.2368C1.53827 11.1709 1.49788 11.0887 1.48298 11.0002C1.46807 10.9117 1.47928 10.8208 1.51524 10.7385C1.55121 10.6563 1.61036 10.5864 1.68546 10.5372C1.76056 10.4881 1.84835 10.462 1.93809 10.462H6.33655C6.40259 10.462 6.46786 10.4761 6.52796 10.5035C6.58805 10.5309 6.64158 10.5708 6.68492 10.6207L9.73883 14.1341C10.0689 13.4286 10.7078 12.2539 11.829 10.8225C13.4864 8.70631 16.5694 5.59411 21.8441 2.78463C21.946 2.73034 22.0646 2.71625 22.1764 2.74514C22.2883 2.77403 22.3852 2.84381 22.4481 2.94068C22.511 3.03756 22.5353 3.1545 22.5162 3.26841C22.497 3.38232 22.4359 3.48492 22.3448 3.55595C22.3247 3.57169 20.291 5.17323 17.9504 8.10672C15.7963 10.8063 12.9329 15.2204 11.5238 20.919C11.4991 21.0191 11.4415 21.1081 11.3603 21.1717C11.2791 21.2352 11.1789 21.2698 11.0758 21.2698L11.076 21.2696Z"
+                    fill="#009DDD" />
+                </svg>
+              </div>
+              <div class="relative w-full pb-4">
+                <div class="line-bottom-dashed"></div>
+                <p class="text-xl font-normal">
+                  On-time delivery is guaranteed.
+                </p>
+              </div>
+            </div>
+            <div class="flex items-start">
+              <div class="me-4">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M11.076 21.2696C11.0123 21.2696 10.9493 21.2564 10.891 21.2309C10.8327 21.2054 10.7803 21.1681 10.737 21.1213L1.59918 11.2368C1.53827 11.1709 1.49788 11.0887 1.48298 11.0002C1.46807 10.9117 1.47928 10.8208 1.51524 10.7385C1.55121 10.6563 1.61036 10.5864 1.68546 10.5372C1.76056 10.4881 1.84835 10.462 1.93809 10.462H6.33655C6.40259 10.462 6.46786 10.4761 6.52796 10.5035C6.58805 10.5309 6.64158 10.5708 6.68492 10.6207L9.73883 14.1341C10.0689 13.4286 10.7078 12.2539 11.829 10.8225C13.4864 8.70631 16.5694 5.59411 21.8441 2.78463C21.946 2.73034 22.0646 2.71625 22.1764 2.74514C22.2883 2.77403 22.3852 2.84381 22.4481 2.94068C22.511 3.03756 22.5353 3.1545 22.5162 3.26841C22.497 3.38232 22.4359 3.48492 22.3448 3.55595C22.3247 3.57169 20.291 5.17323 17.9504 8.10672C15.7963 10.8063 12.9329 15.2204 11.5238 20.919C11.4991 21.0191 11.4415 21.1081 11.3603 21.1717C11.2791 21.2352 11.1789 21.2698 11.0758 21.2698L11.076 21.2696Z"
+                    fill="#009DDD" />
+                </svg>
+              </div>
+              <div class="relative w-full pb-4">
+                <p class="text-xl font-normal">
+                  Technical assistance and advice from experts.
                 </p>
               </div>
             </div>
           </div>
         </div>
-      </div>
-      <!-- Our Mission -->
-      <div
-        class="flex md:flex-nowrap flex-wrap items-center md:py-24 md:px-0 px-4 py-6 relative"
-      >
-        <!-- vecrtor -->
-        <img
-          src="assets/images/banner-vector.png"
-          alt="vector"
-          class="absolute -top-20 right-1/3 md:block hidden"
-        />
-        <!-- Left Side: Content -->
-        <div class="relative md:w-1/3 w-1/2 md:order-1 order-1">
-          <img src="assets/images/about-side.png" alt="about" class="w-full" />
-          <h2
-            class="absolute w-full text-center text-primary font-semibold text-[2rem] lg:text-[5rem] leading-none transform md:-rotate-90 md:top-1/2 top-6 md:left-1/2 md:-translate-x-1/2 md:-translate-y-1/2"
-          >
-            OUR MISSION
-          </h2>
-        </div>
-        <!-- Right Side: Content -->
-        <div class="w-full lg:w-2/3 md:px-12 py-8 lg:py-8 md:order-2 order-3">
-          <h4 class="font-semibold text-3xl mb-4 md:block hidden">
-            OUR MISSION
-          </h4>
-          <p
-            class="text-lg lg:text-[1.75rem] font-normal md:mb-8"
-            style="line-height: inherit"
-          >
-            To provide the best quality products at the most competitive prices
-            to all our esteemed clients. Our strength is servicing and
-            representing world-class manufacturers, suppliers, and importers. We
-            provide high-quality products tailored to your individual needs.
-          </p>
-        </div>
-        <img
-          src="assets/images/about/about-2.png"
-          alt="about"
-          class="md:order-3 order-2 md:mt-0 -mt-48 md:ps-0 ps-16"
-        />
-      </div>
-      <!-- Our Vision -->
-      <div
-        class="flex md:flex-nowrap flex-wrap items-center md:justify-normal justify-end md:py-24 md:px-0 px-4 py-6"
-      >
-        <!-- Left Side: Content -->
-        <img
-          src="assets/images/about/about-3.jpg"
-          alt="about"
-          class="md:order-1 order-2 md:mt-0 -mt-32 md:pe-0 pe-16 relative z-10"
-        />
-        <div class="w-full lg:w-2/3 md:px-12 py-6 lg:py-8 md:order-2 order-3">
-          <h4 class="font-semibold text-3xl mb-4 md:block hidden">
-            OUR VISION
-          </h4>
-          <p
-            class="text-lg lg:text-[1.75rem] font-normal mb-8"
-            style="line-height: inherit"
-          >
-            Global reach with all possible clients on a win-win basis. To be an
-            innovator that enriches the world by delivering sustainable
-            solutions for chemicals and pharmaceutical products, indenting and
-            trading companies, and global import and export solutions via Global
-            Connect, while also being an equal opportunity employer backed by
-            excellent corporate governance. <br /><br />
-            Our priority would be to be an innovative solution provider in the
-            B2B industry while guaranteeing a high level of compliance.
-          </p>
-        </div>
+        <div class="flex justify-center mt-4 md:hidden ">
+          <button
+            class="  bg-primary text-white text-xl lg:text-3xl font-medium rounded-bl-[1.8rem] rounded-tr-[1.8rem] px-10 lg:px-16 py-3 lg:py-5 shadow-inner-button">
+            <a href="#"> LOAD MORE </a>
+          </button>
 
-        <!-- Right Side: Image -->
-        <div class="relative md:w-1/3 w-1/2 md:order-3 order-1">
-          <img
-            src="assets/images/about/about-aside.png"
-            alt="about"
-            class="w-full"
-          />
-          <h2
-            class="absolute w-full text-center text-primary font-semibold text-[2rem] lg:text-[5rem] leading-none transform md:-rotate-90 md:top-1/2 top-6 md:left-1/2 md:-translate-x-1/2 md:-translate-y-1/2"
-          >
-            OUR VISION
-          </h2>
         </div>
-      </div>
-      <!-- FAQ Section Start -->
-<section class="md:py-44 py-12 relative md:px-0 px-4">
-  <!-- faq-bg -->
-  <img
-    src="assets/images/faq-bg.png"
-    alt="bg"
-    class="absolute left-0 top-0"
-  />
-  <!-- faq-vector -->
-  <div class="max-w-container mx-auto relative">
-    <img
-      src="assets/images/banner-vector.png"
-      alt="bg"
-      class="absolute right-52 top-0 md:w-auto w-32"
-    />
-    <!-- Title -->
-    <div class="md:mb-16 mb-6">
-      <h4 class="font-semibold md:text-3xl text-xl md:mb-4 mb-2">FABLIO</h4>
-      <h2 class="md:text-6xl text-3xl font-semibold text-primary">Why Choose Us?</h2>
-    </div>
-
-    <!-- Content -->
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-      <!-- Left Column -->
-      <div class="space-y-6">
-        <div class="flex items-start">
-          <div class="me-4">
-            <svg
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M11.076 21.2696C11.0123 21.2696 10.9493 21.2564 10.891 21.2309C10.8327 21.2054 10.7803 21.1681 10.737 21.1213L1.59918 11.2368C1.53827 11.1709 1.49788 11.0887 1.48298 11.0002C1.46807 10.9117 1.47928 10.8208 1.51524 10.7385C1.55121 10.6563 1.61036 10.5864 1.68546 10.5372C1.76056 10.4881 1.84835 10.462 1.93809 10.462H6.33655C6.40259 10.462 6.46786 10.4761 6.52796 10.5035C6.58805 10.5309 6.64158 10.5708 6.68492 10.6207L9.73883 14.1341C10.0689 13.4286 10.7078 12.2539 11.829 10.8225C13.4864 8.70631 16.5694 5.59411 21.8441 2.78463C21.946 2.73034 22.0646 2.71625 22.1764 2.74514C22.2883 2.77403 22.3852 2.84381 22.4481 2.94068C22.511 3.03756 22.5353 3.1545 22.5162 3.26841C22.497 3.38232 22.4359 3.48492 22.3448 3.55595C22.3247 3.57169 20.291 5.17323 17.9504 8.10672C15.7963 10.8063 12.9329 15.2204 11.5238 20.919C11.4991 21.0191 11.4415 21.1081 11.3603 21.1717C11.2791 21.2352 11.1789 21.2698 11.0758 21.2698L11.076 21.2696Z"
-                fill="#009DDD"
-              />
-            </svg>
-          </div>
-          <div class="relative w-full pb-4">
-            <div class="line-bottom-dashed"></div>
-            <p class="text-xl font-normal">
-              Have the necessary skills, resources, and knowledge for
-              successful distribution.
-            </p>
-          </div>
-        </div>
-        <div class="flex items-start">
-          <div class="me-4">
-            <svg
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M11.076 21.2696C11.0123 21.2696 10.9493 21.2564 10.891 21.2309C10.8327 21.2054 10.7803 21.1681 10.737 21.1213L1.59918 11.2368C1.53827 11.1709 1.49788 11.0887 1.48298 11.0002C1.46807 10.9117 1.47928 10.8208 1.51524 10.7385C1.55121 10.6563 1.61036 10.5864 1.68546 10.5372C1.76056 10.4881 1.84835 10.462 1.93809 10.462H6.33655C6.40259 10.462 6.46786 10.4761 6.52796 10.5035C6.58805 10.5309 6.64158 10.5708 6.68492 10.6207L9.73883 14.1341C10.0689 13.4286 10.7078 12.2539 11.829 10.8225C13.4864 8.70631 16.5694 5.59411 21.8441 2.78463C21.946 2.73034 22.0646 2.71625 22.1764 2.74514C22.2883 2.77403 22.3852 2.84381 22.4481 2.94068C22.511 3.03756 22.5353 3.1545 22.5162 3.26841C22.497 3.38232 22.4359 3.48492 22.3448 3.55595C22.3247 3.57169 20.291 5.17323 17.9504 8.10672C15.7963 10.8063 12.9329 15.2204 11.5238 20.919C11.4991 21.0191 11.4415 21.1081 11.3603 21.1717C11.2791 21.2352 11.1789 21.2698 11.0758 21.2698L11.076 21.2696Z"
-                fill="#009DDD"
-              />
-            </svg>
-          </div>
-          <div class="relative w-full pb-4">
-            <div class="line-bottom-dashed"></div>
-            <p class="text-xl font-normal">
-              Extensive market development experience for new and
-              innovative products.
-            </p>
-          </div>
-        </div>
-        <div class="flex items-start">
-          <div class="me-4">
-            <svg
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M11.076 21.2696C11.0123 21.2696 10.9493 21.2564 10.891 21.2309C10.8327 21.2054 10.7803 21.1681 10.737 21.1213L1.59918 11.2368C1.53827 11.1709 1.49788 11.0887 1.48298 11.0002C1.46807 10.9117 1.47928 10.8208 1.51524 10.7385C1.55121 10.6563 1.61036 10.5864 1.68546 10.5372C1.76056 10.4881 1.84835 10.462 1.93809 10.462H6.33655C6.40259 10.462 6.46786 10.4761 6.52796 10.5035C6.58805 10.5309 6.64158 10.5708 6.68492 10.6207L9.73883 14.1341C10.0689 13.4286 10.7078 12.2539 11.829 10.8225C13.4864 8.70631 16.5694 5.59411 21.8441 2.78463C21.946 2.73034 22.0646 2.71625 22.1764 2.74514C22.2883 2.77403 22.3852 2.84381 22.4481 2.94068C22.511 3.03756 22.5353 3.1545 22.5162 3.26841C22.497 3.38232 22.4359 3.48492 22.3448 3.55595C22.3247 3.57169 20.291 5.17323 17.9504 8.10672C15.7963 10.8063 12.9329 15.2204 11.5238 20.919C11.4991 21.0191 11.4415 21.1081 11.3603 21.1717C11.2791 21.2352 11.1789 21.2698 11.0758 21.2698L11.076 21.2696Z"
-                fill="#009DDD"
-              />
-            </svg>
-          </div>
-          <div class="relative w-full pb-4">
-            <div class="line-bottom-dashed"></div>
-            <p class="text-xl font-normal">
-              Years of experience in the Indian business community.
-            </p>
-          </div>
-        </div>
-        <div class="flex items-start">
-          <div class="me-4">
-            <svg
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M11.076 21.2696C11.0123 21.2696 10.9493 21.2564 10.891 21.2309C10.8327 21.2054 10.7803 21.1681 10.737 21.1213L1.59918 11.2368C1.53827 11.1709 1.49788 11.0887 1.48298 11.0002C1.46807 10.9117 1.47928 10.8208 1.51524 10.7385C1.55121 10.6563 1.61036 10.5864 1.68546 10.5372C1.76056 10.4881 1.84835 10.462 1.93809 10.462H6.33655C6.40259 10.462 6.46786 10.4761 6.52796 10.5035C6.58805 10.5309 6.64158 10.5708 6.68492 10.6207L9.73883 14.1341C10.0689 13.4286 10.7078 12.2539 11.829 10.8225C13.4864 8.70631 16.5694 5.59411 21.8441 2.78463C21.946 2.73034 22.0646 2.71625 22.1764 2.74514C22.2883 2.77403 22.3852 2.84381 22.4481 2.94068C22.511 3.03756 22.5353 3.1545 22.5162 3.26841C22.497 3.38232 22.4359 3.48492 22.3448 3.55595C22.3247 3.57169 20.291 5.17323 17.9504 8.10672C15.7963 10.8063 12.9329 15.2204 11.5238 20.919C11.4991 21.0191 11.4415 21.1081 11.3603 21.1717C11.2791 21.2352 11.1789 21.2698 11.0758 21.2698L11.076 21.2696Z"
-                fill="#009DDD"
-              />
-            </svg>
-          </div>
-          <div class="relative w-full pb-4">
-            <div class="line-bottom-dashed"></div>
-            <p class="text-xl font-normal">
-              A well-trained and knowledgeable sales and support crew.
-            </p>
-          </div>
-        </div>
-        <div class="flex items-start">
-          <div class="me-4">
-            <svg
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M11.076 21.2696C11.0123 21.2696 10.9493 21.2564 10.891 21.2309C10.8327 21.2054 10.7803 21.1681 10.737 21.1213L1.59918 11.2368C1.53827 11.1709 1.49788 11.0887 1.48298 11.0002C1.46807 10.9117 1.47928 10.8208 1.51524 10.7385C1.55121 10.6563 1.61036 10.5864 1.68546 10.5372C1.76056 10.4881 1.84835 10.462 1.93809 10.462H6.33655C6.40259 10.462 6.46786 10.4761 6.52796 10.5035C6.58805 10.5309 6.64158 10.5708 6.68492 10.6207L9.73883 14.1341C10.0689 13.4286 10.7078 12.2539 11.829 10.8225C13.4864 8.70631 16.5694 5.59411 21.8441 2.78463C21.946 2.73034 22.0646 2.71625 22.1764 2.74514C22.2883 2.77403 22.3852 2.84381 22.4481 2.94068C22.511 3.03756 22.5353 3.1545 22.5162 3.26841C22.497 3.38232 22.4359 3.48492 22.3448 3.55595C22.3247 3.57169 20.291 5.17323 17.9504 8.10672C15.7963 10.8063 12.9329 15.2204 11.5238 20.919C11.4991 21.0191 11.4415 21.1081 11.3603 21.1717C11.2791 21.2352 11.1789 21.2698 11.0758 21.2698L11.076 21.2696Z"
-                fill="#009DDD"
-              />
-            </svg>
-          </div>
-          <div class="relative w-full pb-4">
-            <p class="text-xl font-normal">
-              Exclusive or semi-exclusive representation.
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <!-- Right Column -->
-      <div class="space-y-6 md:block hidden">
-        <div class="flex items-start">
-          <div class="me-4">
-            <svg
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M11.076 21.2696C11.0123 21.2696 10.9493 21.2564 10.891 21.2309C10.8327 21.2054 10.7803 21.1681 10.737 21.1213L1.59918 11.2368C1.53827 11.1709 1.49788 11.0887 1.48298 11.0002C1.46807 10.9117 1.47928 10.8208 1.51524 10.7385C1.55121 10.6563 1.61036 10.5864 1.68546 10.5372C1.76056 10.4881 1.84835 10.462 1.93809 10.462H6.33655C6.40259 10.462 6.46786 10.4761 6.52796 10.5035C6.58805 10.5309 6.64158 10.5708 6.68492 10.6207L9.73883 14.1341C10.0689 13.4286 10.7078 12.2539 11.829 10.8225C13.4864 8.70631 16.5694 5.59411 21.8441 2.78463C21.946 2.73034 22.0646 2.71625 22.1764 2.74514C22.2883 2.77403 22.3852 2.84381 22.4481 2.94068C22.511 3.03756 22.5353 3.1545 22.5162 3.26841C22.497 3.38232 22.4359 3.48492 22.3448 3.55595C22.3247 3.57169 20.291 5.17323 17.9504 8.10672C15.7963 10.8063 12.9329 15.2204 11.5238 20.919C11.4991 21.0191 11.4415 21.1081 11.3603 21.1717C11.2791 21.2352 11.1789 21.2698 11.0758 21.2698L11.076 21.2696Z"
-                fill="#009DDD"
-              />
-            </svg>
-          </div>
-          <div class="relative w-full pb-4">
-            <div class="line-bottom-dashed"></div>
-            <p class="text-xl font-normal">
-              Products of the highest quality from industry leaders in the
-              chemical sector.
-            </p>
-          </div>
-        </div>
-        <div class="flex items-start">
-          <div class="me-4">
-            <svg
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M11.076 21.2696C11.0123 21.2696 10.9493 21.2564 10.891 21.2309C10.8327 21.2054 10.7803 21.1681 10.737 21.1213L1.59918 11.2368C1.53827 11.1709 1.49788 11.0887 1.48298 11.0002C1.46807 10.9117 1.47928 10.8208 1.51524 10.7385C1.55121 10.6563 1.61036 10.5864 1.68546 10.5372C1.76056 10.4881 1.84835 10.462 1.93809 10.462H6.33655C6.40259 10.462 6.46786 10.4761 6.52796 10.5035C6.58805 10.5309 6.64158 10.5708 6.68492 10.6207L9.73883 14.1341C10.0689 13.4286 10.7078 12.2539 11.829 10.8225C13.4864 8.70631 16.5694 5.59411 21.8441 2.78463C21.946 2.73034 22.0646 2.71625 22.1764 2.74514C22.2883 2.77403 22.3852 2.84381 22.4481 2.94068C22.511 3.03756 22.5353 3.1545 22.5162 3.26841C22.497 3.38232 22.4359 3.48492 22.3448 3.55595C22.3247 3.57169 20.291 5.17323 17.9504 8.10672C15.7963 10.8063 12.9329 15.2204 11.5238 20.919C11.4991 21.0191 11.4415 21.1081 11.3603 21.1717C11.2791 21.2352 11.1789 21.2698 11.0758 21.2698L11.076 21.2696Z"
-                fill="#009DDD"
-              />
-            </svg>
-          </div>
-          <div class="relative w-full pb-4">
-            <div class="line-bottom-dashed"></div>
-            <p class="text-xl font-normal">
-              Strong presence in important markets.
-            </p>
-          </div>
-        </div>
-        <div class="flex items-start">
-          <div class="me-4">
-            <svg
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M11.076 21.2696C11.0123 21.2696 10.9493 21.2564 10.891 21.2309C10.8327 21.2054 10.7803 21.1681 10.737 21.1213L1.59918 11.2368C1.53827 11.1709 1.49788 11.0887 1.48298 11.0002C1.46807 10.9117 1.47928 10.8208 1.51524 10.7385C1.55121 10.6563 1.61036 10.5864 1.68546 10.5372C1.76056 10.4881 1.84835 10.462 1.93809 10.462H6.33655C6.40259 10.462 6.46786 10.4761 6.52796 10.5035C6.58805 10.5309 6.64158 10.5708 6.68492 10.6207L9.73883 14.1341C10.0689 13.4286 10.7078 12.2539 11.829 10.8225C13.4864 8.70631 16.5694 5.59411 21.8441 2.78463C21.946 2.73034 22.0646 2.71625 22.1764 2.74514C22.2883 2.77403 22.3852 2.84381 22.4481 2.94068C22.511 3.03756 22.5353 3.1545 22.5162 3.26841C22.497 3.38232 22.4359 3.48492 22.3448 3.55595C22.3247 3.57169 20.291 5.17323 17.9504 8.10672C15.7963 10.8063 12.9329 15.2204 11.5238 20.919C11.4991 21.0191 11.4415 21.1081 11.3603 21.1717C11.2791 21.2352 11.1789 21.2698 11.0758 21.2698L11.076 21.2696Z"
-                fill="#009DDD"
-              />
-            </svg>
-          </div>
-          <div class="relative w-full pb-4">
-            <div class="line-bottom-dashed"></div>
-            <p class="text-xl font-normal">
-              Quick, personalized service with excellent attention to
-              detail.
-            </p>
-          </div>
-        </div>
-        <div class="flex items-start">
-          <div class="me-4">
-            <svg
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M11.076 21.2696C11.0123 21.2696 10.9493 21.2564 10.891 21.2309C10.8327 21.2054 10.7803 21.1681 10.737 21.1213L1.59918 11.2368C1.53827 11.1709 1.49788 11.0887 1.48298 11.0002C1.46807 10.9117 1.47928 10.8208 1.51524 10.7385C1.55121 10.6563 1.61036 10.5864 1.68546 10.5372C1.76056 10.4881 1.84835 10.462 1.93809 10.462H6.33655C6.40259 10.462 6.46786 10.4761 6.52796 10.5035C6.58805 10.5309 6.64158 10.5708 6.68492 10.6207L9.73883 14.1341C10.0689 13.4286 10.7078 12.2539 11.829 10.8225C13.4864 8.70631 16.5694 5.59411 21.8441 2.78463C21.946 2.73034 22.0646 2.71625 22.1764 2.74514C22.2883 2.77403 22.3852 2.84381 22.4481 2.94068C22.511 3.03756 22.5353 3.1545 22.5162 3.26841C22.497 3.38232 22.4359 3.48492 22.3448 3.55595C22.3247 3.57169 20.291 5.17323 17.9504 8.10672C15.7963 10.8063 12.9329 15.2204 11.5238 20.919C11.4991 21.0191 11.4415 21.1081 11.3603 21.1717C11.2791 21.2352 11.1789 21.2698 11.0758 21.2698L11.076 21.2696Z"
-                fill="#009DDD"
-              />
-            </svg>
-          </div>
-          <div class="relative w-full pb-4">
-            <div class="line-bottom-dashed"></div>
-            <p class="text-xl font-normal">
-              On-time delivery is guaranteed.
-            </p>
-          </div>
-        </div>
-        <div class="flex items-start">
-          <div class="me-4">
-            <svg
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M11.076 21.2696C11.0123 21.2696 10.9493 21.2564 10.891 21.2309C10.8327 21.2054 10.7803 21.1681 10.737 21.1213L1.59918 11.2368C1.53827 11.1709 1.49788 11.0887 1.48298 11.0002C1.46807 10.9117 1.47928 10.8208 1.51524 10.7385C1.55121 10.6563 1.61036 10.5864 1.68546 10.5372C1.76056 10.4881 1.84835 10.462 1.93809 10.462H6.33655C6.40259 10.462 6.46786 10.4761 6.52796 10.5035C6.58805 10.5309 6.64158 10.5708 6.68492 10.6207L9.73883 14.1341C10.0689 13.4286 10.7078 12.2539 11.829 10.8225C13.4864 8.70631 16.5694 5.59411 21.8441 2.78463C21.946 2.73034 22.0646 2.71625 22.1764 2.74514C22.2883 2.77403 22.3852 2.84381 22.4481 2.94068C22.511 3.03756 22.5353 3.1545 22.5162 3.26841C22.497 3.38232 22.4359 3.48492 22.3448 3.55595C22.3247 3.57169 20.291 5.17323 17.9504 8.10672C15.7963 10.8063 12.9329 15.2204 11.5238 20.919C11.4991 21.0191 11.4415 21.1081 11.3603 21.1717C11.2791 21.2352 11.1789 21.2698 11.0758 21.2698L11.076 21.2696Z"
-                fill="#009DDD"
-              />
-            </svg>
-          </div>
-          <div class="relative w-full pb-4">
-            <p class="text-xl font-normal">
-              Technical assistance and advice from experts.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="flex justify-center mt-4 md:hidden ">
-    <button
-        class="  bg-primary text-white text-xl lg:text-3xl font-medium rounded-bl-[1.8rem] rounded-tr-[1.8rem] px-10 lg:px-16 py-3 lg:py-5 shadow-inner-button"
-      >
-        <a href="#"> LOAD MORE </a>
-      </button>
-
-  </div>
-</section>
-<!-- FAQ Section End -->
-      <!-- Number Section Start -->
-      <section
-        class="md:my-44 my-16 md:h-96 h-[32rem] md:bg-center bg-right bg-cover relative"
-        style="background-image: url(assets/images/number-bg.png)"
-      >
-        <!-- laltain vector -->
-        <img
-          src="assets/images/laltain.png"
-          alt="laltain"
-          class="absolute left-0 bottom-0 md:h-auto h-24"
-        />
-        <!-- ship vector -->
-        <img
-          src="assets/images/ship-vector.png"
-          alt="ship"
-          class="absolute md:left-60 left-1/3 bottom-0 md:h-auto h-8"
-        />
-        <!-- airoplan vector -->
-        <img
-          src="assets/images/airoplan-vector.png"
-          alt="airoplan"
-          class="absolute md:left-[29%] md:top-[40%] top-10 right-1/4 md:h-auto h-12"
-        />
-        <!-- boat vector -->
-        <img
-          src="assets/images/boat.png"
-          alt="boat"
-          class="absolute right-0 bottom-0 md:h-auto h-16"
-        />
-        <!-- start-1 vector -->
-        <img
-          src="assets/images/star.png"
-          alt="laltain"
-          class="absolute right-[11%] top-[20%]"
-        />
-        <!-- start-2 vector -->
-        <img
-          src="assets/images/star.png"
-          alt="laltain"
-          class="absolute left-[45%] top-[35%] h-6"
-        />
-        <!-- start-3 vector -->
-        <img
-          src="assets/images/star.png"
-          alt="laltain"
-          class="absolute left-1/4 top-[30%] md:block hidden"
-        />
-        <!-- start-4 vector -->
-        <img
-          src="assets/images/star.png"
-          alt="laltain"
-          class="absolute md:left-[8%] right-16 top-2/3 h-4"
-        />
-        <!-- Counts -->
-        <div class="max-w-container mx-auto h-full">
-          <div class="flex md:justify-end justify-center items-end h-full">
-            <div class="md:w-3/4">
-              <div
-                class="grid grid-cols-2 sm:grid-cols-4 h-full items-end md:gap-12"
-              >
-                <div
-                  class="md:py-6 py-4 md:px-12 md:me-0 me-16 flex flex-col items-center"
-                >
-                  <h3
-                    class="md:text-5xl text-4xl font-semibold py-4 text-primary counter"
-                  >
-                    550
-                  </h3>
-                  <div class="relative">
-                    <div class="line-top-dashed"></div>
-                    <p
-                      class="text-black font-semibold md:text-2xl text-lg py-2"
-                    >
-                      PROJECT DONE
-                    </p>
-                  </div>
+    </section>
+    <!-- FAQ Section End -->
+    <!-- Number Section Start -->
+    <section class="md:my-32 my-16 md:h-96 h-[32rem] md:bg-center bg-right bg-cover relative"
+      style="background-image: url(assets/images/number-bg.png)">
+      <!-- laltain vector -->
+      <img src="assets/images/laltain.png" alt="laltain" class="absolute left-0 bottom-0 md:h-auto h-24" />
+      <!-- ship vector -->
+      <img src="assets/images/ship-vector.png" alt="ship" class="absolute md:left-60 left-1/3 bottom-0 md:h-auto h-8" />
+      <!-- airoplan vector -->
+      <img src="assets/images/airoplan-vector.png" alt="airoplan"
+        class="absolute md:left-[29%] md:top-[40%] top-10 right-1/4 md:h-auto h-12" />
+      <!-- boat vector -->
+      <img src="assets/images/boat.png" alt="boat" class="absolute right-0 bottom-0 md:h-auto h-16" />
+      <!-- start-1 vector -->
+      <img src="assets/images/star.png" alt="laltain" class="absolute right-[11%] top-[20%]" />
+      <!-- start-2 vector -->
+      <img src="assets/images/star.png" alt="laltain" class="absolute left-[45%] top-[35%] h-6" />
+      <!-- start-3 vector -->
+      <img src="assets/images/star.png" alt="laltain" class="absolute left-1/4 top-[30%] md:block hidden" />
+      <!-- start-4 vector -->
+      <img src="assets/images/star.png" alt="laltain" class="absolute md:left-[8%] right-16 top-2/3 h-4" />
+      <!-- Counts -->
+      <div class="max-w-container mx-auto h-full">
+        <div class="flex md:justify-end justify-center items-end h-full">
+          <div class="md:w-3/4">
+            <div class="grid grid-cols-2 sm:grid-cols-4 h-full items-end md:gap-12">
+              <div class="md:py-6 py-4 md:px-12 md:me-0 me-16 flex flex-col items-center">
+                <h3 class="md:text-5xl text-4xl font-semibold py-4 text-primary counter">
+                  550
+                </h3>
+                <div class="relative">
+                  <div class="line-top-dashed"></div>
+                  <p class="text-black font-semibold md:text-2xl text-lg py-2">
+                    PROJECT DONE
+                  </p>
                 </div>
-                <div
-                  class="md:py-6 md:px-8 md:mb-24 md:me-0 me-16 flex flex-col items-center"
-                >
-                  <h3
-                    class="md:text-5xl text-4xl font-semibold py-4 text-primary counter"
-                  >
-                    354
-                  </h3>
-                  <div class="relative">
-                    <div class="line-top-dashed"></div>
-                    <p
-                      class="text-black font-semibold md:text-2xl text-lg py-2"
-                    >
-                      PERMANENT CLIENT
-                    </p>
-                  </div>
+              </div>
+              <div class="md:py-6 md:px-8 md:mb-24 md:me-0 me-16 flex flex-col items-center">
+                <h3 class="md:text-5xl text-4xl font-semibold py-4 text-primary counter">
+                  354
+                </h3>
+                <div class="relative">
+                  <div class="line-top-dashed"></div>
+                  <p class="text-black font-semibold md:text-2xl text-lg py-2">
+                    PERMANENT CLIENT
+                  </p>
                 </div>
-                <div
-                  class="md:py-6 py-4 px-10 md:mb-12 mb-20 flex flex-col items-center"
-                >
-                  <h3
-                    class="md:text-5xl text-4xl font-semibold py-4 text-primary counter"
-                  >
-                    128
-                  </h3>
-                  <div class="relative">
-                    <div class="line-top-dashed"></div>
-                    <p
-                      class="text-black font-semibold md:text-2xl text-lg py-2"
-                    >
-                      OWNED VEHICALS
-                    </p>
-                  </div>
+              </div>
+              <div class="md:py-6 py-4 px-10 md:mb-12 mb-20 flex flex-col items-center">
+                <h3 class="md:text-5xl text-4xl font-semibold py-4 text-primary counter">
+                  128
+                </h3>
+                <div class="relative">
+                  <div class="line-top-dashed"></div>
+                  <p class="text-black font-semibold md:text-2xl text-lg py-2">
+                    OWNED VEHICALS
+                  </p>
                 </div>
-                <div class="md:py-6 px-10 mb-16 flex flex-col items-center">
-                  <h3
-                    class="md:text-5xl text-4xl font-semibold py-4 text-primary counter"
-                  >
-                    67
-                  </h3>
-                  <div class="relative">
-                    <div class="line-top-dashed"></div>
-                    <p
-                      class="text-black font-semibold md:text-2xl text-lg py-2"
-                    >
-                      SUPPORT MEMBER
-                    </p>
-                  </div>
+              </div>
+              <div class="md:py-6 px-10 mb-16 flex flex-col items-center">
+                <h3 class="md:text-5xl text-4xl font-semibold py-4 text-primary counter">
+                  67
+                </h3>
+                <div class="relative">
+                  <div class="line-top-dashed"></div>
+                  <p class="text-black font-semibold md:text-2xl text-lg py-2">
+                    SUPPORT MEMBER
+                  </p>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </section>
-      <!-- Number Section End -->
-    </main>
+      </div>
+    </section>
+    <!-- Number Section End -->
+      <!-- Gallery Section Start -->
+    <section class="relative pb-20 mb-20 md:pt-32 pt-10 md:px-0 px-4">
+      <!-- aside -->
+      <img src="assets/images/gallery-side.png" alt="aside" class="absolute right-0 top-0 h-full w-3/4" />
+      <div class="mx-auto">
+        <div class="flex justify-between items-center md:mb-16 mb-8 max-w-container mx-auto">
+          <!-- Title -->
+          <div>
+            <h3 class="md:text-3xl text-xl font-semibold md:mb-4 mb-1 wow animate__fadeIn" data-wow-duration="2s" data-wow-delay="0.5s">OUR TEAM</h3>
+            <h2 class="md:text-6xl text-3xl font-semibold text-primary wow animate__fadeIn" data-wow-duration="2s" data-wow-delay="0.5s">
+              Meet Our Team
+            </h2>
+          </div>
+          <!-- Carousel Controls -->
+          <div class="md:flex hidden justify-between items-center mt-6 w-1/4 relative">
+            <!-- Previous Button -->
+            <button id="galleryprevButton" class="text-secondary text-2xl font-semibold">
+              PREVIOUS
+            </button>
+            <div class="line-center-dashed px-6"></div>
+            <!-- Pagination Counter -->
+            <div class="flex items-center rounded-full px-4 py-1 border-gray-100 border-2 bg-white relative z-10">
+              <span class="text-2xl font-bold text-primary" id="gallerycurrentSlide">1</span>
+            </div>
 
-    <!-- Footer -->
-    <div id="footer-placeholder"></div>
-  </body>
+            <!-- Next Button -->
+            <button id="gallerynextButton" class="text-secondary text-2xl font-semibold">
+              NEXT
+            </button>
+          </div>
+        </div>
+
+        <!-- Carousel Section -->
+        <div class="relative overflow-hidden max-2xl-container ms-auto">
+          <!-- Carousel Items -->
+          <div class="carousel flex transition-transform duration-500 ease-in-out justify-between gap-7">
+            <!-- Slide 1 -->
+            <div class="gallery-caurosal flex-shrink-0 md:w-auto w-3/4  wow animate__fadeInLeft " data-wow-duration="2s" data-wow-delay="0.5s">
+              <div class="overflow-hidden relative group">
+                <img src="assets/images/about/team-1.png" alt="Gallery 1" class="w-full h-auto" />
+                <p
+                  class="absolute bottom-0 left-0 w-full text-2xl rounded-tr-[3rem] bg-primary bg-opacity-80 text-white px-8 py-6 transform translate-y-full transition-transform duration-300 group-hover:translate-y-0">
+                  Container-terminal-wharf-<br />transport
+                </p>
+              </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="gallery-caurosal flex-shrink-0 md:w-auto w-3/4 wow animate__fadeInLeft" data-wow-duration="2s" data-wow-delay="0.5s">
+              <div class="overflow-hidden relative group">
+                <img src="assets/images/about/team-2.png" alt="Gallery 2" class="w-full h-auto" />
+                <p
+                  class="absolute bottom-0 left-0 w-full text-2xl rounded-tr-[3rem] bg-primary bg-opacity-80 text-white px-8 py-6 transform translate-y-full transition-transform duration-300 group-hover:translate-y-0">
+                  Industrial-ports-at-night
+                </p>
+              </div>
+            </div>
+            <!-- Slide 3 -->
+            <div class="gallery-caurosal flex-shrink-0 md:w-auto w-3/4 wow animate__fadeInLeft" data-wow-duration="2s" data-wow-delay="0.5s">
+              <div class="overflow-hidden relative group">
+                <img src="assets/images/about/team-3.png" alt="Gallery 3" class="w-full h-auto" />
+                <p
+                  class="absolute bottom-0 left-0 w-full text-2xl rounded-tr-[3rem] bg-primary bg-opacity-80 text-white px-8 py-6 transform translate-y-full transition-transform duration-300 group-hover:translate-y-0">
+                  Cargo-container-yard
+                </p>
+              </div>
+            </div>
+            <!-- Slide 2 -->
+            <div class="gallery-caurosal flex-shrink-0 md:w-auto w-3/4 wow animate__fadeInLeft" data-wow-duration="2s" data-wow-delay="0.5s">
+              <div class="overflow-hidden relative group">
+                <img src="assets/images/about/team-1.png" alt="Gallery 1" class="w-full h-auto" />
+                <p
+                  class="absolute bottom-0 left-0 w-full text-2xl rounded-tr-[3rem] bg-primary bg-opacity-80 text-white px-8 py-6 transform translate-y-full transition-transform duration-300 group-hover:translate-y-0">
+                  Container-terminal-wharf-<br />transport
+                </p>
+              </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="gallery-caurosal flex-shrink-0 md:w-auto w-3/4 wow animate__fadeInLeft" data-wow-duration="2s" data-wow-delay="0.5s">
+              <div class="overflow-hidden relative group">
+                <img src="assets/images/about/team-2.png" alt="Gallery 2" class="w-full h-auto" />
+                <p
+                  class="absolute bottom-0 left-0 w-full text-2xl rounded-tr-[3rem] bg-primary bg-opacity-80 text-white px-8 py-6 transform translate-y-full transition-transform duration-300 group-hover:translate-y-0">
+                  Industrial-ports-at-night
+                </p>
+              </div>
+            </div>
+            <!-- Slide 3 -->
+            <div class="gallery-caurosal flex-shrink-0 md:w-auto w-3/4 wow animate__fadeInLeft" data-wow-duration="2s" data-wow-delay="0.5s">
+              <div class="overflow-hidden relative group">
+                <img src="assets/images/about/team-3.png" alt="Gallery 3" class="w-full h-auto" />
+                <p
+                  class="absolute bottom-0 left-0 w-full text-2xl rounded-tr-[3rem] bg-primary bg-opacity-80 text-white px-8 py-6 transform translate-y-full transition-transform duration-300 group-hover:translate-y-0">
+                  Cargo-container-yard
+                </p>
+              </div>
+            </div>
+            <!-- Add more images if needed -->
+          </div>
+        </div>
+        <!-- Dots Pagination -->
+        <div id="galleryDotsPagination" class="flex justify-center mt-4 md:hidden">
+          <!-- Dots will be dynamically added by JavaScript -->
+        </div>
+      </div>
+    </section>
+    <!-- Gallery Section End -->
+  </main>
+
+  <!-- Footer -->
+  <div id="footer-placeholder"></div>
+</body>
+
 </html>
