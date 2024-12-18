@@ -1,69 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>NGIPL</title>
-  
-    <!-- Favicon -->
-    <link rel="icon" href="assets/images/favicon.png" type="image/x-icon" />
-  
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet" />
-  
-    <!-- Styles -->
-    <!-- Tailwind CSS -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            colors: {
-              primary: "#009DDD",
-              secondary: "#747474",
-            },
-            spacing: {
-              240: "240px",
-              40: "40px",
-            },
-            maxWidth: {
-              container: "1440px",
-              mxcontainer: "1920px",
-            },
-            fontFamily: {
-              barlow: ["'Barlow Condensed'", "sans-serif"],
-            },
-            boxShadow: {
-              "inner-button": "inset 0 5px 4px rgba(0, 0, 0, 0.2)",
-            },
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NGIPL</title>
+
+  <!-- Favicon -->
+  <link rel="icon" href="assets/images/favicon.png" type="image/x-icon" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet" />
+
+  <!-- Styles -->
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: "#009DDD",
+            secondary: "#747474",
+          },
+          spacing: {
+            240: "240px",
+            40: "40px",
+          },
+          maxWidth: {
+            container: "1440px",
+            mxcontainer: "1920px",
+          },
+          fontFamily: {
+            barlow: ["'Barlow Condensed'", "sans-serif"],
+          },
+          boxShadow: {
+            "inner-button":
+              "inset 0 5px 4px rgba(0, 0, 0, 0.2)",
           },
         },
-      };
-    </script>
-  
-    <!-- Animate.css -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-  
-    <!-- Custom Styles -->
-    <link rel="stylesheet" href="/assets/css/style.css" />
-  
-    <!-- JavaScript -->
-    <!-- jQuery (Required for some scripts) -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" defer></script>
-  
-    <!-- Custom Scripts -->
-    <script src="./assets/js/app.js" defer></script>
-    <script src="assets/js/banner.js" defer></script>
-    <script src="assets/js/gallery.js" defer></script>
-    <script src="assets/js/blog.js" defer></script>
-    <script src="assets/js/counter.js" defer></script>
-    <script src="assets/js/testimonial.js" defer></script>
-  </head>
-  
+      },
+    };
+  </script>
+
+  <!-- Animate.css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="/assets/css/style.css" />
+
+  <!-- JavaScript -->
+  <!-- jQuery (Required for some scripts) -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" defer></script>
+
+  <!-- Custom Scripts -->
+  <script src="./assets/js/app.js" defer></script>
+  <script src="assets/js/banner.js" defer></script>
+  <script src="assets/js/gallery.js" defer></script>
+  <script src="assets/js/blog.js" defer></script>
+  <script src="assets/js/counter.js" defer></script>
+  <script src="assets/js/testimonial.js" defer></script>
+</head>
 
 <body>
   <!-- Header -->
@@ -74,130 +75,129 @@
     <!-- Hero Section start -->
     <section class="relative overflow-x-hidden">
       <!-- Background Image -->
-      <img src="assets/images/bg-banner.png" alt="banner"
-        class="absolute top-0 w-full md:h-auto h-[22rem]  "  />
+      <img src="assets/images/bg-banner.png" alt="banner" class="absolute top-0 w-full xl:h-auto h-[22rem]  " />
 
       <!-- Container -->
-      <div class="flex flex-col lg:flex-row relative z-10 mx-auto md:pb-0" >
+      <div class="flex flex-col lg:flex-row relative z-10 mx-auto lg:pb-0">
         <!-- Left Content -->
-        <div class="lg:w-1/2 md:p-10 p-4 relative   " >
+        <div class="lg:w-1/2 lg:p-10 p-4 relative">
           <div class="flex">
             <!-- Carousel Controls -->
-            <div class="md:flex justify-between items-center mt-6 w-1/4 relative transform -rotate-90  hidden">
+            <div class="xl:flex justify-between items-center mt-6 w-1/4 relative transform -rotate-90  hidden">
               <!-- Previous Button -->
-              <button id="prevButton" class="text-secondary text-[2rem] font-semibold transform rotate-90">
+              <button id="prevButton" class="text-secondary 2xl:text-[2rem] font-semibold transform rotate-90">
                 <span id="prevSlideNumber">3</span> <!-- Placeholder for previous slide number -->
               </button>
               <div class="line-center-dashed left-1/2 top-1/2 w-2/3 px-6"></div>
               <!-- Pagination Counter -->
               <div
-                class="flex items-center rounded-full px-4 border-gray-100 border-2 bg-white relative z-10 transform rotate-90">
-                <span class="text-[2rem] font-bold text-primary" id="currentSlide">1</span>
+                class="flex items-center rounded-full 2xl:px-4 px-2 border-gray-100 border-2 bg-white relative z-10 transform rotate-90">
+                <span class="2xl:text-[2rem] font-bold text-primary" id="currentSlide">1</span>
               </div>
               <!-- Next Button -->
-              <button id="nextButton" class="text-secondary text-[2rem] font-semibold transform rotate-90">
+              <button id="nextButton" class="text-secondary 2xl:text-[2rem] font-semibold transform rotate-90">
                 <span id="nextSlideNumber">2</span> <!-- Placeholder for next slide number -->
               </button>
             </div>
 
-            <div class="md:pt-20 md:pb-12 pt-6 pb-6 order-1">
+            <div class="xl:pt-20 lg:pb-12 pt-6 pb-6 order-1">
               <!-- Vector Image -->
               <img src="assets/images/banner-vector.png" alt="vector"
-                class="md:w-auto w-24 absolute right-16 top-16  " />
+                class="lg:w-auto w-24 absolute right-16 top-16 " />
               <!-- Slider Content -->
-              <div class="relative vertical-carousel overflow-hidden md:h-[500px] h-[22rem]">
+              <div class="relative vertical-carousel overflow-hidden 2xl:h-[500px] h-[22rem]">
                 <div class="slides transform transition-transform duration-500">
                   <!-- slide 1 -->
-                  <div
-                    class="slide flex-shrink-0 md:h-[500px] h-[22rem] md:w-auto w-2/3  " >
-                    <h3 class="font-semibold md:text-4xl text-lg md:mb-6 mb-2">WE ARE PROUD</h3>
-                    <h1 class="text-primary font-semibold text-[1.75rem] lg:text-[5rem] leading-none md:mb-4 mb-2">
+                  <div class="slide flex-shrink-0 lg:h-[500px] h-[22rem] lg:w-auto w-2/3  ">
+                    <h3 class="font-semibold 2xl:text-4xl lg:text-3xl text-lg lg:mb-6 mb-2">WE ARE PROUD</h3>
+                    <h1
+                      class="text-primary font-semibold text-[2rem] xl:text-[2.5rem] 2xl:text-[5rem] leading-none lg:mb-4 mb-2">
                       To Be Always On<br />Demand
                     </h1>
-                    <p class="text-md lg:text-[1.75rem] font-normal mt-2 lg:mt-12">
+                    <p class="text-md 2xl:text-[1.75rem] font-normal mt-2 2xl:mt-12">
                       Delivering Excellence in Every Impression-Import Export Made Easy
                     </p>
-                    <button class="mt-8 lg:mt-24">
-                      <a href="about.html"
-                        class="bg-primary text-white text-xl lg:text-3xl font-medium rounded-bl-[1.8rem] rounded-tr-[1.8rem] px-10 lg:px-16 py-3 lg:py-5 shadow-inner-button  " >
+                    <a href="about.html">
+                      <button class="mt-8 xl:mt-24 bg-primary text-white text-xl xl:text-3xl font-medium rounded-bl-[1.8rem] rounded-tr-[1.8rem] 
+                               px-10 xl:px-16 py-3 xl:py-5 shadow-inner-button 
+                               transition-transform duration-300 ease-in-out transform hover:scale-95 hover:shadow-lg">
                         KNOW MORE
-                      </a>
-                    </button>
+                      </button>
+                    </a>
                   </div>
 
                   <!-- slide 2 -->
-                  <div
-                    class="slide flex-shrink-0 md:h-[500px] h-[22rem] md:w-auto w-2/3  ">
-                    <h3 class="font-semibold md:text-4xl text-lg md:mb-6 mb-2">WE ARE PROUD</h3>
-                    <h1 class="text-primary font-semibold text-[1.75rem] lg:text-[5rem] leading-none md:mb-4 mb-2">
+                  <div class="slide flex-shrink-0 lg:h-[500px] h-[22rem] lg:w-auto w-2/3  ">
+                    <h3 class="font-semibold 2xl:text-4xl lg:text-3xl text-lg lg:mb-6 mb-2">WE ARE PROUD</h3>
+                    <h1
+                      class="text-primary font-semibold text-[2rem] xl:text-[2.5rem] 2xl:text-[5rem] leading-none lg:mb-4 mb-2">
                       To Be Always On<br />Demand
                     </h1>
-                    <p class="text-md lg:text-[1.75rem] font-normal mt-2 lg:mt-12">
+                    <p class="text-md 2xl:text-[1.75rem] font-normal mt-2 2xl:mt-12">
                       Delivering Excellence in Every Impression-Import Export Made Easy
                     </p>
-                    <button class="mt-8 lg:mt-24">
-                      <a href="about.html"
-                        class="bg-primary text-white text-xl lg:text-3xl font-medium rounded-bl-[1.8rem] rounded-tr-[1.8rem] px-10 lg:px-16 py-3 lg:py-5 shadow-inner-button  ">
+                    <a href="about.html">
+                      <button class="mt-8 xl:mt-24 bg-primary text-white text-xl xl:text-3xl font-medium rounded-bl-[1.8rem] rounded-tr-[1.8rem] 
+                               px-10 xl:px-16 py-3 xl:py-5 shadow-inner-button 
+                               transition-transform duration-300 ease-in-out transform hover:scale-95 hover:shadow-lg">
                         KNOW MORE
-                      </a>
-                    </button>
+                      </button>
+                    </a>
                   </div>
 
                   <!-- slide 3 -->
-                  <div
-                    class="slide flex-shrink-0 md:h-[500px] h-[22rem] md:w-auto w-2/3  " >
-                    <h3 class="font-semibold md:text-4xl text-lg md:mb-6 mb-2">WE ARE PROUD</h3>
-                    <h1 class="text-primary font-semibold text-[1.75rem] lg:text-[5rem] leading-none md:mb-4 mb-2">
+                  <div class="slide flex-shrink-0 lg:h-[500px] h-[22rem] lg:w-auto w-2/3  ">
+                    <h3 class="font-semibold 2xl:text-4xl lg:text-3xl text-lg lg:mb-6 mb-2">WE ARE PROUD</h3>
+                    <h1
+                      class="text-primary font-semibold text-[2rem] xl:text-[2.5rem] 2xl:text-[5rem] leading-none lg:mb-4 mb-2">
                       To Be Always On<br />Demand
                     </h1>
-                    <p class="text-md lg:text-[1.75rem] font-normal mt-2 lg:mt-12">
+                    <p class="text-md 2xl:text-[1.75rem] font-normal mt-2 2xl:mt-12">
                       Delivering Excellence in Every Impression-Import Export Made Easy
                     </p>
-                    <button class="mt-8 lg:mt-24">
-                      <a href="about.html"
-                        class="bg-primary text-white text-xl lg:text-3xl font-medium rounded-bl-[1.8rem] rounded-tr-[1.8rem] px-10 lg:px-16 py-3 lg:py-5 shadow-inner-button  ">
+                    <a href="about.html">
+                      <button class="mt-8 xl:mt-24 bg-primary text-white text-xl xl:text-3xl font-medium rounded-bl-[1.8rem] rounded-tr-[1.8rem] 
+                               px-10 xl:px-16 py-3 xl:py-5 shadow-inner-button 
+                               transition-transform duration-300 ease-in-out transform hover:scale-95 hover:shadow-lg">
                         KNOW MORE
-                      </a>
-                    </button>
+                      </button>
+                    </a>
                   </div>
                 </div>
               </div>
             </div>
           </div>
           <!-- Delivery Steps -->
-          <div
-            class="py-12 px-5 absolute md:bottom-0 -bottom-[24rem] hidden md:block  md:order-2 order-3  " >
-            <img src="assets/images/delivery_steps.png" alt="Delivery Steps" class="md:w-auto w-[22rem] h-auto" />
+          <div class="py-12 px-5 absolute lg:bottom-0 -bottom-[24rem] hidden lg:block  lg:order-2 order-3  ">
+            <img src="assets/images/delivery_steps.png" alt="Delivery Steps" class="lg:w-auto w-[22rem] h-auto" />
           </div>
         </div>
 
         <!-- Right Content -->
         <div
-          class="w-full lg:w-1/2 order-2 md:order-3 md:mt-0 -mt-36 ms-12 md:ms-0  " >
-          <img src="assets/images/banner.png" alt="Ship Banner" class="w-full h-auto object-bottom" />
+          class="w-full lg:w-1/2 order-2 lg:order-3 lg:mt-0 -mt-36 ms-12 lg:ms-0 xl:rounded-tl-[14rem] rounded-tl-[4rem] overflow-hidden  max-h-[720px]">
+          <img src="assets/images/banner.png" alt="Ship Banner" class="w-full h-auto object-cover" />
         </div>
-        <div class="py-6 px-5  md:order-2 block md:hidden order-3  ">
-          <img src="assets/images/delivery_steps.png" alt="Delivery Steps" class="md:max-w-full w-[22rem] h-auto" />
+        <div class="py-6 px-5  lg:order-2 block lg:hidden order-3  ">
+          <img src="assets/images/delivery_steps.png" alt="Delivery Steps" class="lg:max-w-full w-[22rem] h-auto" />
         </div>
       </div>
 
       </div>
     </section>
     <!-- Hero Section start -->
+
     <!-- About Section Start -->
-    <section class="md:my-20 my-6 relative  ">
+    <section class="lg:my-20 my-6 relative  ">
       <!-- map -->
-      <img src="/assets/images/map.png" alt="map"
-        class="absolute left-0 top-20 md:block hidden  " />
+      <img src="/assets/images/map.png" alt="map" class="absolute left-0 top-20 lg:block hidden  " />
       <!-- about-vector -->
-      <img src="/assets/images/about-vector.png" alt="map"
-        class="absolute md:right-0 md:top-20 -bottom-10  " />
+      <img src="/assets/images/about-vector.png" alt="map" class="absolute right-0 lg:top-20 -bottom-10  " />
       <!-- ship -->
-      <img src="/assets/images/ship.png" alt="map"
-        class="absolute right-0 md:bottom-20 bottom-0 md:w-auto w-20  " />
+      <img src="/assets/images/ship.png" alt="map" class="absolute right-0 lg:bottom-20 bottom-0 xl:w-auto w-20  " />
       <div class="flex ">
         <!-- Left Side: Content -->
-        <div class="relative md:block hidden  " >
+        <div class="relative md:block hidden  ">
           <!-- aside -->
           <img src="assets/images/about-side.png" alt="about" class="w-full" />
           <h2
@@ -206,25 +206,21 @@
           </h2>
         </div>
         <!-- Right Side: Content -->
-        <div class="w-full md:w-2/3 py-4 md:ps-8 md:pe-28 px-4 md:py-8 relative  " >
+        <div class="w-full lg:w-2/3 py-4 md:ps-8 xl:pe-28 px-4 lg:py-8 relative  ">
           <!-- aside for responsive -->
-          <img src="assets/images/about-side.png" alt="about"
-            class="w-60 absolute left-0 top-0 md:hidden block  " />
-          <h4 class="font-semibold md:text-3xl text-xl md:mb-4 mb-1  ">ABOUT US</h4>
-          <h3
-            class="text-primary font-semibold text-3xl lg:text-6xl md:mb-8 mb-4 " >
+          <img src="assets/images/about-side.png" alt="about" class="w-60 absolute left-0 top-0 md:hidden block  " />
+          <h4 class="font-semibold xl:text-3xl text-xl md:mb-4 mb-1  ">ABOUT US</h4>
+          <h3 class="text-primary font-semibold text-3xl xl:text-6xl md:mb-8 mb-4 ">
             Niraj Gupta Impex Pvt. LTD
           </h3>
-          <p class="text-lg lg:text-[1.6rem] font-normal mb-8 md:pe-8 " 
-            style="line-height: inherit">
+          <p class="text-lg xl:text-[1.6rem] font-normal mb-8 md:pe-8 " style="line-height: inherit">
             NIRAJ GUPTA IMPEX PVT. LTD. has been an internationally
             acknowledged indenting and sourcing agent in India since 2005. We
             have expanded our operations to include Importers, Merchant
             Exporters, and Job Manufacturing. Our company has been associated
             with the manufacturing of dyes and dye intermediates since 1993.
           </p>
-          <p class="text-lg lg:text-[1.6rem] font-normal mb-8 pe-8 " 
-            style="line-height: inherit">
+          <p class="text-lg xl:text-[1.6rem] font-normal mb-8 pe-8 " style="line-height: inherit">
             Our primary activities include international trade promotion for a
             wide range of industries including paints, coatings, resins,
             specialty chemicals, organic & inorganic dyes, pharmaceuticals,
@@ -232,7 +228,8 @@
             plastic & polymers, rubber & textiles, and many more.
           </p>
           <button
-            class="md:block hidden bg-primary text-white text-xl lg:text-3xl font-medium rounded-bl-[1.8rem] rounded-tr-[1.8rem] px-10 lg:px-16 py-3 lg:py-5 shadow-inner-button  animate__pulse animate__delay-4s" data--duration="2s" data--delay="1.5s">
+            class="lg:block hidden bg-primary text-white text-xl xl:text-3xl font-medium rounded-bl-[1.8rem] rounded-tr-[1.8rem] px-10 xl:px-16 py-3 xl:py-5 shadow-inner-button  animate__pulse animate__delay-4s"
+            data--duration="2s" data--delay="1.5s">
             <a href="#"> KNOW MORE </a>
           </button>
         </div>
@@ -242,15 +239,14 @@
     <!-- Service Section Start -->
     <section class="bg-white relative md:my-32 my-6">
       <!-- Airoplane -->
-      <div class="absolute right-0 bottom-0  " >
+      <div class="absolute right-0 bottom-0  ">
         <img src="assets/images/helicopter.png" alt="" />
       </div>
-      <div class="max-w-container mx-auto flex md:flex-nowrap flex-wrap justify-between items-center gap-8">
+      <div class="max-w-container mx-auto flex lg:flex-nowrap flex-wrap justify-between items-center gap-8">
         <!-- Left Section: Content Boxes -->
-        <div
-          class="lg:col-span-2 md:w-2/3 grid grid-cols-1 sm:grid-cols-2 md:p-0 p-4 order-2 sm:order-1  " >
+        <div class="lg:col-span-2 lg:w-2/3 grid grid-cols-1 sm:grid-cols-2 md:p-0 p-4 order-2 sm:order-1  ">
           <!-- Box with Before and After Borders -->
-          <div class="relative p-6  " >
+          <div class="relative p-6  ">
             <div class="line-bottom-dashed"></div>
             <div class="line-right-dashed md:block hidden"></div>
             <!-- Content -->
@@ -271,7 +267,7 @@
           </div>
 
           <!-- Box 2 -->
-          <div class="relative p-6  " >
+          <div class="relative p-6  ">
             <div class="line-bottom-dashed"></div>
             <h3 class="text-3xl font-semibold mb-3">Textiles</h3>
             <p class="text-[1.4rem] text-secondary mb-3 leading-relaxed">
@@ -343,13 +339,13 @@
           </div>
 
           <!-- Box 6 with Vector -->
-          <div class="p-6  animate__fadeInLeft animate__delay-1s flex flex-col items-start" data--duration="2s" data--delay="0.5s">
+          <div class="p-6   flex flex-col items-start">
             <img src="./assets/images/service-vector.png" alt="Service Vector" />
           </div>
         </div>
 
         <!-- Right Section: Images -->
-        <div class="flex flex-col relative order-1 sm:order-2  animate__fadeInRight animate__delay-1s" data--duration="2s" data--delay="0.5s">
+        <div class="flex flex-col relative order-1 sm:order-2  px-4 lg:px-0  md:px-8">
           <div class="md:px-4 text-center md:text-start">
             <div class="bg-primary bg-opacity-10 py-8 px-6 mx-8 rounded-tr-[8rem]">
               <h3 class="text-3xl font-semibold mb-3">Ultimate Quality</h3>
@@ -362,12 +358,13 @@
               </p>
             </div>
           </div>
-          <div class="h-full relative">
-            <img src="./assets/images/service-image.png" alt="Service Image" class="w-full" />
+          <div class=" relative max-h-[620px] lg:rounded-br-[7rem] rounded-br-[4rem] overflow-hidden">
+            <img src="./assets/images/service-image.png" alt="Service Image" class="w-full object-contain" />
             <!-- Play Button -->
             <div
               class="p-2 rounded-full bg-white bg-opacity-80 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-              <div class="p-4 bg-white rounded-full shadow-md">
+              <div
+                class="p-4 bg-white rounded-full shadow-md transition-transform duration-300 ease-in-out transform hover:scale-95 hover:shadow-lg cursor-pointer">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <g clip-path="url(#clip0_1_2039)">
                     <path
@@ -387,27 +384,28 @@
       </div>
     </section>
     <!-- Service Section End -->
+
     <!-- Global Service Section Start -->
     <section class="bg-primary relative" style="
-    background: url('assets/images/global-banner.png') no-repeat center top; background-size: cover;">
+  background: url('assets/images/global-banner.png') no-repeat center top; background-size: cover;">
       <!-- Overlay for background with primary color and reduced opacity -->
       <div class="absolute inset-0 bg-[#006994] bg-opacity-90"></div>
 
       <!-- Content Container -->
-      <div class="relative max-w-container md:flex items-end justify-between mx-auto text-white " >
+      <div class="relative max-w-container lg:flex  items-end justify-between mx-auto text-white ">
         <!-- Left Content -->
-        <div class="w-full lg:w-2/3 px-8 md:py-24 py-8 text-center md:text-start  animate__fadeInLeft" data--duration="2s" data--delay="0.5s">
+        <div class="w-full lg:w-2/3 px-8 md:py-24 py-8 text-center lg:text-start  ">
           <h4 class="md:text-3xl text-lg font-medium uppercase">
             We're Servicing A Global
           </h4>
-          <h2 class="text-2xl md:text-6xl font-semibold mt-2 md:pe-4 md:leading-relaxed">
+          <h2 class="text-2xl lg:text-6xl font-semibold mt-2 lg:pe-4 xl:leading-relaxed">
             Provide You The Highest Quality Work That Meets Your Expectation.
           </h2>
         </div>
 
         <!-- Right Content -->
-        <div class="bg-white py-6 px-12 rounded-tr-[6rem] flex flex-col items-center md:mx-0 mx-20  animate__fadeInRight animate__delay-1s" >
-          <div class="relative px-14  animate__fadeInRight animate__delay-1s" >
+        <div class="bg-white py-6 px-12 rounded-tr-[6rem] flex flex-col items-center lg:mx-0 md:mx-32 mx-16">
+          <div class="relative px-14 ">
             <div class="line-bottom-dashed"></div>
             <svg width="45" class="m-4" height="45" viewBox="0 0 60 54" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path
@@ -427,27 +425,27 @@
                 fill="#009DDD" />
             </svg>
           </div>
-          <h3 class="text-5xl font-semibold md:py-4 py-3 text-primary  animate__fadeInRight animate__delay-1s" >2545</h3>
-          <p class="text-black text-2xl pb-2  animate__fadeInRight animate__delay-1s" >Happy Customer</p>
+          <h3 class="text-5xl font-semibold md:py-4 py-3 text-primary  ">2545</h3>
+          <p class="text-black text-2xl pb-2  ">Happy Customer</p>
         </div>
       </div>
     </section>
     <!-- Global Service Section End -->
     <!-- Gallery Section Start -->
-    <section class="relative pb-20 md:pt-32 pt-16 md:px-0 px-4">
+    <section class="relative pb-20 md:pt-32 pt-16 2xl:px-0 px-4">
       <!-- aside -->
       <img src="assets/images/gallery-side.png" alt="aside" class="absolute right-0 top-0 h-full w-3/4" />
       <div class="max-w-container mx-auto">
         <div class="flex justify-between items-center md:mb-16 mb-8">
           <!-- Title -->
           <div>
-            <h3 class="md:text-3xl text-xl font-semibold md:mb-4 mb-1  animate__fadeIn" >RECENT GALLERY</h3>
-            <h2 class="md:text-6xl text-3xl font-semibold text-primary  animate__fadeIn" >
+            <h3 class="md:text-3xl text-xl font-semibold md:mb-4 mb-1  animate__fadeIn">RECENT GALLERY</h3>
+            <h2 class="md:text-6xl text-3xl font-semibold text-primary  animate__fadeIn">
               Explore Recent Gallery
             </h2>
           </div>
           <!-- Carousel Controls -->
-          <div class="md:flex hidden justify-between items-center mt-6 w-1/4 relative">
+          <div class="lg:flex hidden justify-between items-center mt-6 w-1/4 relative">
             <!-- Previous Button -->
             <button id="galleryprevButton" class="text-secondary text-2xl font-semibold">
               PREVIOUS
@@ -470,8 +468,8 @@
           <!-- Carousel Items -->
           <div class="carousel flex transition-transform duration-500 ease-in-out justify-between gap-7">
             <!-- Slide 1 -->
-            <div class="gallery-caurosal flex-shrink-0 md:w-auto w-3/4   animate__fadeInLeft " >
-              <div class="overflow-hidden relative group">
+            <div class="gallery-caurosal flex-shrink-0 md:w-auto w-3/4   animate__fadeInLeft ">
+              <div class="overflow-hidden relative group lg:rouned-tr-[7rem] rounded-tr-[4rem]  max-h-[554px]">
                 <img src="./assets/images/gallery-1.png" alt="Gallery 1" class="w-full h-auto" />
                 <p
                   class="absolute bottom-0 left-0 w-full text-2xl rounded-tr-[3rem] bg-primary bg-opacity-80 text-white px-8 py-6 transform translate-y-full transition-transform duration-300 group-hover:translate-y-0">
@@ -481,8 +479,8 @@
             </div>
 
             <!-- Slide 2 -->
-            <div class="gallery-caurosal flex-shrink-0 md:w-auto w-3/4  animate__fadeInLeft" >
-              <div class="overflow-hidden relative group">
+            <div class="gallery-caurosal flex-shrink-0 md:w-auto w-3/4  animate__fadeInLeft">
+              <div class="overflow-hidden relative group lg:rouned-tr-[7rem] rounded-tr-[4rem]  max-h-[554px]">
                 <img src="./assets/images/gallery-2.png" alt="Gallery 2" class="w-full h-auto" />
                 <p
                   class="absolute bottom-0 left-0 w-full text-2xl rounded-tr-[3rem] bg-primary bg-opacity-80 text-white px-8 py-6 transform translate-y-full transition-transform duration-300 group-hover:translate-y-0">
@@ -491,8 +489,8 @@
               </div>
             </div>
             <!-- Slide 3 -->
-            <div class="gallery-caurosal flex-shrink-0 md:w-auto w-3/4  animate__fadeInLeft" >
-              <div class="overflow-hidden relative group">
+            <div class="gallery-caurosal flex-shrink-0 md:w-auto w-3/4  animate__fadeInLeft">
+              <div class="overflow-hidden relative group lg:rouned-tr-[7rem] rounded-tr-[4rem]  max-h-[554px]">
                 <img src="./assets/images/gallery-3.png" alt="Gallery 3" class="w-full h-auto" />
                 <p
                   class="absolute bottom-0 left-0 w-full text-2xl rounded-tr-[3rem] bg-primary bg-opacity-80 text-white px-8 py-6 transform translate-y-full transition-transform duration-300 group-hover:translate-y-0">
@@ -501,8 +499,8 @@
               </div>
             </div>
             <!-- Slide 2 -->
-            <div class="gallery-caurosal flex-shrink-0 md:w-auto w-3/4  animate__fadeInLeft" >
-              <div class="overflow-hidden relative group">
+            <div class="gallery-caurosal flex-shrink-0 md:w-auto w-3/4  animate__fadeInLeft">
+              <div class="overflow-hidden relative group lg:rouned-tr-[7rem] rounded-tr-[4rem]  max-h-[554px]">
                 <img src="./assets/images/gallery-1.png" alt="Gallery 1" class="w-full h-auto" />
                 <p
                   class="absolute bottom-0 left-0 w-full text-2xl rounded-tr-[3rem] bg-primary bg-opacity-80 text-white px-8 py-6 transform translate-y-full transition-transform duration-300 group-hover:translate-y-0">
@@ -512,8 +510,8 @@
             </div>
 
             <!-- Slide 2 -->
-            <div class="gallery-caurosal flex-shrink-0 md:w-auto w-3/4  animate__fadeInLeft" >
-              <div class="overflow-hidden relative group">
+            <div class="gallery-caurosal flex-shrink-0 md:w-auto w-3/4  animate__fadeInLeft">
+              <div class="overflow-hidden relative group lg:rouned-tr-[7rem] rounded-tr-[4rem]  max-h-[554px]">
                 <img src="./assets/images/gallery-2.png" alt="Gallery 2" class="w-full h-auto" />
                 <p
                   class="absolute bottom-0 left-0 w-full text-2xl rounded-tr-[3rem] bg-primary bg-opacity-80 text-white px-8 py-6 transform translate-y-full transition-transform duration-300 group-hover:translate-y-0">
@@ -522,8 +520,8 @@
               </div>
             </div>
             <!-- Slide 3 -->
-            <div class="gallery-caurosal flex-shrink-0 md:w-auto w-3/4  animate__fadeInLeft" >
-              <div class="overflow-hidden relative group">
+            <div class="gallery-caurosal flex-shrink-0 md:w-auto w-3/4  animate__fadeInLeft">
+              <div class="overflow-hidden relative group lg:rouned-tr-[7rem] rounded-tr-[4rem]  max-h-[554px]">
                 <img src="./assets/images/gallery-3.png" alt="Gallery 3" class="w-full h-auto" />
                 <p
                   class="absolute bottom-0 left-0 w-full text-2xl rounded-tr-[3rem] bg-primary bg-opacity-80 text-white px-8 py-6 transform translate-y-full transition-transform duration-300 group-hover:translate-y-0">
@@ -542,16 +540,19 @@
     </section>
     <!-- Gallery Section End -->
     <!-- FAQ Section Start -->
-    <section class="md:py-44 py-12 relative md:px-0 px-4">
+    <section class="md:py-44 py-12 relative 2xl:px-0 px-4">
       <!-- faq-bg -->
       <img src="assets/images/faq-bg.png" alt="bg" class="absolute left-0 top-0" />
       <!-- faq-vector -->
       <div class="max-w-container mx-auto relative">
-        <img src="assets/images/banner-vector.png" alt="bg" class="absolute right-52 top-0 md:w-auto w-32  animate__fadeInUp" />
+        <img src="assets/images/banner-vector.png" alt="bg"
+          class="absolute right-52 top-0 md:w-auto w-32  animate__fadeInUp" />
         <!-- Title -->
         <div class="md:mb-16 mb-6">
-          <h4 class="font-semibold md:text-3xl text-xl md:mb-4 mb-2  animate__fadeIn" data--duration="2s" data--delay="0.5s">FABLIO</h4>
-          <h2 class="md:text-6xl text-3xl font-semibold text-primary  animate__fadeIn" data--duration="2s" data--delay="0.5s">Why Choose Us?</h2>
+          <h4 class="font-semibold md:text-3xl text-xl md:mb-4 mb-2  animate__fadeIn" data--duration="2s"
+            data--delay="0.5s">FABLIO</h4>
+          <h2 class="md:text-6xl text-3xl font-semibold text-primary  animate__fadeIn" data--duration="2s"
+            data--delay="0.5s">Why Choose Us?</h2>
         </div>
 
         <!-- Content -->
@@ -638,7 +639,7 @@
 
           <!-- Right Column -->
           <div class="space-y-6 md:block hidden">
-            <div class="flex items-start  animate__fadeInRight" data-wow-duration="2s" data-wow-delay="0.5s">
+            <div class="flex items-start  ">
               <div class="me-4">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path
@@ -654,7 +655,7 @@
                 </p>
               </div>
             </div>
-            <div class="flex items-start  wow animate__fadeInRight" data-wow-duration="2s" data-wow-delay="0.5s">
+            <div class="flex items-start  ">
               <div class="me-4">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path
@@ -669,7 +670,7 @@
                 </p>
               </div>
             </div>
-            <div class="flex items-start wow animate__fadeInRight" data-wow-duration="2s" data-wow-delay="0.5s">
+            <div class="flex items-start  ">
               <div class="me-4">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path
@@ -685,7 +686,7 @@
                 </p>
               </div>
             </div>
-            <div class="flex items-start wow animate__fadeInRight" data-wow-duration="2s" data-wow-delay="0.5s">
+            <div class="flex items-start ">
               <div class="me-4">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path
@@ -700,7 +701,7 @@
                 </p>
               </div>
             </div>
-            <div class="flex items-start wow animate__fadeInRight" data-wow-duration="2s" data-wow-delay="0.5s">
+            <div class="flex items-start ">
               <div class="me-4">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path
@@ -709,7 +710,7 @@
                 </svg>
               </div>
               <div class="relative w-full pb-4">
-                <p class="text-xl font-normal"> 
+                <p class="text-xl font-normal">
                   Technical assistance and advice from experts.
                 </p>
               </div>
@@ -725,33 +726,43 @@
         </div>
     </section>
     <!-- FAQ Section End -->
+
     <!-- Blog Section Startvvv -->
-    <section class="relative md:px-0 px-4 md:py-0 py-8">
+    <section class="relative 2xl:px-0 px-4 md:py-0 py-8">
       <!-- Dron -->
-      <img src="assets/images/dron.png" alt="dron" class="absolute left-0 top-0 md:block hidden wow animate__fadeInLeft" data-wow-duration="2s" data-wow-delay="0.5s"/>
+      <img src="assets/images/dron.png" alt="dron" class="absolute left-0 top-0 md:block hidden "
+        />
       <div class="max-w-container mx-auto">
         <!-- Header Part -->
         <div class="flex justify-between items-center md:mb-16 mb-6">
           <!-- Title -->
           <div>
-            <h3 class="md:text-3xl text-xl font-semibold mb-4 wow animate__fadeIn animate__delay-1s" data-wow-duration="2s" data-wow-delay="0.5s">NEWS AND BLOGS</h3>
-            <h2 class="md:text-6xl text-3xl font-semibold text-primary wow animate__fadeIn animate__delay-1s" data-wow-duration="2s" data-wow-delay="0.5s">
+            <h3 class="md:text-3xl text-xl font-semibold mb-4 "
+             >NEWS AND BLOGS</h3>
+            <h2 class="md:text-6xl text-3xl font-semibold text-primary "
+             >
               Our Latest News And Articles
             </h2>
           </div>
           <!-- Carousel Controls -->
-          <div class="md:flex hidden justify-between items-center mt-6 w-1/4 relative">
+          <div class="lg:flex hidden justify-between items-center mt-6 w-1/4 relative">
             <!-- Previous Button -->
-            <button id="blogPrevButton" class="text-secondary hover:text-primary text-2xl font-semibold wow animate__fadeIn animate__delay-1s" data-wow-duration="2s" data-wow-delay="0.5s">
+            <button id="blogPrevButton"
+              class="text-secondary hover:text-primary text-2xl font-semibold "
+             >
               PREVIOUS
             </button>
             <div class="line-center-dashed px-6"></div>
             <!-- Pagination Counter -->
-            <div class="flex items-center rounded-full px-4 py-1 border-gray-100 border-2 bg-white relative z-10 wow animate__fadeIn animate__delay-1s" data-wow-duration="2s" data-wow-delay="0.5s">
+            <div
+              class="flex items-center rounded-full px-4 py-1 border-gray-100 border-2 bg-white relative z-10 "
+             >
               <span class="text-2xl font-bold text-primary" id="blogCurrentSlide">1</span>
             </div>
             <!-- Next Button -->
-            <button id="blogNextButton" class="text-secondary hover:text-primary text-2xl font-semibold wow animate__fadeIn animate__delay-1s" data-wow-duration="2s" data-wow-delay="0.5s">
+            <button id="blogNextButton"
+              class="text-secondary hover:text-primary text-2xl font-semibold "
+             >
               NEXT
             </button>
           </div>
@@ -761,13 +772,15 @@
           <div class="blog-carousel flex transition-transform duration-500 ease-in-out">
             <!-- Slide 1 -->
             <div class="flex justify-between items-start gap-6 w-full flex-shrink-0">
-              <div class="md:w-2/3 wow animate__fadeInUp" data-wow-duration="2s" data-wow-delay="0.5s">
+              <div class="md:w-2/3 ">
                 <img src="assets/images/blog-banner.png" alt="blog-banner" class="md:mb-8 mb-4" />
-                <h3 class="text-[1.75rem] font-semibold mb-2 md:pe-0 pe-10 wow animate__fadeInUp" data-wow-duration="2s" data-wow-delay="0.5s">
+                <h3 class="text-[1.75rem] font-semibold mb-2 md:pe-0 pe-10 " data-wow-duration="2s"
+                  data-wow-delay="0.5s">
                   The Role of Indentors in Maintaining Safety and Quality
                   Standards for Chemical Products
                 </h3>
-                <p class="text-secondary md:text-[1.375rem] text-lg md:pe-12 mb-8 leading-relaxed wow animate__fadeInUp" data-wow-duration="2s" data-wow-delay="0.5s">
+                <p class="text-secondary md:text-[1.375rem] text-lg md:pe-12 mb-8 leading-relaxed "
+                 >
                   In the complex world of chemical manufacturing and
                   distribution, ensuring product safety and quality is
                   paramount. This task is facilitated by various actors within
@@ -788,7 +801,8 @@
                   </svg>
                 </a>
               </div>
-              <div class="w-1/3 flex-col justify-between gap-6 md:flex hidden wow animate__fadeInUp" data-wow-duration="2s" data-wow-delay="0.5s">
+              <div class="w-1/3 flex-col justify-between gap-6 md:flex hidden wow animate__fadeInUp"
+               >
                 <img src="assets/images/blog-1.png" alt="blog" />
                 <img src="assets/images/blog-2.png" alt="blog" />
                 <img src="assets/images/blog-3.png" alt="blog" />
@@ -798,17 +812,20 @@
             <div class="flex justify-between items-start gap-6 w-full flex-shrink-0">
               <div class="md:w-2/3">
                 <img src="assets/images/blog-banner.png" alt="blog-banner" class="md:mb-8 mb-4" />
-                <h3 class="text-[1.75rem] font-semibold mb-2 wow animate__fadeInUp" data-wow-duration="2s" data-wow-delay="0.5s">
+                <h3 class="text-[1.75rem] font-semibold mb-2 wow animate__fadeInUp" data-wow-duration="2s"
+                  data-wow-delay="0.5s">
                   Dummy Slide 2
                 </h3>
-                <p class="text-secondary text-[1.375rem] pe-12 mb-8 leading-relaxed wow animate__fadeInUp" data-wow-duration="2s" data-wow-delay="0.5s">
+                <p class="text-secondary text-[1.375rem] pe-12 mb-8 leading-relaxed wow animate__fadeInUp"
+                 >
                   This is dummy content for slide 2...
                 </p>
                 <a href="#" class="text-primary text-2xl font-semibold flex items-center space-x-2 mt-2">
                   <span>KNOW MORE</span>
                 </a>
               </div>
-              <div class="w-1/3 flex-col justify-between gap-6 flex wow animate__fadeInUp" data-wow-duration="2s" data-wow-delay="0.5s">
+              <div class="w-1/3 flex-col justify-between gap-6 flex wow animate__fadeInUp" data-wow-duration="2s"
+                data-wow-delay="0.5s">
                 <img src="assets/images/blog-2.png" alt="blog" />
                 <img src="assets/images/blog-3.png" alt="blog" />
                 <img src="assets/images/blog-1.png" alt="blog" />
@@ -818,17 +835,20 @@
             <div class="flex justify-between items-start gap-6 w-full flex-shrink-0">
               <div class="w-2/3">
                 <img src="assets/images/blog-banner.png" alt="blog-banner" class="mb-8" />
-                <h3 class="text-[1.75rem] font-semibold mb-2 wow animate__fadeInUp" data-wow-duration="2s" data-wow-delay="0.5s">
+                <h3 class="text-[1.75rem] font-semibold mb-2 wow animate__fadeInUp" data-wow-duration="2s"
+                  data-wow-delay="0.5s">
                   Dummy Slide 3
                 </h3>
-                <p class="text-secondary text-[1.375rem] pe-12 mb-8 leading-relaxed wow animate__fadeInUp" data-wow-duration="2s" data-wow-delay="0.5s">
+                <p class="text-secondary text-[1.375rem] pe-12 mb-8 leading-relaxed wow animate__fadeInUp"
+                 >
                   This is dummy content for slide 3...
                 </p>
                 <a href="#" class="text-primary text-2xl font-semibold flex items-center space-x-2 mt-2">
                   <span>KNOW MORE</span>
                 </a>
               </div>
-              <div class="w-1/3 flex-col justify-between gap-6 flex wow animate__fadeInUp" data-wow-duration="2s" data-wow-delay="0.5s">
+              <div class="w-1/3 flex-col justify-between gap-6 flex wow animate__fadeInUp" data-wow-duration="2s"
+                data-wow-delay="0.5s">
                 <img src="assets/images/blog-3.png" alt="blog" />
                 <img src="assets/images/blog-1.png" alt="blog" />
                 <img src="assets/images/blog-2.png" alt="blog" />
@@ -839,167 +859,173 @@
       </div>
     </section>
     <!-- Blog Section End -->
-    <!-- Number Section Start -->
-    <section class="md:my-44 my-16 md:h-96 h-[32rem] md:bg-center bg-right bg-cover relative wow animate__fadeIn" data-wow-duration="2s" data-wow-delay="0.5s"
-      style="background-image: url(assets/images/number-bg.png)">
-      <!-- laltain vector -->
-      <img src="assets/images/laltain.png" alt="laltain" class="absolute left-0 bottom-0 md:h-auto h-24 wow animate__fadeInUp " data-wow-duration="2s" data-wow-delay="0.5s"/>
-      <!-- ship vector -->
-      <img src="assets/images/ship-vector.png" alt="ship" class="absolute md:left-60 left-1/3 bottom-0 md:h-auto h-8 wow animate__fadeInLeft animate__delay-0.5s" data-wow-duration="2s" data-wow-delay="0.5s"/>
-      <!-- airoplan vector -->
-      <img src="assets/images/airoplan-vector.png" alt="airoplan"
-        class="absolute md:left-[29%] md:top-[40%] top-10 right-1/4 md:h-auto h-12 wow animate__fadeInRight animate__delay-1s" data-wow-duration="2s" data-wow-delay="1s"/>
-      <!-- boat vector -->
-      <img src="assets/images/boat.png" alt="boat" class="absolute right-0 bottom-0 md:h-auto h-16 wow animate__fadeInUp animate__delay-0.5s" data-wow-duration="2s" data-wow-delay="0.5s"/>
-      <!-- start-1 vector -->
-      <img src="assets/images/star.png" alt="laltain" class="absolute right-[11%] top-[20%] wow animate__bounceIn animate__delay-1.5s" data-wow-duration="2s" data-wow-delay="1.5s"/>
-      <!-- start-2 vector -->
-      <img src="assets/images/star.png" alt="laltain" class="absolute left-[45%] top-[35%] h-6 wow animate__zoomIn animate__delay-1s" data-wow-duration="2s" data-wow-delay="1s"/>
-      <!-- start-3 vector -->
-      <img src="assets/images/star.png" alt="laltain" class="absolute left-1/4 top-[30%] md:block hidden wow animate__fadeInDown animate__delay-0.5s" data-wow-duration="2s" data-wow-delay="0.5s"/>
-      <!-- start-4 vector -->
-      <img src="assets/images/star.png" alt="laltain" class="absolute md:left-[8%] right-16 top-2/3 h-4 wow animate__fadeInUp animate__delay-1.5s" data-wow-duration="2s" data-wow-delay="1.5s"/>
-      <!-- Counts -->
-      <div class="max-w-container mx-auto h-full">
-        <div class="flex md:justify-end justify-center items-end h-full">
-          <div class="md:w-3/4">
-            <div class="grid grid-cols-2 sm:grid-cols-4 h-full items-end md:gap-12">
-              <div class="md:py-6 py-4 md:px-12 md:me-0 me-16 flex flex-col items-center wow animate__fadeInUp" data-wow-duration="2s" data-wow-delay="0.5s">
-                <h3 class="md:text-5xl text-4xl font-semibold py-4 text-primary counter">
-                  550
-                </h3>
-                <div class="relative">
-                  <div class="line-top-dashed"></div>
-                  <p class="text-black font-semibold md:text-2xl text-lg py-2">
-                    PROJECT DONE
-                  </p>
-                </div>
-              </div>
-              <div class="md:py-6 md:px-8 md:mb-24 md:me-0 me-16 flex flex-col items-center  wow animate__fadeInUp animate__delay-0.5s" data-wow-duration="2s" data-wow-delay="0.5s">
-                <h3 class="md:text-5xl text-4xl font-semibold py-4 text-primary counter">
-                  354
-                </h3>
-                <div class="relative">
-                  <div class="line-top-dashed"></div>
-                  <p class="text-black font-semibold md:text-2xl text-lg py-2">
-                    PERMANENT CLIENT
-                  </p>
-                </div>
-              </div>
-              <div class="md:py-6 py-4 px-10 md:mb-12 mb-20 flex flex-col items-center wow animate__fadeInUp animate__delay-1s" data-wow-duration="2s" data-wow-delay="0.5s">
-                <h3 class="md:text-5xl text-4xl font-semibold py-4 text-primary counter">
-                  128
-                </h3>
-                <div class="relative">
-                  <div class="line-top-dashed"></div>
-                  <p class="text-black font-semibold md:text-2xl text-lg py-2">
-                    OWNED VEHICALS
-                  </p>
-                </div>
-              </div>
-              <div class="md:py-6 px-10 mb-16 flex flex-col items-center">
-                <h3 class="md:text-5xl text-4xl font-semibold py-4 text-primary counter wow animate__fadeInUp animate__delay-1.5s" data-wow-duration="2s" data-wow-delay="0.5s">
-                  67
-                </h3>
-                <div class="relative">
-                  <div class="line-top-dashed"></div>
-                  <p class="text-black font-semibold md:text-2xl text-lg py-2">
-                    SUPPORT MEMBER
-                  </p>
-                </div>
-              </div>
+       <!-- Number Section Start -->
+  <section class="md:my-44 my-16 lg:h-96 h-[32rem] lg:bg-center bg-right bg-cover relative wow animate__fadeIn"
+  style="background-image: url(assets/images/number-bg.png)">
+  <!-- laltain vector -->
+  <img src="assets/images/laltain.png" alt="laltain" class="absolute left-0 bottom-0 lg:h-auto h-24 wow animate__fadeInUp "/>
+  <!-- ship vector -->
+  <img src="assets/images/ship-vector.png" alt="ship" class="absolute lg:left-60 left-1/3 bottom-0 lg:h-auto h-8 wow animate__fadeInLeft animate__delay-0.5s"/>
+  <!-- airoplan vector -->
+  <img src="assets/images/airoplan-vector.png" alt="airoplan"
+    class="absolute lg:left-[29%] lg:top-[40%] top-10 right-1/4 md:h-auto h-12 wow animate__fadeInRight animate__delay-1s" data-wow-duration="2s" data-wow-delay="1s"/>
+  <!-- boat vector -->
+  <img src="assets/images/boat.png" alt="boat" class="absolute right-0 bottom-0 lg:h-auto h-16 wow animate__fadeInUp animate__delay-0.5s"/>
+  <!-- start-1 vector -->
+  <img src="assets/images/star.png" alt="laltain" class="absolute right-[11%] top-[20%] wow animate__bounceIn animate__delay-1.5s" data-wow-duration="2s" data-wow-delay="1.5s"/>
+  <!-- start-2 vector -->
+  <img src="assets/images/star.png" alt="laltain" class="absolute left-[45%] top-[35%] h-6 wow animate__zoomIn animate__delay-1s" data-wow-duration="2s" data-wow-delay="1s"/>
+  <!-- start-3 vector -->
+  <img src="assets/images/star.png" alt="laltain" class="absolute left-1/4 top-[30%] lg:block hidden wow animate__fadeInDown animate__delay-0.5s"/>
+  <!-- start-4 vector -->
+  <img src="assets/images/star.png" alt="laltain" class="absolute lg:left-[8%] right-16 top-2/3 h-4 wow animate__fadeInUp animate__delay-1.5s" data-wow-duration="2s" data-wow-delay="1.5s"/>
+  <!-- Counts -->
+  <div class="max-w-container mx-auto h-full">
+    <div class="flex lg:justify-end justify-center items-end h-full">
+      <div class="lg:w-3/4">
+        <div class="grid grid-cols-2 sm:grid-cols-4 h-full items-end md:gap-12">
+          <div class="lg:py-6 py-4 md:px-12 md:me-0 me-16 flex flex-col items-center wow animate__fadeInUp">
+            <h3 class="lg:text-5xl text-4xl font-semibold py-4 text-primary counter">
+              550
+            </h3>
+            <div class="relative">
+              <div class="line-top-dashed"></div>
+              <p class="text-black font-semibold md:text-2xl text-lg py-2">
+                PROJECT DONE
+              </p>
+            </div>
+          </div>
+          <div class="md:py-6 md:px-8 md:mb-24 md:me-0 me-16 flex flex-col items-center  wow animate__fadeInUp animate__delay-0.5s">
+            <h3 class="md:text-5xl text-4xl font-semibold py-4 text-primary counter">
+              354
+            </h3>
+            <div class="relative">
+              <div class="line-top-dashed"></div>
+              <p class="text-black font-semibold md:text-2xl text-lg py-2">
+                PERMANENT CLIENT
+              </p>
+            </div>
+          </div>
+          <div class="md:py-6 py-4 px-10 md:mb-12 mb-20 flex flex-col items-center wow animate__fadeInUp animate__delay-1s">
+            <h3 class="md:text-5xl text-4xl font-semibold py-4 text-primary counter">
+              128
+            </h3>
+            <div class="relative">
+              <div class="line-top-dashed"></div>
+              <p class="text-black font-semibold md:text-2xl text-lg py-2">
+                OWNED VEHICALS
+              </p>
+            </div>
+          </div>
+          <div class="md:py-6 px-10 mb-16 flex flex-col items-center">
+            <h3 class="md:text-5xl text-4xl font-semibold py-4 text-primary counter ">
+              67
+            </h3>
+            <div class="relative">
+              <div class="line-top-dashed"></div>
+              <p class="text-black font-semibold md:text-2xl text-lg py-2">
+                SUPPORT MEMBER
+              </p>
             </div>
           </div>
         </div>
       </div>
-    </section>
-    <!-- Number Section End -->
-    <!-- Testimonial Section Start -->
-    <section class="relative md:my-44 my-12 md:px-0 px-4">
-      <!-- vector -->
-      <img src="assets/images/tower.png" alt="tower" class="absolute right-0 bottom-0 md:block hidden" />
-      <div class="max-w-container mx-auto">
-        <!-- Header Part -->
-        <div class="flex justify-between items-center md:mb-32 mb-28">
-          <!-- Title -->
-          <div>
-            <h3 class="md:text-3xl text-xl font-semibold md:mb-4 mb-2">TESTIMONIAL</h3>
-            <h2 class="md:text-6xl text-4xl font-semibold text-primary">
-              What Our Client Say
-            </h2>
+    </div>
+  </div>
+</section>
+<!-- Number Section End -->
+   <!-- Testimonial Section Start -->
+   <section class="relative md:my-44 my-12 2xl:px-0 px-4">
+    <!-- vector -->
+    <img src="assets/images/tower.png" alt="tower" class="absolute right-0 bottom-0 xl:block hidden" />
+    <div class="max-w-container mx-auto">
+      <!-- Header Part -->
+      <div class="flex justify-between items-center md:mb-32 mb-28">
+        <!-- Title -->
+        <div>
+          <h3 class="md:text-3xl text-xl font-semibold md:mb-4 mb-2">TESTIMONIAL</h3>
+          <h2 class="md:text-6xl text-4xl font-semibold text-primary">
+            What Our Client Say
+          </h2>
+        </div>
+        <!-- Carousel Controls -->
+        <div class="lg:flex hidden justify-between items-center mt-6 w-1/4 relative">
+          <!-- Previous Button -->
+          <button id="testimonialPrevButton" class="text-secondary hover:text-primary text-2xl font-semibold">
+            PREVIOUS
+          </button>
+          <div class="line-center-dashed px-6"></div>
+          <!-- Pagination Counter -->
+          <div class="flex items-center rounded-full px-4 py-1 border-gray-100 border-2 bg-white relative z-10">
+            <span class="text-2xl font-bold text-primary" id="testimonialCurrentSlide">1</span>
           </div>
-          <!-- Carousel Controls -->
-          <div class="md:flex hidden justify-between items-center mt-6 w-1/4 relative">
-            <!-- Previous Button -->
-            <button id="testimonialPrevButton" class="text-secondary hover:text-primary text-2xl font-semibold">
-              PREVIOUS
-            </button>
-            <div class="line-center-dashed px-6"></div>
-            <!-- Pagination Counter -->
-            <div class="flex items-center rounded-full px-4 py-1 border-gray-100 border-2 bg-white relative z-10">
-              <span class="text-2xl font-bold text-primary" id="testimonialCurrentSlide">1</span>
-            </div>
-            <!-- Next Button -->
-            <button id="testimonialNextButton" class="text-secondary hover:text-primary text-2xl font-semibold">
-              NEXT
-            </button>
+          <!-- Next Button -->
+          <button id="testimonialNextButton" class="text-secondary hover:text-primary text-2xl font-semibold">
+            NEXT
+          </button>
+        </div>
+      </div>
+      <!-- Content Part -->
+      <div class="grid lg:grid-cols-2 grid-cols-1 gap-6" id="testimonialContainer">
+        <!-- slide 1 -->
+        <div
+          class="testimonial-caurosal bg-primary bg-opacity-10 rounded-bl-[6rem] xl:py-10 py-6 xl:px-10 px-4  md:flex ">
+          <div class="max-h-[373px]  md:w-1/2 md:-mt-20 -mt-28 md:h-auto w-[15rem] h-[10rem] mx-auto md:block hidden rounded-tr-[7rem] overflow-hidden">
+          <img src="assets/images/testimonial-2.png" alt="testimonial-2"
+            class="h-full" />
+          </div>
+          <img src="assets/images/testimonial-res.png" alt="testimonial-2"
+            class=" md:w-1/2 md:-mt-20 -mt-28 md:h-auto w-[15rem] h-[10rem] mx-auto md:hidden block" />
+          <div class="md:w-1/2 ps-8 md:ps-3">
+            <p class="xl:text-xl text-lg md:mb-8 mb-2 md:mt-0 mt-4 xl:leading-relaxed">
+              The culture is the best at Fablio. You can tell that they
+              truly care about the happiness of their employees. It's a
+              really relaxed and calm environment and their quality of
+              product is always best. I refer them for the future.
+            </p>
+            <h3 class="xl:text-[1.75rem] text-xl font-semibold mb-2 text-center">
+              Leslie Alexander
+            </h3>
           </div>
         </div>
-        <!-- Content Part -->
-        <div class="grid md:grid-cols-2 grid-cols-1 gap-6" id="testimonialContainer">
-          <!-- slide 1 -->
-          <div
-            class="testimonial-caurosal bg-primary bg-opacity-10 rounded-bl-[6rem] md:py-10 py-6 md:px-10 px-4  md:flex ">
-            <img src="assets/images/testimonial-2.png" alt="testimonial-2"
-              class=" md:w-1/2 md:-mt-20 -mt-28 md:h-auto w-[15rem] h-[10rem] mx-auto md:block hidden" />
-            <img src="assets/images/testimonial-res.png" alt="testimonial-2"
-              class=" md:w-1/2 md:-mt-20 -mt-28 md:h-auto w-[15rem] h-[10rem] mx-auto md:hidden block" />
-            <div class="md:w-1/2 md:ps-8">
-              <p class="md:text-xl text-lg md:mb-8 mb-2 md:mt-0 mt-4 md:leading-relaxed">
-                The culture is the best at Fablio. You can tell that they
-                truly care about the happiness of their employees. It's a
-                really relaxed and calm environment and their quality of
-                product is always best. I refer them for the future.
-              </p>
-              <h3 class="md:text-[1.75rem] text-xl font-semibold mb-2 text-center">
-                Leslie Alexander
-              </h3>
-            </div>
+        <!-- slide 2 -->
+        <div class="testimonial-caurosal bg-primary bg-opacity-10 rounded-bl-[6rem] py-10 px-10 md:flex">
+          <div class="max-h-[373px]  md:w-1/2 md:-mt-20 -mt-28 md:h-auto w-[15rem] h-[10rem] mx-auto md:block hidden rounded-tr-[7rem] overflow-hidden">
+          <img src="assets/images/testimonial-1.png" alt="testimonial-1"
+            class="h-full" />
           </div>
-          <!-- slide 2 -->
-          <div class="testimonial-caurosal bg-primary bg-opacity-10 rounded-bl-[6rem] py-10 px-10 md:flex">
-            <img src="assets/images/testimonial-1.png" alt="testimonial-1"
-              class="md:w-1/2 md:-mt-20 -mt-28 md:h-auto w-[15rem] h-[10rem] mx-auto" />
-            <div class="md:w-1/2 md:ps-8">
-              <p class="md:text-xl text-lg md:mb-8 mb-2 md:mt-0 mt-4 md:leading-relaxed">
-                Fablio's customer service is great. I was searching & found
-                exactly what I wanted, was delivered quickly. Very good
-                transaction. Fast shipping. Great blankets fabric and I am
-                planning to buy it in bulk order.
-              </p>
-              <h3 class="md:text-[1.75rem] text-xl font-semibold mb-2">
-                Cameron Williamson
-              </h3>
-            </div>
+          <div class="md:w-1/2 ps-8 md:ps-3">
+            <p class="xl:text-xl text-lg md:mb-8 mb-2 md:mt-0 mt-4 xl:leading-relaxed">
+              Fablio's customer service is great. I was searching & found
+              exactly what I wanted, was delivered quickly. Very good
+              transaction. Fast shipping. Great blankets fabric and I am
+              planning to buy it in bulk order.
+            </p>
+            <h3 class="xl:text-[1.75rem] text-xl font-semibold mb-2">
+              Cameron Williamson
+            </h3>
           </div>
-          <!-- Dummy Slide -->
-          <div class="testimonial-caurosal bg-primary bg-opacity-10 rounded-bl-[6rem] py-10 px-10 md:flex">
-            <img src="assets/images/testimonial-2.png" alt="testimonial-3"
-              class="md:w-1/2 md:-mt-20 -mt-28 md:h-auto w-[15rem] h-[10rem] mx-auto" />
-            <div class="md:w-1/2 md:ps-8">
-              <p class="md:text-xl text-lg md:mb-8 mb-2 md:mt-0 mt-4 md:leading-relaxed">
-                I absolutely love Fablio products. Their designs and fabrics
-                are top-notch. I’ve used their services for years, and they
-                never disappoint. Highly recommended for quality and
-                professionalism!
-              </p>
-              <h3 class="md:text-[1.75rem] text-xl font-semibold mb-2">Jane Doe</h3>
+        </div>
+        <!-- Dummy Slide -->
+        <div class="testimonial-caurosal bg-primary bg-opacity-10 rounded-bl-[6rem] py-10 px-10 md:flex">
+          <div class="max-h-[373px]  md:w-1/2 md:-mt-20 -mt-28 md:h-auto w-[15rem] h-[10rem] mx-auto md:block hidden rounded-tr-[7rem] overflow-hidden">
+          <img src="assets/images/testimonial-2.png" alt="testimonial-3"
+            class="h-full" />
             </div>
+          <div class="md:w-1/2 ps-8 md:ps-3">
+            <p class="xl:text-xl text-lg md:mb-8 mb-2 md:mt-0 mt-4 md:leading-relaxed">
+              I absolutely love Fablio products. Their designs and fabrics
+              are top-notch. I’ve used their services for years, and they
+              never disappoint. Highly recommended for quality and
+              professionalism!
+            </p>
+            <h3 class="xl:text-[1.75rem] text-xl font-semibold mb-2">Jane Doe</h3>
           </div>
         </div>
       </div>
-    </section>
-    <!-- Testimonial Section End -->
+    </div>
+  </section>
+  <!-- Testimonial Section End -->
     <!-- Footer Section Start -->
     <div id="footer-placeholder"></div>
     <!-- Footer Section End -->
@@ -1009,4 +1035,5 @@
 <script>
   new WOW().init();
 </script>
+
 </html>

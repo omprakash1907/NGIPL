@@ -35,7 +35,8 @@
             barlow: ["'Barlow Condensed'", "sans-serif"],
           },
           boxShadow: {
-            "inner-button": "inset 0 5px 4px rgba(0, 0, 0, 0.2)",
+            "inner-button":
+              "inset 0 5px 4px rgba(0, 0, 0, 0.2)",
           },
         },
       },
@@ -62,27 +63,28 @@
   <div id="header-placeholder"></div>
   <main>
     <!-- breadcrumb Start -->
-    <div class="bg-primary bg-opacity-10 md:rounded-bl-[7rem] rounded-bl-[5rem] animate__animated animate__fadeInDown">
-      <div class="max-2xl-container ms-auto">
+    <div class="bg-primary bg-opacity-10 md:rounded-bl-[7rem] rounded-bl-[5rem]">
+      <div class="max-2xl-container ms-auto ps-4 2xl:ps-0">
         <div class="grid md:grid-cols-2 grid-cols-1 items-center relative">
-          <div class="md:pt-0 pt-16 md:pb-0 pb-6 md:px-0 px-12 animate__animated animate__fadeInLeft">
+          <div class="md:pt-0 pt-16 md:pb-0 pb-6 md:px-0 px-12">
             <!-- ship vector -->
             <img src="assets/images/gallery/ship.png" alt="ship"
-              class="absolute md:bottom-0 bottom-10 md:left-20 right-0 md:w-auto w-96" />
+              class="absolute md:bottom-0 bottom-10 md:left-20 right-0 xl:w-auto w-96" />
             <!-- vector -->
             <img src="assets/images/banner-vector.png" alt="vector"
-              class="absolute md:left-1/4 md:top-20 right-10 top-10 md:h-20 h-12" />
+              class="absolute md:left-1/4 md:top-20 right-10 top-10 xl:h-20 h-12" />
             <!-- content -->
 
-            <h3 class="md:text-3xl text-lg font-semibold mb-4">
-              <a href="index.html">HOME</a>/
-              <a href="contact.html">CONTACT US</a>
+            <h3 class="xl:text-3xl text-lg font-semibold mb-4">
+              <a href="index.html" class="hover:text-primary transition duration-300 ease-in-out">HOME</a> /
+              <a href="contact.html" aria-disabled="true" onclick="event.preventDefault();" class="text-secondary">CONTACT US</a>
             </h3>
-            <h2 class="text-primary font-semibold text-[2.75rem] md:text-[4.5rem] leading-none mb-4 animate__animated animate__fadeInUp">
+            <h2 class="text-primary font-semibold text-[2.75rem] xl:text-[4.5rem] leading-none mb-4">
               Contact Us
             </h2>
           </div>
-          <div class="md:rounded-tl-[7rem] rounded-tl-[4rem] overflow-hidden md:ms-0 ms-16 md:mb-0 -mb-24 animate__animated animate__zoomIn">
+          <div
+            class="lg:rounded-tl-[7rem] rounded-tl-[4rem] overflow-hidden md:ms-0 ms-16 md:mb-0 -mb-24 max-h-[852px]">
             <img src="assets/images/contact/contact-banner.jpg" alt="banner" />
           </div>
         </div>
@@ -90,35 +92,36 @@
     </div>
     <!-- breadcrumb End -->
     <!-- Content Start -->
-    <div class="max-2xl-container ms-auto pt-32 md:pb-32 pb-12 md:ps-0 ps-4 animate__animated animate__fadeIn" >
+    <div class="max-2xl-container ms-auto pt-32 md:pb-32 pb-12 md:ps-0 ps-4">
       <!-- Section Heading -->
-      <h4 class="font-semibold md:text-3xl text-lg md:mb-5 mb-1">
+      <h4 class="font-semibold md:text-3xl text-lg md:mb-5 mb-1 ps-4 2xl:ps-0">
         CONTACT US
       </h4>
-      <h3 class="text-primary font-semibold md:text-6xl text-3xl md:mb-8 mb-6 animate__animated animate__fadeInUp">
+      <h3 class="text-primary font-semibold md:text-6xl text-3xl md:mb-8 mb-6 ps-4 2xl:ps-0">
         Inquiry Form
       </h3>
 
       <!-- Form Section -->
-      <form action="#" class="bg-primary bg-opacity-10 rounded-br-[7rem] md:p-12 p-4 animate__animated animate__fadeInUp">
+      <form action="#"
+        class="bg-primary bg-opacity-10 rounded-br-[7rem] md:p-12 p-4 ">
         <div class="max-w-container space-y-10 relative">
           <!-- vector -->
           <img src="assets/images/banner-vector.png" alt="vector" class="absolute bottom-20 right-0 md:block hidden" />
           <!-- Row 1: First Name, Last Name, Email -->
           <div class="grid lg:grid-cols-3 grid-cols-1 gap-6">
-            <div class="flex flex-col animate__animated animate__fadeInLeft">
+            <div class="flex flex-col ">
               <label for="first-name" class="text-secondary md:text-xl text-lg font-normal mb-2 ps-4">First Name<span
                   class="text-red-500">*</span></label>
               <input type="text" id="first-name" placeholder="First Name*"
                 class="md:py-4 px-4 py-3 rounded-lg md:text-xl text-lg" required />
             </div>
-            <div class="flex flex-col animate__animated animate__fadeInLeft">
+            <div class="flex flex-col ">
               <label for="last-name" class="text-secondary md:text-xl text-lg font-normal mb-2 ps-4">Last Name<span
                   class="text-red-500">*</span></label>
               <input type="text" id="last-name" placeholder="Last Name*"
                 class="md:py-4 px-4 py-3 rounded-lg md:text-xl text-lg" required />
             </div>
-            <div class="flex flex-col animate__animated animate__fadeInLeft">
+            <div class="flex flex-col ">
               <label for="email" class="text-secondary md:text-xl text-lg font-normal mb-2 ps-4">Email<span
                   class="text-red-500">*</span></label>
               <input type="email" id="email" placeholder="Enter Your Email*"
@@ -127,14 +130,22 @@
           </div>
 
           <!-- Row 2: Attach File -->
-          <div class="flex flex-col lg:flex-row md:items-center gap-6">
+          <!-- File Upload Section -->
+          <div class="flex flex-col xl:flex-row xl:items-center gap-6">
             <div class="flex-grow">
-              <label for="file-upload" class="text-secondary md:text-xl text-lg font-normal mb-2 ps-4 block">Attach Your
-                Requirement Details</label>
-              <div class="md:block flex gap-4 animate__animated animate__fadeInLeft">
-                <input type="text" id="file-upload" placeholder="Attach Your Requirement Details"
+              <label for="file-upload" class="text-secondary md:text-xl text-lg font-normal mb-2 ps-4 block">
+                Attach Your Requirement Details
+              </label>
+              <div class="md:block flex gap-4 ">
+                <!-- Hidden File Input -->
+                <input type="file" id="file-upload" class="hidden" accept=".pdf, .doc, .docx" />
+
+                <!-- Text Input (Read-Only) -->
+                <input type="text" id="file-name-display" placeholder="Attach Your Requirement Details"
                   class="md:py-4 px-4 py-3 rounded-lg md:text-xl text-lg w-full" readonly />
-                <button type="button"
+
+                <!-- Small Button (Mobile View) -->
+                <button type="button" onclick="document.getElementById('file-upload').click();"
                   class="bg-primary md:hidden block text-white text-xl lg:text-3xl font-medium rounded-lg px-4 py-2 lg:py-4 shadow-inner-button">
                   <svg width="18" height="18" viewBox="0 0 18 18" class="md:h-auto md:w-auto h-4" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
@@ -155,17 +166,18 @@
                 .pdf, .doc, .docx extensions only<span class="text-red-500">*</span>
               </p>
             </div>
-            <button type="button"
-              class="bg-primary md:block hidden text-white md:text-xl text-lg lg:text-3xl font-medium rounded-bl-[1.8rem] animate__animated animate__fadeInLeft rounded-tr-[1.8rem] px-10 lg:px-16 py-3 lg:py-3 shadow-inner-button">
-              BROWSER
+
+            <!-- Browse Button (Desktop View) -->
+            <button type="button" onclick="document.getElementById('file-upload').click();"
+              class="bg-primary md:block hidden text-white md:text-xl text-lg lg:text-3xl font-medium rounded-bl-[1.8rem]  rounded-tr-[1.8rem] px-10 lg:px-16 py-3 lg:py-3 shadow-inner-button transition-transform duration-300 ease-in-out transform hover:scale-95 hover:shadow-lg">
+              BROWSE
             </button>
           </div>
-
           <!-- Row 3: Message -->
           <div class="flex flex-col">
             <label for="message" class="text-secondary md:text-xl text-lg font-normal mb-2 ps-4">Message</label>
             <textarea id="message" rows="5" placeholder="Message"
-              class="md:py-4 px-4 py-3 rounded-lg md:text-xl text-lg animate__animated animate__fadeInLeft"></textarea>
+              class="md:py-4 px-4 py-3 rounded-lg md:text-xl text-lg "></textarea>
           </div>
 
           <!-- Row 4: Security Question -->
@@ -173,19 +185,21 @@
             <div class="flex flex-col">
               <label for="security-question" class="text-secondary md:text-xl text-lg font-normal mb-2 ps-4">What is 6 +
                 1?</label>
-              <div class="flex items-center gap-4 animate__animated animate__fadeInLeft">
+              <div class="flex items-center gap-4 ">
                 <input type="text" id="security-question" placeholder="Type Your Answer"
                   class="md:py-4 px-4 py-3 rounded-lg md:text-xl text-lg w-full" />
                 <div class="flex items-center justify-start">
-                  <button type="button"
-                    class="bg-primary text-white md:text-xl text-lg lg:text-3xl font-medium rounded-lg px-3 lg:px-4 py-4 shadow-inner-button">
-                    <svg width="25" height="24" viewBox="0 0 25 24" class="md:h-auto md:w-auto h-4" fill="none"
-                      xmlns="http://www.w3.org/2000/svg">
-                      <path
-                        d="M21.9118 11.0177C22.142 13.1814 21.6093 15.3576 20.4058 17.1705C19.2023 18.9833 17.4034 20.3189 15.32 20.9466C13.2365 21.5743 10.9993 21.4547 8.9946 20.6085C6.98994 19.7622 5.34374 18.2425 4.34033 16.3117C3.33691 14.3809 3.03928 12.1603 3.49884 10.0334C3.9584 7.90652 5.14629 6.0069 6.85736 4.66263C8.56842 3.31836 10.6952 2.61385 12.8704 2.67076C15.0457 2.72767 17.1327 3.54244 18.7711 4.97434L17.1203 4.98251C16.9671 4.98289 16.8155 5.01345 16.6741 5.07243C16.5327 5.13142 16.4043 5.21767 16.2962 5.32628C16.1881 5.43489 16.1025 5.56371 16.0442 5.70541C15.986 5.8471 15.9562 5.99888 15.9566 6.15209C15.9569 6.3053 15.9875 6.45693 16.0465 6.59833C16.1055 6.73973 16.1917 6.86813 16.3003 6.9762C16.4089 7.08426 16.5378 7.16988 16.6794 7.22815C16.8211 7.28643 16.9729 7.31623 17.1261 7.31584H17.1331L21.3401 7.29251C21.6489 7.29066 21.9444 7.16644 22.1618 6.9471C22.3792 6.72775 22.5007 6.43116 22.4998 6.12234L22.4765 1.91651C22.4813 1.76168 22.4541 1.60752 22.3966 1.46366C22.3392 1.31981 22.2527 1.18934 22.1425 1.08041C22.0324 0.971476 21.901 0.886419 21.7565 0.830547C21.612 0.774675 21.4576 0.749187 21.3028 0.755675C20.9936 0.757527 20.6978 0.882061 20.4803 1.10192C20.2629 1.32177 20.1416 1.61896 20.1431 1.92818L20.149 3.09134C18.0787 1.34785 15.4661 0.379269 12.7596 0.351797C10.0532 0.324325 7.42148 1.23968 5.31623 2.94078C3.21098 4.64189 1.76342 7.02267 1.22195 9.67459C0.680482 12.3265 1.07887 15.0842 2.34875 17.4744C3.61864 19.8647 5.68083 21.7384 8.18146 22.7741C10.6821 23.8098 13.4652 23.943 16.0533 23.1506C18.6413 22.3583 20.8729 20.6899 22.3651 18.4317C23.8573 16.1736 24.5171 13.4665 24.2311 10.775C24.2198 10.619 24.1773 10.4669 24.106 10.3277C24.0347 10.1885 23.9362 10.0651 23.8163 9.96473C23.6963 9.86437 23.5575 9.78914 23.4079 9.74352C23.2583 9.6979 23.1011 9.68282 22.9455 9.69917C22.79 9.71552 22.6394 9.76297 22.5026 9.8387C22.3657 9.91443 22.2455 10.0169 22.1491 10.14C22.0527 10.2631 21.982 10.4043 21.9412 10.5553C21.9004 10.7063 21.8904 10.8639 21.9118 11.0188V11.0177Z"
-                        fill="white" />
-                    </svg>
-                  </button>
+                  <a href="#">
+                    <button type="button"
+                      class="bg-primary text-white md:text-xl text-lg lg:text-3xl font-medium rounded-lg px-3 lg:px-4 py-4 shadow-inner-button transition-transform duration-300 ease-in-out transform hover:scale-95 hover:shadow-lg">
+                      <svg width="25" height="24" viewBox="0 0 25 24" class="md:h-auto md:w-auto h-4" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M21.9118 11.0177C22.142 13.1814 21.6093 15.3576 20.4058 17.1705C19.2023 18.9833 17.4034 20.3189 15.32 20.9466C13.2365 21.5743 10.9993 21.4547 8.9946 20.6085C6.98994 19.7622 5.34374 18.2425 4.34033 16.3117C3.33691 14.3809 3.03928 12.1603 3.49884 10.0334C3.9584 7.90652 5.14629 6.0069 6.85736 4.66263C8.56842 3.31836 10.6952 2.61385 12.8704 2.67076C15.0457 2.72767 17.1327 3.54244 18.7711 4.97434L17.1203 4.98251C16.9671 4.98289 16.8155 5.01345 16.6741 5.07243C16.5327 5.13142 16.4043 5.21767 16.2962 5.32628C16.1881 5.43489 16.1025 5.56371 16.0442 5.70541C15.986 5.8471 15.9562 5.99888 15.9566 6.15209C15.9569 6.3053 15.9875 6.45693 16.0465 6.59833C16.1055 6.73973 16.1917 6.86813 16.3003 6.9762C16.4089 7.08426 16.5378 7.16988 16.6794 7.22815C16.8211 7.28643 16.9729 7.31623 17.1261 7.31584H17.1331L21.3401 7.29251C21.6489 7.29066 21.9444 7.16644 22.1618 6.9471C22.3792 6.72775 22.5007 6.43116 22.4998 6.12234L22.4765 1.91651C22.4813 1.76168 22.4541 1.60752 22.3966 1.46366C22.3392 1.31981 22.2527 1.18934 22.1425 1.08041C22.0324 0.971476 21.901 0.886419 21.7565 0.830547C21.612 0.774675 21.4576 0.749187 21.3028 0.755675C20.9936 0.757527 20.6978 0.882061 20.4803 1.10192C20.2629 1.32177 20.1416 1.61896 20.1431 1.92818L20.149 3.09134C18.0787 1.34785 15.4661 0.379269 12.7596 0.351797C10.0532 0.324325 7.42148 1.23968 5.31623 2.94078C3.21098 4.64189 1.76342 7.02267 1.22195 9.67459C0.680482 12.3265 1.07887 15.0842 2.34875 17.4744C3.61864 19.8647 5.68083 21.7384 8.18146 22.7741C10.6821 23.8098 13.4652 23.943 16.0533 23.1506C18.6413 22.3583 20.8729 20.6899 22.3651 18.4317C23.8573 16.1736 24.5171 13.4665 24.2311 10.775C24.2198 10.619 24.1773 10.4669 24.106 10.3277C24.0347 10.1885 23.9362 10.0651 23.8163 9.96473C23.6963 9.86437 23.5575 9.78914 23.4079 9.74352C23.2583 9.6979 23.1011 9.68282 22.9455 9.69917C22.79 9.71552 22.6394 9.76297 22.5026 9.8387C22.3657 9.91443 22.2455 10.0169 22.1491 10.14C22.0527 10.2631 21.982 10.4043 21.9412 10.5553C21.9004 10.7063 21.8904 10.8639 21.9118 11.0188V11.0177Z"
+                          fill="white" />
+                      </svg>
+                    </button>
+                  </a>
                 </div>
               </div>
             </div>
@@ -193,30 +207,35 @@
 
           <!-- Submit Button -->
           <div class="md:text-start text-center">
-            <button type="submit"
-              class="bg-primary text-white text-lg lg:text-3xl font-medium md:rounded-bl-[1.8rem] rounded-bl-[1.2rem] md:rounded-tr-[1.8rem] rounded-tr-[1.2rem] px-16 lg:px-16 py-3 lg:py-3 shadow-inner-button">
-              SUBMIT
-            </button>
+            <a href="#">
+              <button type="submit"
+                class="bg-primary text-white text-lg lg:text-3xl font-medium md:rounded-bl-[1.8rem] rounded-bl-[1.2rem] md:rounded-tr-[1.8rem] rounded-tr-[1.2rem] px-16 lg:px-16 py-3 lg:py-3 shadow-inner-button transition-transform duration-300 ease-in-out transform hover:scale-95 hover:shadow-lg">
+                SUBMIT
+              </button>
+            </a>
           </div>
         </div>
       </form>
     </div>
 
     <!-- contact details -->
-    <div class="max-2xl-container me-autopt-32 md:pb-32 pb-6 animate__animated animate__fadeIn">
+    <div class="max-2xl-container me-autopt-32 md:pb-32 pb-6 ">
       <div class="grid lg:grid-cols-2 grid-cols-1 gap-12 items-center">
-        <div class="md:rounded-br-[7rem] rounded-br-[5rem] md:me-0 me-4  overflow-hidden animate__animated animate__fadeInLeft">
+        <div
+          class="md:rounded-br-[7rem] rounded-br-[5rem] md:me-0 me-4 overflow-hidden max-h-[816px]">
           <img src="assets/images/service/service-details.png" alt="banner" />
         </div>
-        <div class="md:pe-24 md:ps-0 pe-4 ps-4">
-          <h4 class="font-semibold md:text-3xl text-xl md:mb-5 mb-2 animate__animated animate__fadeInDown">CONTACT DETAILS</h4>
-          <h3 class="text-primary font-semibold md:text-6xl text-4xl md:mb-8 animate__animated animate__fadeInUp">
+        <div class="md:pe-24 md:ps-0 pe-4 ps-4 ms-4 2xl:ms-0">
+          <h4 class="font-semibold lg:text-3xl text-xl md:mb-5 mb-2 ">
+            CONTACT DETAILS
+          </h4>
+          <h3 class="text-primary font-semibold lg:text-6xl text-4xl md:mb-8 ">
             Say Hii!
           </h3>
           <div class="relative">
             <div class="line-bottom-dashed"></div>
-            <div class="flex justify-start items-center gap-6 py-4 animate__animated animate__fadeInLeft">
-              <div class="p-3 w-max bg-white rounded-md shadow-sm">
+            <div class="flex justify-start items-center gap-6 py-4">
+              <a href="#" class="p-3 w-max bg-white rounded-md shadow-sm hover:shadow-lg">
                 <svg width="24" height="25" viewBox="0 0 24 25" class="md:w-5 md:h-5 w-4 h-4" fill="none"
                   xmlns="http://www.w3.org/2000/svg">
                   <path
@@ -226,14 +245,16 @@
                     d="M21.8906 4.48584H2.10938C1.79438 4.48584 1.49808 4.56 1.22944 4.68426L8.94398 12.4244C8.9445 12.4249 8.94511 12.425 8.94563 12.4255C8.94594 12.4259 8.94616 12.4263 8.94623 12.4267L11.4547 14.9435C11.7211 15.2099 12.279 15.2099 12.5454 14.9435L15.0533 12.4272C15.0533 12.4272 15.054 12.426 15.0545 12.4255C15.0545 12.4255 15.0556 12.4249 15.0561 12.4244L22.7705 4.68421C22.5018 4.5599 22.2056 4.48584 21.8906 4.48584ZM0.224344 5.66765C0.0853125 5.94881 0 6.2609 0 6.59521V19.2515C0 19.5858 0.0852187 19.8979 0.224297 20.179L7.45631 12.9236L0.224344 5.66765ZM23.7757 5.66756L16.5437 12.9236L23.7757 20.1791C23.9147 19.898 24 19.5859 24 19.2515V6.59521C24 6.26081 23.9147 5.94871 23.7757 5.66756Z"
                     fill="#009DDD" />
                 </svg>
-              </div>
-              <h3 class="md:text-[1.75rem] text-xl font-medium">info@ngimpli.in</h3>
+              </a>
+              <h3 class="lg:text-[1.75rem] text-xl font-medium">
+                info@ngimpli.in
+              </h3>
             </div>
           </div>
           <div class="relative">
             <div class="line-bottom-dashed"></div>
-            <div class="flex justify-start items-center gap-6 py-4  animate__animated animate__fadeInRight">
-              <div class="p-3 w-max bg-white rounded-md shadow-sm">
+            <div class="flex justify-start items-center gap-6 py-4">
+              <a href="#" class="p-3 w-max bg-white rounded-md shadow-sm hover:shadow-lg">
                 <svg width="24" height="25" viewBox="0 0 24 25" class="md:w-5 md:h-5 w-4 h-4" fill="none"
                   xmlns="http://www.w3.org/2000/svg">
                   <g clip-path="url(#clip0_74_219)">
@@ -247,23 +268,27 @@
                     </clipPath>
                   </defs>
                 </svg>
-              </div>
-              <h3 class="md:text-[1.75rem] text-xl font-medium">+91 97129 23925</h3>
+              </a>
+              <h3 class="lg:text-[1.75rem] text-xl font-medium">
+                +91 97129 23925
+              </h3>
             </div>
           </div>
           <div class="relative">
-            <div class="flex justify-start items-center gap-6 py-4 animate__animated animate__fadeInUp">
-              <div class="p-3 w-max bg-white rounded-md shadow-sm">
+            <div class="flex justify-start items-center gap-6 py-4">
+              <a href="#" class="p-3 w-max bg-white rounded-md shadow-sm hover:shadow-lg">
                 <svg width="24" height="24" viewBox="0 0 24 24" class="md:w-5 md:h-5 w-4 h-4" fill="none"
                   xmlns="http://www.w3.org/2000/svg">
                   <path
                     d="M12.0005 0C7.20775 0 3.30859 3.89916 3.30859 8.69184C3.30859 14.6397 11.087 23.3715 11.4182 23.7404C11.7292 24.0868 12.2723 24.0862 12.5828 23.7404C12.914 23.3715 20.6924 14.6397 20.6924 8.69184C20.6923 3.89916 16.7932 0 12.0005 0ZM12.0005 13.065C9.58914 13.065 7.62742 11.1032 7.62742 8.69184C7.62742 6.2805 9.58919 4.31878 12.0005 4.31878C14.4118 4.31878 16.3735 6.28055 16.3735 8.69189C16.3735 11.1032 14.4118 13.065 12.0005 13.065Z"
                     fill="#009DDD" />
                 </svg>
-              </div>
-              <h3 class="md:text-[1.75rem] text-xl font-medium md:leading-10">315, Oberon Tower Opp Mercedes Benz
-                Showroom New City Light
-                Road, Bharthana, Vesu, Surat, Gujarat 395007</h3>
+              </a>
+              <h3 class="lg:text-[1.75rem] text-xl font-medium md:leading-10">
+                315, Oberon Tower Opp Mercedes Benz Showroom
+                New City Light Road, Bharthana, Vesu, Surat,
+                Gujarat 395007
+              </h3>
             </div>
           </div>
         </div>
@@ -272,12 +297,25 @@
     <!-- map -->
     <iframe
       src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3721.103042890928!2d72.79592157525994!3d21.14829718053114!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be053e489b1f22b%3A0x5fbdd97174122d91!2sNiraj%20Gupta%20Impex%20Pvt.%20Ltd.!5e0!3m2!1sen!2sin!4v1733009082601!5m2!1sen!2sin"
-      width="600" height="450" class="w-full " style="border:0;" allowfullscreen="" loading="lazy"
+      width="600" height="450" class="w-full" style="border: 0" allowfullscreen="" loading="lazy"
       referrerpolicy="no-referrer-when-downgrade"></iframe>
   </main>
 
   <!-- Footer -->
   <div id="footer-placeholder"></div>
 </body>
+<script>
+  // Update file input value display
+  const fileInput = document.getElementById("file-upload");
+  const fileNameDisplay = document.getElementById("file-name-display");
+
+  fileInput.addEventListener("change", function () {
+    if (fileInput.files.length > 0) {
+      fileNameDisplay.value = fileInput.files[0].name;
+    } else {
+      fileNameDisplay.value = "";
+    }
+  });
+</script>
 
 </html>
