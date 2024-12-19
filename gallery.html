@@ -93,7 +93,7 @@
                                     href="gallery.html"
                                     aria-disabled="true"
                                     onclick="event.preventDefault();"
-                                    class="text-primary"
+                                    class="text-secondary"
                                     >GALLERY</a
                                 >
                             </h3>
@@ -295,7 +295,7 @@
             const loadLessButton = document.createElement("button");
             loadLessButton.textContent = "LOAD LESS";
             loadLessButton.className =
-                "load-less-btn bg-primary text-white text-xl lg:text-3xl font-medium rounded-bl-[1.8rem] rounded-tr-[1.8rem] px-10 lg:px-16 py-3 lg:py-5 shadow-inner-button hidden"; // Hidden by default
+                "load-less-btn bg-primary text-white text-xl lg:text-3xl font-medium rounded-bl-[1.8rem] rounded-tr-[1.8rem] px-10 lg:px-16 py-3 lg:py-5 shadow-inner-button hidden transition-transform duration-300 ease-in-out transform hover:scale-95 hover:shadow-lg"; // Hidden by default
 
             // Append Load Less button to the gallery section
             loadMoreButton.parentElement.appendChild(loadLessButton);
